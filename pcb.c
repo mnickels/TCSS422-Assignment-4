@@ -1,0 +1,202 @@
+/*
+TCSS422 - Operating Systems
+Problem 3
+
+Group Members:
+Taylor Riccetti
+Alisher Baimenov
+
+Changes:
+    We added to variables the the PCB_s struct, a bool value to
+    determine whether or not the PCB is privileged and added
+    a cycles variable to track how many cycles the PCB has run.
+
+    This information is specific to the PCB so we decided to store this
+    information here.
+*/
+
+#include <stdlib.h>
+#include <stdio.h>
+
+#include "pcb.h"
+
+// Global to determine the next possible PID value for a new PCB
+unsigned int currentpid = 1;
+
+// Structure definition for the CPU State for the LC-3 Processor.
+struct CPU_context_s {
+    unsigned int pc;
+    unsigned int ir;
+    unsigned int psr;
+    unsigned int r0;
+    unsigned int r1;
+    unsigned int r2;
+    unsigned int r3;
+    unsigned int r4;
+    unsigned int r5;
+    unsigned int r6;
+    unsigned int r7;
+} CPU_context_s;
+
+// Structure definition for the process control block.
+struct PCB_s {
+    unsigned int pid;
+    enum state_type state;
+    unsigned int parent;
+    unsigned char priority;
+    unsigned char *mem;
+    unsigned int size;
+    unsigned char channel_no;
+    CPU_context_p context;
+    unsigned int max_pc;
+    time_t creation;
+    time_t termination;
+    _Bool terminate;
+    unsigned int term_count;
+    unsigned int IO_1_trap[4];
+    unsigned int IO_2_trap[4];
+    unsigned int cycles;
+    _Bool privileged;
+} PCB_s;
+
+/* constructor */
+// Creates a pcb with the PCB pointer and the CPU_context pointer
+PCB_p create_pcb() {
+    PCB_p pcb = (PCB_p) malloc(sizeof(PCB_s));
+    pcb->context = (CPU_context_p) malloc(sizeof(CPU_context_s));
+    if (!pcb) {
+        return NULL;
+    } else {
+        pcb->context->pc = 0;
+        pcb->context->ir = 0;
+        pcb->context->psr = 0;
+        pcb->context->r0 = 0;
+        pcb->context->r1 = 0;
+        pcb->context->r2 = 0;
+        pcb->context->r3 = 0;
+        pcb->context->r4 = 0;
+        pcb->context->r5 = 0;
+        pcb->context->r6 = 0;
+        pcb->context->r7 = 0;
+
+        pcb->pid = currentpid++;
+        pcb->state = new;
+        pcb->parent = 0;
+        pcb->priority = 0;
+        pcb->mem = 0;
+        pcb->size = 0;
+        pcb->channel_no = 0;
+        // PCB Fields added for problem 4.
+        pcb->max_pc = 0;
+        pcb->creation = 0;
+        pcb->termination = 0;
+        pcb->terminate = 0;
+        pcb->term_count = 0;
+        pcb->IO_1_trap;
+        pcb->IO_2_trap;
+
+        pcb->cycles = 0;
+        pcb->privileged = 0;
+    }
+    return pcb;
+}
+
+/* deconstructor */
+// Deallocates the memory for the pcb passed in.
+void destroy_pcb(PCB_p p) {
+    if (!p) {
+        return;
+    } else {
+        free(p->context);
+        free(p);
+    }
+}
+
+/* functions */
+// Assigns the PID.
+void set_pid(PCB_p pcb, unsigned int num) {
+    pcb->pid = num;
+}
+
+unsigned int get_pid(PCB_p pcb) {
+    return pcb->pid;
+}
+
+// Sets the state_type of the pcb passed in.
+void set_state(PCB_p pcb, enum state_type type) {
+    pcb->state = type;
+}
+
+enum state_type get_state(PCB_p pcb) {
+    return pcb->state;
+}
+
+// Sets the priority of the pcb.
+void set_priority(PCB_p pcb, unsigned char priority) {
+    pcb->priority = priority;
+}
+
+unsigned char get_priority(PCB_p pcb) {
+    return pcb->priority;
+}
+
+// Returns the cycles the pcb has run.
+unsigned int get_cycles(PCB_p pcb) {
+    return pcb->cycles;
+}
+
+// Sets the cycles this pcb has run.
+void set_cycles(PCB_p pcb, unsigned int newCycles) {
+    pcb->cycles = newCycles;
+}
+
+// Returns whether or no the pcb is privileged.
+int isPrivileged(PCB_p pcb) {
+    return pcb->privileged;
+}
+
+// Sets the pcb to privileged.
+void setPrivileged(PCB_p pcb) {
+    pcb->privileged = 1;
+}
+
+// returns the pcbs pc value.
+unsigned int get_pc(PCB_p pcb) {
+    if(pcb == NULL) return NULL;
+    if(pcb->context == NULL) return NULL;
+
+    return pcb->context->pc;
+}
+
+// Sets the pcbs pc value to the given pc.
+void set_pc(PCB_p pcb, unsigned int pc) {
+    pcb->context->pc = pc;
+}
+
+
+// Prints a string representation of the pcb passed in.
+void print_pcb_file(PCB_p pcb, FILE * fp) {
+    fprintf(fp, "Pid: %X, Priority: %X, State:%X ", get_pid(pcb), get_priority(pcb), pcb->state);
+    print_context(pcb->context,fp);
+}
+
+void print_pcb(PCB_p pcb){
+    printf("PCB: PID: %u, PRIORITY: %u, PC: %u,%u\n", pcb->pid, pcb->priority, pcb->context->pc, pcb->cycles);
+}
+
+void print_context(CPU_context_p context, FILE * fp) {
+    fprintf(fp, "Context Data: [pc: %u, ir: %u, psr: %u, r0: %u, r1: %u, r2: %u, r3: %u, r4: %u, r5: %u, r6: %u, r7: %u]\n",
+           context->pc, context->ir, context->psr, context->r0, context->r1, context->r2, context->r3,
+           context->r4, context->r5, context->r6, context->r7);
+}
+
+const char* get_state_name(enum state_type state) {
+    switch (state) {
+        case new: return "New";
+        case ready: return "Ready";
+        case running: return "Running";
+        case interrupted: return "Interrupted";
+        case waiting: return "Waiting";
+        case halted: return "Halted";
+    }
+}
