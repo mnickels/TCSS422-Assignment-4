@@ -1,0 +1,1 @@
+/usr/bin/cc -g  -Wl,--enable-auto-import CMakeFiles/problem4.dir/OS.c.o CMakeFiles/problem4.dir/fifo_queue.c.o CMakeFiles/problem4.dir/pcb.c.o CMakeFiles/problem4.dir/PriorityQ.c.o  -o problem4.exe -Wl,--out-implib,libproblem4.dll.a -Wl,--major-image-version,0,--minor-image-version,0 

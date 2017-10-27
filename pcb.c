@@ -17,6 +17,7 @@ Changes:
 
 #include <stdlib.h>
 #include <stdio.h>
+#include <time.h>
 
 #include "pcb.h"
 
@@ -51,12 +52,11 @@ struct PCB_s {
     unsigned int max_pc;
     time_t creation;
     time_t termination;
-    _Bool terminate;
+    unsigned int terminate;
     unsigned int term_count;
     unsigned int IO_1_trap[4];
     unsigned int IO_2_trap[4];
     unsigned int cycles;
-    _Bool privileged;
 } PCB_s;
 
 /* constructor */
@@ -87,16 +87,39 @@ PCB_p create_pcb() {
         pcb->size = 0;
         pcb->channel_no = 0;
         // PCB Fields added for problem 4.
-        pcb->max_pc = 0;
-        pcb->creation = 0;
+        srand(time(NULL));
+        // Max_pc 2000 to 3000.
+        pcb->max_pc = rand() % 2001 + 1000;
+        pcb->creation = time(NULL);
         pcb->termination = 0;
-        pcb->terminate = 0;
+        // Terminate 0 to 15.
+        pcb->terminate = rand() % 16;
         pcb->term_count = 0;
-        pcb->IO_1_trap;
-        pcb->IO_2_trap;
-
+        for(int i = 0; i < 4; i++) {
+            unsigned int r = rand() % pcb->max_pc;
+            int duplicate_flag = 0;
+            for(int j = 0; j < i; j++) {
+                duplicate_flag |= pcb->IO_1_trap[j] == r;
+            }
+            if(duplicate_flag) {
+                i--;
+            } else {
+                pcb->IO_1_trap[i] = r;
+            }
+        }
+        for(int i = 0; i < 4; i++) {
+            unsigned int r = rand() % pcb->max_pc;
+            int duplicate_flag = 0;
+            for(int j = 0; j < i; j++) {
+                duplicate_flag |= pcb->IO_2_trap[j] == r;
+            }
+            if(duplicate_flag) {
+                i--;
+            } else {
+                pcb->IO_2_trap[i] = r;
+            }
+        }
         pcb->cycles = 0;
-        pcb->privileged = 0;
     }
     return pcb;
 }
@@ -173,6 +196,11 @@ void set_pc(PCB_p pcb, unsigned int pc) {
     pcb->context->pc = pc;
 }
 
+// Sets the pcb's time to the current time.
+void set_termination(PCB_p pcb) {
+    if (pcb == NULL) return;
+    pcb->termination = time(NULL);
+}
 
 // Prints a string representation of the pcb passed in.
 void print_pcb_file(PCB_p pcb, FILE * fp) {
