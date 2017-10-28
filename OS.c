@@ -21,13 +21,16 @@ unsigned int quantumCounter;
 unsigned int processCounter;
 
 // The os simulator, runs the main loop.
-int OS_Simulator(FIFO_Queue_p newProcesses, FIFO_Queue_p dieingProcesses, PriorityQ_p * readyProcesses, PCB_p * runningProcess) {
+int OS_Simulator(FIFO_Queue_p newProcesses, FIFO_Queue_p dieingProcesses, PriorityQ_p readyProcesses, PCB_p runningProcess) {
     srand(time(NULL));
-    int iteration = 1;
+    int iteration = 0;
 
     // Main Loop
     // One cycle is one quantum
     for( ; ; ) { // for spider
+        if (!iteration) {
+            currentPC = sysStack;
+        }
         // stops making processes after 48 and if there are at least 4 Privileged pcbs
         if(processCounter < 48 && privilegedCount < 4) {
             createNewProcesses(newProcesses);
@@ -45,15 +48,12 @@ int OS_Simulator(FIFO_Queue_p newProcesses, FIFO_Queue_p dieingProcesses, Priori
         }
 
         // Simulate Process Running
-        currentPC += get_pc(*runningProcess) + (rand() % getCyclesFromPriority(get_priority(*runningProcess)));
+        currentPC++;
 
         // Push to SysStack
         sysStack = currentPC;
 
-        pseudoISR(readyProcesses, dieingProcesses, runningProcess);
-
         quantumCounter--;
-
 
         printf("Iteration: %d\n", iteration);
         print_priority_queue(*readyProcesses);
@@ -64,8 +64,11 @@ int OS_Simulator(FIFO_Queue_p newProcesses, FIFO_Queue_p dieingProcesses, Priori
                 print_pcb(privilegedPCBs[i]);
             }
         }
-        iteration ++;
-        if (iteration == 300)  break;
+
+        if (iteration++ >= getCyclesFromPriority(get_priority(runningProcess))) {
+            iteration = 0;
+            pseudoISR(readyProcesses, dieingProcesses, runningProcess);
+        }
     }
 }
 
@@ -222,7 +225,7 @@ int main() {
     processCounter = 1;
 
     // main loop
-    OS_Simulator(newProcesses, dieingProcesses, &readyProcesses, &runningProcess);
+    OS_Simulator(newProcesses, dieingProcesses, readyProcesses, runningProcess);
     
     // free resources
     destroy(newProcesses);
