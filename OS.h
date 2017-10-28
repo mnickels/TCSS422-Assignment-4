@@ -23,16 +23,16 @@ Alisher Baimenov
 #define MAX_BUFFER_SIZE 1024
 
 // Simulates the OS.
-int OS_Simulator(FIFO_Queue_p, FIFO_Queue_p, PriorityQ_p, PCB_p);
+int OS_Simulator(FIFO_Queue_p, FIFO_Queue_p, PriorityQ_p , PCB_p);
 
 // Runs the pseudo ISR, calls the scheduler and updates the PC.
-int pseudoISR(PriorityQ_p,FIFO_Queue_p , PCB_p);
+int pseudoISR(PriorityQ_p , FIFO_Queue_p , FIFO_Queue_p, PCB_p);
 
 // Handles the interrupts.
-int scheduler(PriorityQ_p, FIFO_Queue_p , PCB_p, int);
+int scheduler(PriorityQ_p , FIFO_Queue_p, FIFO_Queue_p , PCB_p, int );
 
 // Dispatches the next ready process and enqueues the old process.
-int dispatcher(PriorityQ_p, PCB_p);
+int dispatcher(PriorityQ_p , PCB_p);
 
 // Creates a random number (0 - 5) of processes.
 int createNewProcesses(FIFO_Queue_p);

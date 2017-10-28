@@ -198,6 +198,11 @@ void set_pc(PCB_p pcb, unsigned int pc) {
     pcb->context->pc = pc;
 }
 
+// Sets the pcb's time to the current time.
+void set_termination(PCB_p pcb) {
+    if (pcb == NULL) return;
+    pcb->termination = time(NULL);
+}
 
 // Prints a string representation of the pcb passed in.
 void print_pcb_file(PCB_p pcb, FILE * fp) {

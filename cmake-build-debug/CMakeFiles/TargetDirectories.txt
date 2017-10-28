@@ -1,0 +1,3 @@
+/cygdrive/c/Users/User/CLionProjects/TCSS422-Assignment-4/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/cygdrive/c/Users/User/CLionProjects/TCSS422-Assignment-4/cmake-build-debug/CMakeFiles/edit_cache.dir
+/cygdrive/c/Users/User/CLionProjects/TCSS422-Assignment-4/cmake-build-debug/CMakeFiles/TCSS422-Assignment-4.dir
