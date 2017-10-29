@@ -61,6 +61,8 @@ stdlib.h
 -
 stdio.h
 -
+time.h
+-
 pcb.h
 /cygdrive/c/Users/User/CLionProjects/TCSS422-Assignment-4/pcb.h
 
