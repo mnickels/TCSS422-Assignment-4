@@ -40,11 +40,17 @@ int dispatcher();
 // The timer calls timer interrupts.
 int timer();
 
+int termination_trap();
+
+int check_io_1();
+
+int check_io_2();
+
 // Creates a random number (0 - 5) of processes.
 int createNewProcesses();
 
 // Moves proccesses into the highest priority queue.
-void moveProcesses ();
+void moveProcesses();
 
 // Returns the number of cycles that each queue uses.
 unsigned int getCyclesFromPriority(unsigned int);

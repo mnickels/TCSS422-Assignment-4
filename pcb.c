@@ -56,7 +56,6 @@ struct PCB_s {
     unsigned int term_count;
     unsigned int IO_1_trap[4];
     unsigned int IO_2_trap[4];
-    unsigned int cycles;
 } PCB_s;
 
 /* constructor */
@@ -113,14 +112,16 @@ PCB_p create_pcb() {
             for (int j = 0; j < i; j++) {
                 duplicate_flag |= pcb->IO_2_trap[j] == r;
             }
+            // make sure io1 and io2 dont overlap, either
+            for (int j = 0; j < 4; j++) {
+                duplicate_flag |= pcb->IO_1_trap[j] == r;
+            }
             if (duplicate_flag) {
                 i--;
             } else {
                 pcb->IO_2_trap[i] = r;
             }
         }
-
-        pcb->cycles = 0;
     }
     return pcb;
 }
@@ -164,20 +165,10 @@ unsigned char get_priority(PCB_p pcb) {
     return pcb->priority;
 }
 
-// Returns the cycles the pcb has run.
-unsigned int get_cycles(PCB_p pcb) {
-    return pcb->cycles;
-}
-
-// Sets the cycles this pcb has run.
-void set_cycles(PCB_p pcb, unsigned int newCycles) {
-    pcb->cycles = newCycles;
-}
-
 // returns the pcbs pc value.
 unsigned int get_pc(PCB_p pcb) {
-    if(pcb == NULL) return NULL;
-    if(pcb->context == NULL) return NULL;
+    if(pcb == NULL) return -1;
+    if(pcb->context == NULL) return -1;
 
     return pcb->context->pc;
 }
@@ -203,6 +194,22 @@ unsigned int get_IO_2_trap(PCB_p pcb, int index) {
     return pcb->IO_2_trap[index];
 }
 
+unsigned int get_terminate(PCB_p pcb) {
+    return pcb->terminate;
+}
+
+unsigned int get_term_count(PCB_p pcb) {
+    return pcb->term_count;
+}
+
+unsigned int increment_term_count(PCB_p pcb) {
+    return ++pcb->term_count;
+}
+
+unsigned int get_max_pc(PCB_p pcb) {
+    return pcb->max_pc;
+}
+
 // Prints a string representation of the pcb passed in.
 void print_pcb_file(PCB_p pcb, FILE * fp) {
     fprintf(fp, "Pid: %X, Priority: %X, State:%X ", get_pid(pcb), get_priority(pcb), pcb->state);
@@ -210,7 +217,7 @@ void print_pcb_file(PCB_p pcb, FILE * fp) {
 }
 
 void print_pcb(PCB_p pcb){
-    printf("PCB: PID: %u, PRIORITY: %u, PC: %u,%u\n", pcb->pid, pcb->priority, pcb->context->pc, pcb->cycles);
+    printf("PCB: PID: %u, PRIORITY: %u, PC: %u\n", pcb->pid, pcb->priority, pcb->context->pc);
 }
 
 void print_context(CPU_context_p context, FILE * fp) {

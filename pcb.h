@@ -52,12 +52,6 @@ void set_priority(PCB_p pcb, unsigned char priority);
 // gets the priority of the pcb.
 unsigned char get_priority(PCB_p pcb);
 
-// Returns the cycles the pcb has run.
-unsigned int get_cycles(PCB_p pcb);
-
-// Sets the cycles this pcb has run.
-void set_cycles(PCB_p pcb, unsigned int newCycles);
-
 // returns the pcbs pc value.
 unsigned int get_pc(PCB_p pcb);
 
@@ -75,6 +69,14 @@ unsigned int get_IO_1_trap(PCB_p pcb, int index);
 
 //Returns the i/o 2 trap's value at the given index.
 unsigned int get_IO_2_trap(PCB_p pcb, int index);
+
+unsigned int get_terminate(PCB_p);
+
+unsigned int get_term_count(PCB_p);
+
+unsigned int increment_term_count(PCB_p);
+
+unsigned int get_max_pc(PCB_p);
 
 // Prints a string representation of the pcb passed in.
 void print_pcb_file(PCB_p pcb, FILE * fp);
