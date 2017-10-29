@@ -89,7 +89,6 @@ PCB_p create_pcb() {
         // PCB Fields added for problem 4.
 
         srand(time(NULL));
-
         pcb->max_pc = rand() % 2001 + 1000;     // rand from 2000 - 3000, inclusive
         pcb->creation = time(NULL);
         pcb->termination = 0;
@@ -175,16 +174,6 @@ void set_cycles(PCB_p pcb, unsigned int newCycles) {
     pcb->cycles = newCycles;
 }
 
-// Returns whether or no the pcb is privileged.
-int isPrivileged(PCB_p pcb) {
-    return pcb->privileged;
-}
-
-// Sets the pcb to privileged.
-void setPrivileged(PCB_p pcb) {
-    pcb->privileged = 1;
-}
-
 // returns the pcbs pc value.
 unsigned int get_pc(PCB_p pcb) {
     if(pcb == NULL) return NULL;
@@ -202,6 +191,16 @@ void set_pc(PCB_p pcb, unsigned int pc) {
 void set_termination(PCB_p pcb) {
     if (pcb == NULL) return;
     pcb->termination = time(NULL);
+}
+
+//Returns the i/o 1 trap's value at the given index.
+unsigned int get_IO_1_trap(PCB_p pcb, int index) {
+    return pcb->IO_1_trap[index];
+}
+
+//Returns the i/o 2 trap's value at the given index.
+unsigned int get_IO_2_trap(PCB_p pcb, int index) {
+    return pcb->IO_2_trap[index];
 }
 
 // Prints a string representation of the pcb passed in.

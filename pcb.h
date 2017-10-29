@@ -70,6 +70,12 @@ int isPrivileged(PCB_p pcb);
 // Sets the pcb to privileged.
 void setPrivileged(PCB_p pcb);
 
+//Returns the i/o 1 trap's value at the given index.
+unsigned int get_IO_1_trap(PCB_p pcb, int index);
+
+//Returns the i/o 2 trap's value at the given index.
+unsigned int get_IO_2_trap(PCB_p pcb, int index);
+
 // Prints a string representation of the pcb passed in.
 void print_pcb_file(PCB_p pcb, FILE * fp);
 

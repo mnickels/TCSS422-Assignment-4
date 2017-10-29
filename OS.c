@@ -11,6 +11,13 @@ Alisher Baimenov
 #include "OS.h"
 
 
+FIFO_Queue_p newProcesses;
+PriorityQ_p readyProcesses;
+PCB_p runningProcess;
+FIFO_Queue_p dieingProcesses;
+FIFO_Queue_p device1WaitingQueue;
+FIFO_Queue_p device2WaitingQueue;
+
 unsigned int sysStack;
 unsigned int currentPC;
 unsigned int dispatchCount;
@@ -21,19 +28,21 @@ unsigned int quantumCounter;
 unsigned int processCounter;
 
 // The os simulator, runs the main loop.
-int OS_Simulator(FIFO_Queue_p newProcesses, FIFO_Queue_p dieingProcesses, PriorityQ_p readyProcesses, PCB_p runningProcess) {
+int OS_Simulator() {
     srand(time(NULL));
     int iteration = 0;
 
     // Main Loop
     // One cycle is one quantum
     for( ; ; ) { // for spider
+        if (iteration == 10000) break; // Temp so I can see
+
         if (!iteration) {
             currentPC = sysStack;
         }
         // stops making processes after 48 and if there are at least 4 Privileged pcbs
         if(processCounter < 48 && privilegedCount < 4) {
-            createNewProcesses(newProcesses);
+            createNewProcesses();
             processCounter += fifo_size(newProcesses);
         }
 
@@ -43,35 +52,41 @@ int OS_Simulator(FIFO_Queue_p newProcesses, FIFO_Queue_p dieingProcesses, Priori
         // Push to SysStack
         sysStack = currentPC;
 
-        quantumCounter--;
+        // Check for timer interrupts
+        int timerInterruptOccurred = timer();
+        if(!timerInterruptOccurred) {
+            pseudoISR();
+        }
 
-        printf("Iteration: %d\n", iteration);
-        print_priority_queue(readyProcesses);
-        for(int i = 0; i < 4; i++) {
-            if (privilegedPCBs[i] == NULL) {
-                // skip
-            } else {
-                print_pcb(privilegedPCBs[i]);
+        // TODO checks for pending IO with completed tasks
+
+        // After current PC is incremented check each of the I/O arrays
+        for (unsigned int i = 0; i < 4; i++) {
+            if(currentPC == get_IO_1_trap(runningProcess, i)) {
+                trapServiceHandler(1); // 1st io device
+            } else if (currentPC == get_IO_2_trap(runningProcess, i)) {
+                trapServiceHandler(2); // 2nd io device
             }
         }
 
+        quantumCounter--;
+
         if (iteration++ >= getCyclesFromPriority(get_priority(runningProcess))) {
             iteration = 0;
-            pseudoISR(readyProcesses, newProcesses, dieingProcesses, runningProcess);
+            pseudoISR();
         }
     }
 }
 
 // The psuedo-ISR, sets the state of the running process,
 // calls the scheduler and updates the PC.
-int pseudoISR(PriorityQ_p readyProcesses, FIFO_Queue_p newProcesses,
-              FIFO_Queue_p dieingProcesses, PCB_p runningProcess) {
+int pseudoISR() {
 
     // Sets the state to interrupted.
     set_state(runningProcess, interrupted);
 
     // Terminate 15% chance to terminate the processes.
-    if(rand() % 100 < 15 && !isPrivileged(runningProcess)) {
+    if(rand() % 100 < 15 ) { // TODO && !isPrivileged(runningProcess)) {
         set_state(runningProcess, halted);
     }
 
@@ -79,16 +94,34 @@ int pseudoISR(PriorityQ_p readyProcesses, FIFO_Queue_p newProcesses,
     set_pc(runningProcess, currentPC);
 
     // scheduler up call
-    scheduler(readyProcesses, newProcesses, dieingProcesses, runningProcess, get_state(runningProcess));
+    scheduler(get_state(runningProcess));
 
     // IRET (update current pc)
     currentPC = sysStack;
     return SUCCESSFUL;
 }
 
+// IO trap handler
+int trapServiceHandler(int device) {
+    // Sets the state to waiting.
+    set_state(runningProcess, waiting);
+
+    // save pc to pcb
+    set_pc(runningProcess, currentPC);
+
+    // activate internal timer
+
+
+    // scheduler up call
+    // if the device is one, the schedulers interrupt will be 6
+    // if its two the scheduler will get 7
+    scheduler(get_state(runningProcess) + (1 + device));
+
+    return SUCCESSFUL;
+}
+
 // Runs the scheduler to handle interrupts.
-int scheduler(PriorityQ_p readyProcesses, FIFO_Queue_p newProcesses,
-              FIFO_Queue_p dieingProcesses, PCB_p runningProcess, int interrupt) {
+int scheduler(int interrupt) {
     // set new processes to ready
     while(!fifo_is_empty(newProcesses)) {
         // dequeue and print next pcb
@@ -101,11 +134,18 @@ int scheduler(PriorityQ_p readyProcesses, FIFO_Queue_p newProcesses,
 
     switch(interrupt) {
         case interrupted:
-            dispatcher(readyProcesses, runningProcess);
+            dispatcher();
             break;
         case halted: // if the state is interrupted move to dieing processes and then call the dispatcher.
             fifo_enqueue(dieingProcesses, runningProcess);
-            dispatcher(readyProcesses, runningProcess);
+            dispatcher();
+            break;
+        case waiting + 2: // Device 1 IO
+            fifo_enqueue(device1WaitingQueue, runningProcess);
+            dispatcher();
+            break;
+        case waiting + 3: // Device 2 IO
+            fifo_enqueue(device2WaitingQueue, runningProcess);
             break;
         default:
             // error handling as needed
@@ -122,7 +162,7 @@ int scheduler(PriorityQ_p readyProcesses, FIFO_Queue_p newProcesses,
     }
     // after some time S move all processes into Q0.
     if(quantumCounter == 0) {
-        moveProcesses(readyProcesses);
+        moveProcesses();
         quantumCounter = quantum;
     }
 
@@ -130,12 +170,13 @@ int scheduler(PriorityQ_p readyProcesses, FIFO_Queue_p newProcesses,
 }
 
 // Dispatched the running process to appropriate queue.
-int dispatcher(PriorityQ_p readyProcesses, PCB_p runningProcess) {
+int dispatcher() {
     // increment and check
     dispatchCount++;
 
-    // update context if the pcb was not halted.
-    if(get_state(runningProcess) != halted) {
+    // update context if the pcb was not halted or waiting.
+    if(get_state(runningProcess) != halted
+        && get_state(runningProcess) != waiting) {
         // update the pc counter.
         set_pc(runningProcess, sysStack);
         // set state.
@@ -171,7 +212,19 @@ int dispatcher(PriorityQ_p readyProcesses, PCB_p runningProcess) {
     return SUCCESSFUL;
 }
 
-void moveProcesses (PriorityQ_p readyProcesses) {
+int timer() {
+    // Decrements the cycles of the process.
+    unsigned int cycles = get_cycles(runningProcess);
+    unsigned char priority = get_priority(runningProcess);
+    set_cycles(runningProcess, cycles - 1);
+    if(cycles != 0) {
+        return 0;
+    } // else if (cycles == 0) {
+    set_cycles(runningProcess, getCyclesFromPriority(priority));
+    return 1;
+}
+
+void moveProcesses () {
     PriorityQ_p tempQueue = create_pq();
     while(!pq_isEmpty(readyProcesses)) {
 
@@ -185,13 +238,13 @@ void moveProcesses (PriorityQ_p readyProcesses) {
 
 // Creates a random number of processes to be added to the
 // the list of new processes.
-int createNewProcesses(FIFO_Queue_p newProcesses) {
+int createNewProcesses() {
     for(int i = 0; i < rand() % 5; i++) {
         PCB_p pcb = create_pcb();
 
         // 20% chance that the pcb will become privileged.
         if(rand() % 100 < 20 && privilegedCount < 4)  {
-            setPrivileged(pcb);
+            // TODO setPrivileged(pcb); will we have a set 'terminate'
             privilegedPCBs[privilegedCount] = pcb;
             privilegedCount++;
         }
@@ -210,10 +263,12 @@ int main() {
     srand(time(NULL));
     
     // Initialize Vars
-    FIFO_Queue_p newProcesses = create_fifo_queue();
-    PriorityQ_p readyProcesses = create_pq();
-    PCB_p runningProcess = create_pcb();
-    FIFO_Queue_p dieingProcesses = create_fifo_queue();
+    newProcesses = create_fifo_queue();
+    readyProcesses = create_pq();
+    runningProcess = create_pcb();
+    dieingProcesses = create_fifo_queue();
+    device1WaitingQueue = create_fifo_queue();
+    device2WaitingQueue = create_fifo_queue();
 
     // set a process to running
     set_state(runningProcess, running);
@@ -227,9 +282,11 @@ int main() {
     processCounter = 1;
 
     // main loop
-    OS_Simulator(newProcesses, dieingProcesses, readyProcesses, runningProcess);
+    OS_Simulator();
     
     // free resources
+    destroy(device1WaitingQueue);
+    destroy(device2WaitingQueue);
     destroy(newProcesses);
     destroy(dieingProcesses);
     destroy_pq(readyProcesses);
