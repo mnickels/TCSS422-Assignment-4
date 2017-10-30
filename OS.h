@@ -1,10 +1,8 @@
 /*
-TCSS422 - Operating Systems
-Problem 3
-
-Group Members:
-Taylor Riccetti
-Alisher Baimenov
+	Mike Nickels
+	Taylor Riccetti
+	TCSS 422
+	Problem 4
 */
 
 #include <stdio.h>
@@ -48,6 +46,8 @@ int check_io_2();
 
 // Creates a random number (0 - 5) of processes.
 int createNewProcesses();
+
+void createPrivilegedProcesses();
 
 // Moves proccesses into the highest priority queue.
 void moveProcesses();

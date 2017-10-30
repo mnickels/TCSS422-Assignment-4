@@ -1,18 +1,8 @@
 /*
-TCSS422 - Operating Systems
-Problem 3
-
-Group Members:
-Taylor Riccetti
-Alisher Baimenov
-
-Changes:
-    We added to variables the the PCB_s struct, a bool value to
-    determine whether or not the PCB is privileged and added
-    a cycles variable to track how many cycles the PCB has run.
-
-    This information is specific to the PCB so we decided to store this
-    information here.
+    Mike Nickels
+    Taylor Riccetti
+    TCSS 422
+    Problem 4
 */
 
 #include <stdlib.h>
@@ -91,7 +81,7 @@ PCB_p create_pcb() {
         pcb->max_pc = rand() % 2001 + 1000;     // rand from 2000 - 3000, inclusive
         pcb->creation = time(NULL);
         pcb->termination = 0;
-        pcb->terminate = rand() % 16;     // rand from 0 - 15, inclusive
+        pcb->terminate = (rand() % 15) + 1;     // rand from 1 - 15, inclusive
         pcb->term_count = 0;
 
         for (int i = 0; i < 4; i++) {
@@ -163,6 +153,10 @@ void set_priority(PCB_p pcb, unsigned char priority) {
 
 unsigned char get_priority(PCB_p pcb) {
     return pcb->priority;
+}
+
+void setPrivileged(PCB_p pcb) {
+    pcb->terminate = 0;
 }
 
 // returns the pcbs pc value.

@@ -1,14 +1,14 @@
 /*
-TCSS422 - Operating Systems
-Problem 3
-
-Group Members:
-Taylor Riccetti
-Alisher Baimenov
+    Mike Nickels
+    Taylor Riccetti
+    TCSS 422
+    Problem 4
 */
 
 #include <time.h>
 #include "OS.h"
+
+#define DEBUG 0
 
 
 FIFO_Queue_p newProcesses;
@@ -29,6 +29,7 @@ unsigned int processCounter;
 int timer_counter;
 int io_1_counter;
 int io_2_counter;
+char in;
 
 // The os simulator, runs the main loop.
 int OS_Simulator() {
@@ -36,22 +37,20 @@ int OS_Simulator() {
     unsigned int totalIterations = 0;
     currentPC = 0;
     sysStack = 0;
+    in = ' ';
 
-    // make 10 processes to start out
+    // create initial processes
+    createPrivilegedProcesses();
     for (int i = 0; i < 10; i++) {
         createNewProcesses();
         processCounter += fifo_size(newProcesses);
     }
 
     // Main Loop
-    // One cycle is one quantum
-    for( ; ; ) { // for spider
-        if (totalIterations > 225000) {        // 10 processes * 3000 instructions * 15 resets of pcb to zero / 2
+    // One cycle is one CPU cycle
+    for( ; ; ) {
+        if (totalIterations++ > 2000) {
             break;
-        }
-
-        if (!iteration) {
-            currentPC = sysStack;
         }
 
         // // stops making processes after 48 and if there are at least 4 Privileged pcbs
@@ -68,6 +67,8 @@ int OS_Simulator() {
             if (get_terminate(runningProcess)) {    // check if this process CAN die
                 if (increment_term_count(runningProcess) >= get_terminate(runningProcess)) {
                     // this process has reset pc to zero enough, kill it
+                    printf("Process P%d finished running.\n", get_pid(runningProcess));
+                    if (DEBUG) scanf("%c", &in);
                     termination_trap();
                     iteration = 0;
                     continue;   // to skip rest of loop stuff and avoid breaking anything
@@ -81,37 +82,62 @@ int OS_Simulator() {
         // check for timer interrupt
         if(timer()) {
             // Push to SysStack
+            unsigned int prevPid = get_pid(runningProcess);
             sysStack = currentPC;
             pseudoISR();
+
+            printf("Timer interrupt: process switch from P%d to P%d\n", prevPid, get_pid(runningProcess));
+            printf("Currently running:\n\t");
+            print_pcb(runningProcess);
+            printf("Iteration: %d\n", totalIterations);
+            print_priority_queue(readyProcesses);
+            for (int i = 0; i < 4; i++) {
+                print_pcb(privilegedPCBs[i]);
+            }
+            printf("\n");
+            // if (DEBUG) scanf("%c", &in);
+
+            iteration = 0;
+            continue;
         }
 
         // checks for pending IO with completed tasks
         if (check_io_1()) {
-            // does this happen in scheduler??
-            PCB_p blocked_process = fifo_dequeue(device1WaitingQueue);
-            set_state(blocked_process, ready);
-            pq_enqueue(readyProcesses, blocked_process);
+            while (!fifo_is_empty(device1WaitingQueue)) {
+                PCB_p blocked_process = fifo_dequeue(device1WaitingQueue);
+                set_state(blocked_process, ready);
+                set_priority(blocked_process, 0);
+                pq_enqueue(readyProcesses, blocked_process);
+            }
+            printf("IO device 1 received input, releasing processes from IO 1 queue.\n");
+            if (DEBUG) scanf("%c", &in);
         }
         if (check_io_2()) {
-            PCB_p blocked_process = fifo_dequeue(device2WaitingQueue);
-            set_state(blocked_process, ready);
-            pq_enqueue(readyProcesses, blocked_process);
+            while (!fifo_is_empty(device2WaitingQueue)) {
+                PCB_p blocked_process = fifo_dequeue(device2WaitingQueue);
+                set_state(blocked_process, ready);
+                set_priority(blocked_process, 0);
+                pq_enqueue(readyProcesses, blocked_process);
+            }
+            printf("IO device 2 received input, releasing processes from IO 2 queue.\n");
+            if (DEBUG) scanf("%c", &in);
         }
 
         // After current PC is incremented check each of the I/O arrays
         for (unsigned int i = 0; i < 4; i++) {
             if(currentPC == get_IO_1_trap(runningProcess, i)) {
+                printf("Process P%d requesting input from IO device 1, adding process to IO 1 queue.\n", get_pid(runningProcess));
+                if (DEBUG) scanf("%c", &in);
                 trapServiceHandler(1); // 1st io device
+                iteration = 0;
+                continue;
             } else if (currentPC == get_IO_2_trap(runningProcess, i)) {
+                printf("Process P%d requesting input from IO device 2, adding process to IO 2 queue.\n", get_pid(runningProcess));
+                if (DEBUG) scanf("%c", &in);
                 trapServiceHandler(2); // 2nd io device
+                iteration = 0;
+                continue;
             }
-        }
-
-        totalIterations++;
-        if (iteration++ >= getCyclesFromPriority(get_priority(runningProcess))) {
-            iteration = 0;
-            quantumCounter--;
-            pseudoISR();
         }
     }
 }
@@ -175,10 +201,10 @@ int scheduler(int interrupt) {
         }
     }
     // after some time S move all processes into Q0.
-    if(quantumCounter == 0) {
-        moveProcesses();
-        quantumCounter = quantum;
-    }
+    // if(quantumCounter == 0) {
+    //     moveProcesses();
+    //     quantumCounter = quantum;
+    // }
 
     return SUCCESSFUL;
 }
@@ -198,7 +224,7 @@ int dispatcher() {
 
         unsigned char priority = get_priority(runningProcess);
 
-        if (priority == MAX_PRIORITY) {
+        if (priority >= MAX_PRIORITY) {
             set_priority(runningProcess, 0); // will go back to the highest priority queue
         } else {
             set_priority(runningProcess, priority + 1);
@@ -317,12 +343,17 @@ int createNewProcesses() {
     for(int i = 0; i < rand() % 5; i++) {
         PCB_p pcb = create_pcb();
 
-        // 20% chance that the pcb will become privileged.
-        if(rand() % 100 < 20 && privilegedCount < 4)  {
-            // TODO setPrivileged(pcb); will we have a set 'terminate'
-            privilegedPCBs[privilegedCount] = pcb;
-            privilegedCount++;
-        }
+        fifo_enqueue(newProcesses, pcb);
+    }
+}
+
+void createPrivilegedProcesses() {
+    for (int i = 0; i < 4; i++) {
+        PCB_p pcb = create_pcb();
+        setPrivileged(pcb);
+        privilegedPCBs[privilegedCount] = pcb;
+        privilegedCount++;
+
         fifo_enqueue(newProcesses, pcb);
     }
 }

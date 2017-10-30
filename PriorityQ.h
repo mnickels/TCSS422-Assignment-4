@@ -1,10 +1,8 @@
 /*
-TCSS422 - Operating Systems
-Problem 3
-
-Group Members:
-Taylor Riccetti
-Alisher Baimenov
+	Mike Nickels
+	Taylor Riccetti
+	TCSS 422
+	Problem 4
 */
 
 #ifndef PRIORITYQ_H_

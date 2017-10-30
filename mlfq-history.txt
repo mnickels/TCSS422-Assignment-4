@@ -1,22 +1,14 @@
-Iteration: 1
-Q0: 0
-Q1: 0
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
+Mike Nickels
+Taylor Riccetti
+TCSS 422
+Problem 4
+
+
+Timer interrupt: process switch from P1 to P2
+Currently running:
+	PCB: PID: 2, PRIORITY: 0, PC: 0
 Iteration: 2
-Q0: 0
+Q0: 13
 Q1: 1
 Q2: 0
 Q3: 0
@@ -32,8 +24,16 @@ Q12: 0
 Q13: 0
 Q14: 0
 Q15: 0
-Iteration: 3
-Q0: 1
+PCB: PID: 2, PRIORITY: 0, PC: 0
+PCB: PID: 3, PRIORITY: 0, PC: 0
+PCB: PID: 4, PRIORITY: 0, PC: 0
+PCB: PID: 5, PRIORITY: 0, PC: 0
+
+Timer interrupt: process switch from P2 to P3
+Currently running:
+	PCB: PID: 3, PRIORITY: 0, PC: 0
+Iteration: 4
+Q0: 12
 Q1: 2
 Q2: 0
 Q3: 0
@@ -49,8 +49,16 @@ Q12: 0
 Q13: 0
 Q14: 0
 Q15: 0
-Iteration: 4
-Q0: 2
+PCB: PID: 2, PRIORITY: 1, PC: 2
+PCB: PID: 3, PRIORITY: 0, PC: 0
+PCB: PID: 4, PRIORITY: 0, PC: 0
+PCB: PID: 5, PRIORITY: 0, PC: 0
+
+Timer interrupt: process switch from P3 to P4
+Currently running:
+	PCB: PID: 4, PRIORITY: 0, PC: 0
+Iteration: 6
+Q0: 11
 Q1: 3
 Q2: 0
 Q3: 0
@@ -66,8 +74,16 @@ Q12: 0
 Q13: 0
 Q14: 0
 Q15: 0
-Iteration: 5
-Q0: 3
+PCB: PID: 2, PRIORITY: 1, PC: 2
+PCB: PID: 3, PRIORITY: 1, PC: 2
+PCB: PID: 4, PRIORITY: 0, PC: 0
+PCB: PID: 5, PRIORITY: 0, PC: 0
+
+Timer interrupt: process switch from P4 to P5
+Currently running:
+	PCB: PID: 5, PRIORITY: 0, PC: 0
+Iteration: 8
+Q0: 10
 Q1: 4
 Q2: 0
 Q3: 0
@@ -83,9 +99,16 @@ Q12: 0
 Q13: 0
 Q14: 0
 Q15: 0
-PCB: PID: 8, PRIORITY: 0, PC: 0,0
-Iteration: 6
-Q0: 4
+PCB: PID: 2, PRIORITY: 1, PC: 2
+PCB: PID: 3, PRIORITY: 1, PC: 2
+PCB: PID: 4, PRIORITY: 1, PC: 2
+PCB: PID: 5, PRIORITY: 0, PC: 0
+
+Timer interrupt: process switch from P5 to P6
+Currently running:
+	PCB: PID: 6, PRIORITY: 0, PC: 0
+Iteration: 10
+Q0: 9
 Q1: 5
 Q2: 0
 Q3: 0
@@ -101,9 +124,16 @@ Q12: 0
 Q13: 0
 Q14: 0
 Q15: 0
-PCB: PID: 8, PRIORITY: 0, PC: 0,0
-Iteration: 7
-Q0: 6
+PCB: PID: 2, PRIORITY: 1, PC: 2
+PCB: PID: 3, PRIORITY: 1, PC: 2
+PCB: PID: 4, PRIORITY: 1, PC: 2
+PCB: PID: 5, PRIORITY: 1, PC: 2
+
+Timer interrupt: process switch from P6 to P7
+Currently running:
+	PCB: PID: 7, PRIORITY: 0, PC: 0
+Iteration: 12
+Q0: 8
 Q1: 6
 Q2: 0
 Q3: 0
@@ -119,9 +149,16 @@ Q12: 0
 Q13: 0
 Q14: 0
 Q15: 0
-PCB: PID: 8, PRIORITY: 0, PC: 0,0
-Iteration: 8
-Q0: 5
+PCB: PID: 2, PRIORITY: 1, PC: 2
+PCB: PID: 3, PRIORITY: 1, PC: 2
+PCB: PID: 4, PRIORITY: 1, PC: 2
+PCB: PID: 5, PRIORITY: 1, PC: 2
+
+Timer interrupt: process switch from P7 to P8
+Currently running:
+	PCB: PID: 8, PRIORITY: 0, PC: 0
+Iteration: 14
+Q0: 7
 Q1: 7
 Q2: 0
 Q3: 0
@@ -137,8 +174,15 @@ Q12: 0
 Q13: 0
 Q14: 0
 Q15: 0
-PCB: PID: 8, PRIORITY: 0, PC: 0,0
-Iteration: 9
+PCB: PID: 2, PRIORITY: 1, PC: 2
+PCB: PID: 3, PRIORITY: 1, PC: 2
+PCB: PID: 4, PRIORITY: 1, PC: 2
+PCB: PID: 5, PRIORITY: 1, PC: 2
+
+Timer interrupt: process switch from P8 to P9
+Currently running:
+	PCB: PID: 9, PRIORITY: 0, PC: 0
+Iteration: 16
 Q0: 6
 Q1: 8
 Q2: 0
@@ -155,10 +199,16 @@ Q12: 0
 Q13: 0
 Q14: 0
 Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 1,1
-PCB: PID: 14, PRIORITY: 0, PC: 0,0
-Iteration: 10
-Q0: 6
+PCB: PID: 2, PRIORITY: 1, PC: 2
+PCB: PID: 3, PRIORITY: 1, PC: 2
+PCB: PID: 4, PRIORITY: 1, PC: 2
+PCB: PID: 5, PRIORITY: 1, PC: 2
+
+Timer interrupt: process switch from P9 to P10
+Currently running:
+	PCB: PID: 10, PRIORITY: 0, PC: 0
+Iteration: 18
+Q0: 5
 Q1: 9
 Q2: 0
 Q3: 0
@@ -174,10 +224,16 @@ Q12: 0
 Q13: 0
 Q14: 0
 Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 1,1
-PCB: PID: 14, PRIORITY: 0, PC: 0,0
-Iteration: 11
-Q0: 5
+PCB: PID: 2, PRIORITY: 1, PC: 2
+PCB: PID: 3, PRIORITY: 1, PC: 2
+PCB: PID: 4, PRIORITY: 1, PC: 2
+PCB: PID: 5, PRIORITY: 1, PC: 2
+
+Timer interrupt: process switch from P10 to P11
+Currently running:
+	PCB: PID: 11, PRIORITY: 0, PC: 0
+Iteration: 20
+Q0: 4
 Q1: 10
 Q2: 0
 Q3: 0
@@ -193,10 +249,16 @@ Q12: 0
 Q13: 0
 Q14: 0
 Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 1,1
-PCB: PID: 14, PRIORITY: 0, PC: 0,0
-Iteration: 12
-Q0: 6
+PCB: PID: 2, PRIORITY: 1, PC: 2
+PCB: PID: 3, PRIORITY: 1, PC: 2
+PCB: PID: 4, PRIORITY: 1, PC: 2
+PCB: PID: 5, PRIORITY: 1, PC: 2
+
+Timer interrupt: process switch from P11 to P12
+Currently running:
+	PCB: PID: 12, PRIORITY: 0, PC: 0
+Iteration: 22
+Q0: 3
 Q1: 11
 Q2: 0
 Q3: 0
@@ -212,29 +274,16 @@ Q12: 0
 Q13: 0
 Q14: 0
 Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 1,1
-PCB: PID: 14, PRIORITY: 0, PC: 0,0
-Iteration: 13
-Q0: 6
-Q1: 11
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 1,1
-PCB: PID: 14, PRIORITY: 0, PC: 0,0
-Iteration: 14
-Q0: 6
+PCB: PID: 2, PRIORITY: 1, PC: 2
+PCB: PID: 3, PRIORITY: 1, PC: 2
+PCB: PID: 4, PRIORITY: 1, PC: 2
+PCB: PID: 5, PRIORITY: 1, PC: 2
+
+Timer interrupt: process switch from P12 to P13
+Currently running:
+	PCB: PID: 13, PRIORITY: 0, PC: 0
+Iteration: 24
+Q0: 2
 Q1: 12
 Q2: 0
 Q3: 0
@@ -250,10 +299,16 @@ Q12: 0
 Q13: 0
 Q14: 0
 Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 1,1
-PCB: PID: 14, PRIORITY: 0, PC: 0,0
-Iteration: 15
-Q0: 8
+PCB: PID: 2, PRIORITY: 1, PC: 2
+PCB: PID: 3, PRIORITY: 1, PC: 2
+PCB: PID: 4, PRIORITY: 1, PC: 2
+PCB: PID: 5, PRIORITY: 1, PC: 2
+
+Timer interrupt: process switch from P13 to P14
+Currently running:
+	PCB: PID: 14, PRIORITY: 0, PC: 0
+Iteration: 26
+Q0: 1
 Q1: 13
 Q2: 0
 Q3: 0
@@ -269,11 +324,16 @@ Q12: 0
 Q13: 0
 Q14: 0
 Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 1,1
-PCB: PID: 14, PRIORITY: 1, PC: 0,1
-PCB: PID: 22, PRIORITY: 0, PC: 0,0
-Iteration: 16
-Q0: 9
+PCB: PID: 2, PRIORITY: 1, PC: 2
+PCB: PID: 3, PRIORITY: 1, PC: 2
+PCB: PID: 4, PRIORITY: 1, PC: 2
+PCB: PID: 5, PRIORITY: 1, PC: 2
+
+Timer interrupt: process switch from P14 to P15
+Currently running:
+	PCB: PID: 15, PRIORITY: 0, PC: 0
+Iteration: 28
+Q0: 0
 Q1: 14
 Q2: 0
 Q3: 0
@@ -289,324 +349,17 @@ Q12: 0
 Q13: 0
 Q14: 0
 Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 1,1
-PCB: PID: 14, PRIORITY: 1, PC: 0,1
-PCB: PID: 22, PRIORITY: 0, PC: 0,0
-Iteration: 17
-Q0: 11
-Q1: 15
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 1,1
-PCB: PID: 14, PRIORITY: 1, PC: 0,1
-PCB: PID: 22, PRIORITY: 0, PC: 0,0
-Iteration: 18
-Q0: 10
-Q1: 16
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 1,1
-PCB: PID: 14, PRIORITY: 1, PC: 0,1
-PCB: PID: 22, PRIORITY: 0, PC: 0,0
-Iteration: 19
-Q0: 10
-Q1: 17
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 1,1
-PCB: PID: 14, PRIORITY: 1, PC: 0,1
-PCB: PID: 22, PRIORITY: 0, PC: 0,0
-Iteration: 20
-Q0: 12
-Q1: 18
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 1,1
-PCB: PID: 14, PRIORITY: 1, PC: 0,1
-PCB: PID: 22, PRIORITY: 0, PC: 0,0
-PCB: PID: 31, PRIORITY: 0, PC: 0,0
-Iteration: 21
-Q0: 11
-Q1: 19
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 1,1
-PCB: PID: 14, PRIORITY: 1, PC: 0,1
-PCB: PID: 22, PRIORITY: 0, PC: 0,0
-PCB: PID: 31, PRIORITY: 0, PC: 0,0
-Iteration: 22
-Q0: 10
-Q1: 20
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 1,1
-PCB: PID: 14, PRIORITY: 1, PC: 0,1
-PCB: PID: 22, PRIORITY: 0, PC: 0,0
-PCB: PID: 31, PRIORITY: 0, PC: 0,0
-Iteration: 23
-Q0: 9
-Q1: 21
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 1,1
-PCB: PID: 14, PRIORITY: 1, PC: 0,1
-PCB: PID: 22, PRIORITY: 1, PC: 0,1
-PCB: PID: 31, PRIORITY: 0, PC: 0,0
-Iteration: 24
-Q0: 8
-Q1: 21
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 1,1
-PCB: PID: 14, PRIORITY: 1, PC: 0,1
-PCB: PID: 22, PRIORITY: 1, PC: 0,1
-PCB: PID: 31, PRIORITY: 0, PC: 0,0
-Iteration: 25
-Q0: 7
-Q1: 21
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 1,1
-PCB: PID: 14, PRIORITY: 1, PC: 0,1
-PCB: PID: 22, PRIORITY: 1, PC: 0,1
-PCB: PID: 31, PRIORITY: 0, PC: 0,0
-Iteration: 26
-Q0: 6
-Q1: 22
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 1,1
-PCB: PID: 14, PRIORITY: 1, PC: 0,1
-PCB: PID: 22, PRIORITY: 1, PC: 0,1
-PCB: PID: 31, PRIORITY: 0, PC: 0,0
-Iteration: 27
-Q0: 5
-Q1: 23
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 1,1
-PCB: PID: 14, PRIORITY: 1, PC: 0,1
-PCB: PID: 22, PRIORITY: 1, PC: 0,1
-PCB: PID: 31, PRIORITY: 0, PC: 0,0
-Iteration: 28
-Q0: 4
-Q1: 24
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 1,1
-PCB: PID: 14, PRIORITY: 1, PC: 0,1
-PCB: PID: 22, PRIORITY: 1, PC: 0,1
-PCB: PID: 31, PRIORITY: 0, PC: 0,0
-Iteration: 29
-Q0: 3
-Q1: 24
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 1,1
-PCB: PID: 14, PRIORITY: 1, PC: 0,1
-PCB: PID: 22, PRIORITY: 1, PC: 0,1
-PCB: PID: 31, PRIORITY: 0, PC: 0,0
+PCB: PID: 2, PRIORITY: 1, PC: 2
+PCB: PID: 3, PRIORITY: 1, PC: 2
+PCB: PID: 4, PRIORITY: 1, PC: 2
+PCB: PID: 5, PRIORITY: 1, PC: 2
+
+Timer interrupt: process switch from P15 to P1
+Currently running:
+	PCB: PID: 1, PRIORITY: 1, PC: 2
 Iteration: 30
-Q0: 2
-Q1: 25
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 1,1
-PCB: PID: 14, PRIORITY: 1, PC: 0,1
-PCB: PID: 22, PRIORITY: 1, PC: 0,1
-PCB: PID: 31, PRIORITY: 0, PC: 0,0
-Iteration: 31
-Q0: 1
-Q1: 26
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 1,1
-PCB: PID: 14, PRIORITY: 1, PC: 0,1
-PCB: PID: 22, PRIORITY: 1, PC: 0,1
-PCB: PID: 31, PRIORITY: 0, PC: 0,0
-Iteration: 32
 Q0: 0
-Q1: 27
+Q1: 14
 Q2: 0
 Q3: 0
 Q4: 0
@@ -621,35 +374,18 @@ Q12: 0
 Q13: 0
 Q14: 0
 Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 1,1
-PCB: PID: 14, PRIORITY: 1, PC: 0,1
-PCB: PID: 22, PRIORITY: 1, PC: 0,1
-PCB: PID: 31, PRIORITY: 1, PC: 0,1
-Iteration: 33
-Q0: 0
-Q1: 27
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 1,1
-PCB: PID: 14, PRIORITY: 1, PC: 0,1
-PCB: PID: 22, PRIORITY: 1, PC: 0,1
-PCB: PID: 31, PRIORITY: 1, PC: 0,1
+PCB: PID: 2, PRIORITY: 1, PC: 2
+PCB: PID: 3, PRIORITY: 1, PC: 2
+PCB: PID: 4, PRIORITY: 1, PC: 2
+PCB: PID: 5, PRIORITY: 1, PC: 2
+
+Timer interrupt: process switch from P1 to P2
+Currently running:
+	PCB: PID: 2, PRIORITY: 1, PC: 2
 Iteration: 34
 Q0: 0
-Q1: 27
-Q2: 0
+Q1: 13
+Q2: 1
 Q3: 0
 Q4: 0
 Q5: 0
@@ -663,3058 +399,17 @@ Q12: 0
 Q13: 0
 Q14: 0
 Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 1,1
-PCB: PID: 14, PRIORITY: 1, PC: 0,1
-PCB: PID: 22, PRIORITY: 1, PC: 0,1
-PCB: PID: 31, PRIORITY: 1, PC: 0,1
-Iteration: 35
-Q0: 0
-Q1: 27
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 1,1
-PCB: PID: 14, PRIORITY: 1, PC: 0,1
-PCB: PID: 22, PRIORITY: 1, PC: 0,1
-PCB: PID: 31, PRIORITY: 1, PC: 0,1
-Iteration: 36
-Q0: 0
-Q1: 26
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 1,1
-PCB: PID: 14, PRIORITY: 1, PC: 0,1
-PCB: PID: 22, PRIORITY: 1, PC: 0,1
-PCB: PID: 31, PRIORITY: 1, PC: 0,1
-Iteration: 37
-Q0: 0
-Q1: 25
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 1,1
-PCB: PID: 14, PRIORITY: 1, PC: 0,1
-PCB: PID: 22, PRIORITY: 1, PC: 0,1
-PCB: PID: 31, PRIORITY: 1, PC: 0,1
+PCB: PID: 2, PRIORITY: 1, PC: 2
+PCB: PID: 3, PRIORITY: 1, PC: 2
+PCB: PID: 4, PRIORITY: 1, PC: 2
+PCB: PID: 5, PRIORITY: 1, PC: 2
+
+Timer interrupt: process switch from P2 to P3
+Currently running:
+	PCB: PID: 3, PRIORITY: 1, PC: 2
 Iteration: 38
 Q0: 0
-Q1: 24
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 1,1
-PCB: PID: 14, PRIORITY: 1, PC: 0,1
-PCB: PID: 22, PRIORITY: 1, PC: 0,1
-PCB: PID: 31, PRIORITY: 1, PC: 0,1
-Iteration: 39
-Q0: 0
-Q1: 24
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 1,1
-PCB: PID: 14, PRIORITY: 1, PC: 0,1
-PCB: PID: 22, PRIORITY: 1, PC: 0,1
-PCB: PID: 31, PRIORITY: 1, PC: 0,1
-Iteration: 40
-Q0: 0
-Q1: 24
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 1,1
-PCB: PID: 14, PRIORITY: 1, PC: 0,1
-PCB: PID: 22, PRIORITY: 1, PC: 0,1
-PCB: PID: 31, PRIORITY: 1, PC: 0,1
-Iteration: 41
-Q0: 0
-Q1: 24
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 5,2
-PCB: PID: 14, PRIORITY: 1, PC: 0,1
-PCB: PID: 22, PRIORITY: 1, PC: 0,1
-PCB: PID: 31, PRIORITY: 1, PC: 0,1
-Iteration: 42
-Q0: 0
-Q1: 24
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 5,2
-PCB: PID: 14, PRIORITY: 1, PC: 0,1
-PCB: PID: 22, PRIORITY: 1, PC: 0,1
-PCB: PID: 31, PRIORITY: 1, PC: 0,1
-Iteration: 43
-Q0: 0
-Q1: 24
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 5,2
-PCB: PID: 14, PRIORITY: 1, PC: 0,1
-PCB: PID: 22, PRIORITY: 1, PC: 0,1
-PCB: PID: 31, PRIORITY: 1, PC: 0,1
-Iteration: 44
-Q0: 0
-Q1: 24
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 5,2
-PCB: PID: 14, PRIORITY: 1, PC: 0,1
-PCB: PID: 22, PRIORITY: 1, PC: 0,1
-PCB: PID: 31, PRIORITY: 1, PC: 0,1
-Iteration: 45
-Q0: 0
-Q1: 24
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 5,2
-PCB: PID: 14, PRIORITY: 1, PC: 0,1
-PCB: PID: 22, PRIORITY: 1, PC: 0,1
-PCB: PID: 31, PRIORITY: 1, PC: 0,1
-Iteration: 46
-Q0: 0
-Q1: 24
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 5,2
-PCB: PID: 14, PRIORITY: 1, PC: 1,2
-PCB: PID: 22, PRIORITY: 1, PC: 0,1
-PCB: PID: 31, PRIORITY: 1, PC: 0,1
-Iteration: 47
-Q0: 0
-Q1: 24
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 5,2
-PCB: PID: 14, PRIORITY: 1, PC: 1,2
-PCB: PID: 22, PRIORITY: 1, PC: 0,1
-PCB: PID: 31, PRIORITY: 1, PC: 0,1
-Iteration: 48
-Q0: 0
-Q1: 24
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 5,2
-PCB: PID: 14, PRIORITY: 1, PC: 1,2
-PCB: PID: 22, PRIORITY: 1, PC: 0,1
-PCB: PID: 31, PRIORITY: 1, PC: 0,1
-Iteration: 49
-Q0: 24
-Q1: 0
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 0, PC: 5,2
-PCB: PID: 14, PRIORITY: 0, PC: 1,2
-PCB: PID: 22, PRIORITY: 0, PC: 0,1
-PCB: PID: 31, PRIORITY: 0, PC: 0,1
-Iteration: 50
-Q0: 23
-Q1: 0
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 0, PC: 5,2
-PCB: PID: 14, PRIORITY: 0, PC: 1,2
-PCB: PID: 22, PRIORITY: 0, PC: 0,1
-PCB: PID: 31, PRIORITY: 0, PC: 0,1
-Iteration: 51
-Q0: 22
-Q1: 0
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 0, PC: 5,2
-PCB: PID: 14, PRIORITY: 0, PC: 1,2
-PCB: PID: 22, PRIORITY: 0, PC: 0,1
-PCB: PID: 31, PRIORITY: 0, PC: 0,1
-Iteration: 52
-Q0: 22
-Q1: 0
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 0, PC: 5,2
-PCB: PID: 14, PRIORITY: 0, PC: 1,2
-PCB: PID: 22, PRIORITY: 0, PC: 0,1
-PCB: PID: 31, PRIORITY: 0, PC: 0,1
-Iteration: 53
-Q0: 22
-Q1: 0
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 0, PC: 5,2
-PCB: PID: 14, PRIORITY: 0, PC: 1,2
-PCB: PID: 22, PRIORITY: 0, PC: 0,1
-PCB: PID: 31, PRIORITY: 0, PC: 0,1
-Iteration: 54
-Q0: 22
-Q1: 0
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 0, PC: 5,2
-PCB: PID: 14, PRIORITY: 0, PC: 1,2
-PCB: PID: 22, PRIORITY: 0, PC: 0,2
-PCB: PID: 31, PRIORITY: 0, PC: 0,1
-Iteration: 55
-Q0: 22
-Q1: 0
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 0, PC: 5,2
-PCB: PID: 14, PRIORITY: 0, PC: 1,2
-PCB: PID: 22, PRIORITY: 0, PC: 0,2
-PCB: PID: 31, PRIORITY: 0, PC: 0,1
-Iteration: 56
-Q0: 22
-Q1: 0
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 0, PC: 5,2
-PCB: PID: 14, PRIORITY: 0, PC: 1,2
-PCB: PID: 22, PRIORITY: 0, PC: 0,2
-PCB: PID: 31, PRIORITY: 0, PC: 0,1
-Iteration: 57
-Q0: 22
-Q1: 0
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 0, PC: 5,2
-PCB: PID: 14, PRIORITY: 0, PC: 1,2
-PCB: PID: 22, PRIORITY: 0, PC: 0,2
-PCB: PID: 31, PRIORITY: 0, PC: 0,1
-Iteration: 58
-Q0: 22
-Q1: 0
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 0, PC: 5,2
-PCB: PID: 14, PRIORITY: 0, PC: 1,2
-PCB: PID: 22, PRIORITY: 0, PC: 0,2
-PCB: PID: 31, PRIORITY: 0, PC: 0,1
-Iteration: 59
-Q0: 22
-Q1: 0
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 0, PC: 5,2
-PCB: PID: 14, PRIORITY: 0, PC: 1,2
-PCB: PID: 22, PRIORITY: 0, PC: 0,2
-PCB: PID: 31, PRIORITY: 0, PC: 0,1
-Iteration: 60
-Q0: 22
-Q1: 0
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 0, PC: 5,2
-PCB: PID: 14, PRIORITY: 0, PC: 1,2
-PCB: PID: 22, PRIORITY: 0, PC: 0,2
-PCB: PID: 31, PRIORITY: 0, PC: 1,2
-Iteration: 61
-Q0: 22
-Q1: 0
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 0, PC: 5,2
-PCB: PID: 14, PRIORITY: 0, PC: 1,2
-PCB: PID: 22, PRIORITY: 0, PC: 0,2
-PCB: PID: 31, PRIORITY: 0, PC: 1,2
-Iteration: 62
-Q0: 21
-Q1: 0
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 0, PC: 5,2
-PCB: PID: 14, PRIORITY: 0, PC: 1,2
-PCB: PID: 22, PRIORITY: 0, PC: 0,2
-PCB: PID: 31, PRIORITY: 0, PC: 1,2
-Iteration: 63
-Q0: 20
-Q1: 1
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 0, PC: 5,2
-PCB: PID: 14, PRIORITY: 0, PC: 1,2
-PCB: PID: 22, PRIORITY: 0, PC: 0,2
-PCB: PID: 31, PRIORITY: 0, PC: 1,2
-Iteration: 64
-Q0: 19
-Q1: 2
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 0, PC: 5,2
-PCB: PID: 14, PRIORITY: 0, PC: 1,2
-PCB: PID: 22, PRIORITY: 0, PC: 0,2
-PCB: PID: 31, PRIORITY: 0, PC: 1,2
-Iteration: 65
-Q0: 18
-Q1: 3
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 0, PC: 5,2
-PCB: PID: 14, PRIORITY: 0, PC: 1,2
-PCB: PID: 22, PRIORITY: 0, PC: 0,2
-PCB: PID: 31, PRIORITY: 0, PC: 1,2
-Iteration: 66
-Q0: 17
-Q1: 4
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 11,3
-PCB: PID: 14, PRIORITY: 0, PC: 1,2
-PCB: PID: 22, PRIORITY: 0, PC: 0,2
-PCB: PID: 31, PRIORITY: 0, PC: 1,2
-Iteration: 67
-Q0: 16
-Q1: 5
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 11,3
-PCB: PID: 14, PRIORITY: 0, PC: 1,2
-PCB: PID: 22, PRIORITY: 0, PC: 0,2
-PCB: PID: 31, PRIORITY: 0, PC: 1,2
-Iteration: 68
-Q0: 15
-Q1: 6
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 11,3
-PCB: PID: 14, PRIORITY: 0, PC: 1,2
-PCB: PID: 22, PRIORITY: 0, PC: 0,2
-PCB: PID: 31, PRIORITY: 0, PC: 1,2
-Iteration: 69
-Q0: 14
-Q1: 7
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 11,3
-PCB: PID: 14, PRIORITY: 0, PC: 1,2
-PCB: PID: 22, PRIORITY: 0, PC: 0,2
-PCB: PID: 31, PRIORITY: 0, PC: 1,2
-Iteration: 70
-Q0: 13
-Q1: 8
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 11,3
-PCB: PID: 14, PRIORITY: 0, PC: 1,2
-PCB: PID: 22, PRIORITY: 0, PC: 0,2
-PCB: PID: 31, PRIORITY: 0, PC: 1,2
-Iteration: 71
-Q0: 12
-Q1: 9
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 11,3
-PCB: PID: 14, PRIORITY: 1, PC: 2,3
-PCB: PID: 22, PRIORITY: 0, PC: 0,2
-PCB: PID: 31, PRIORITY: 0, PC: 1,2
-Iteration: 72
-Q0: 11
-Q1: 10
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 11,3
-PCB: PID: 14, PRIORITY: 1, PC: 2,3
-PCB: PID: 22, PRIORITY: 0, PC: 0,2
-PCB: PID: 31, PRIORITY: 0, PC: 1,2
-Iteration: 73
-Q0: 10
-Q1: 11
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 11,3
-PCB: PID: 14, PRIORITY: 1, PC: 2,3
-PCB: PID: 22, PRIORITY: 0, PC: 0,2
-PCB: PID: 31, PRIORITY: 0, PC: 1,2
-Iteration: 74
-Q0: 9
 Q1: 12
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 11,3
-PCB: PID: 14, PRIORITY: 1, PC: 2,3
-PCB: PID: 22, PRIORITY: 0, PC: 0,2
-PCB: PID: 31, PRIORITY: 0, PC: 1,2
-Iteration: 75
-Q0: 8
-Q1: 13
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 11,3
-PCB: PID: 14, PRIORITY: 1, PC: 2,3
-PCB: PID: 22, PRIORITY: 0, PC: 0,2
-PCB: PID: 31, PRIORITY: 0, PC: 1,2
-Iteration: 76
-Q0: 7
-Q1: 14
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 11,3
-PCB: PID: 14, PRIORITY: 1, PC: 2,3
-PCB: PID: 22, PRIORITY: 0, PC: 0,2
-PCB: PID: 31, PRIORITY: 0, PC: 1,2
-Iteration: 77
-Q0: 6
-Q1: 15
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 11,3
-PCB: PID: 14, PRIORITY: 1, PC: 2,3
-PCB: PID: 22, PRIORITY: 1, PC: 0,3
-PCB: PID: 31, PRIORITY: 0, PC: 1,2
-Iteration: 78
-Q0: 5
-Q1: 16
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 11,3
-PCB: PID: 14, PRIORITY: 1, PC: 2,3
-PCB: PID: 22, PRIORITY: 1, PC: 0,3
-PCB: PID: 31, PRIORITY: 0, PC: 1,2
-Iteration: 79
-Q0: 4
-Q1: 17
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 11,3
-PCB: PID: 14, PRIORITY: 1, PC: 2,3
-PCB: PID: 22, PRIORITY: 1, PC: 0,3
-PCB: PID: 31, PRIORITY: 0, PC: 1,2
-Iteration: 80
-Q0: 3
-Q1: 17
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 11,3
-PCB: PID: 14, PRIORITY: 1, PC: 2,3
-PCB: PID: 22, PRIORITY: 1, PC: 0,3
-PCB: PID: 31, PRIORITY: 0, PC: 1,2
-Iteration: 81
-Q0: 2
-Q1: 18
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 11,3
-PCB: PID: 14, PRIORITY: 1, PC: 2,3
-PCB: PID: 22, PRIORITY: 1, PC: 0,3
-PCB: PID: 31, PRIORITY: 0, PC: 1,2
-Iteration: 82
-Q0: 1
-Q1: 19
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 11,3
-PCB: PID: 14, PRIORITY: 1, PC: 2,3
-PCB: PID: 22, PRIORITY: 1, PC: 0,3
-PCB: PID: 31, PRIORITY: 0, PC: 1,2
-Iteration: 83
-Q0: 0
-Q1: 20
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 11,3
-PCB: PID: 14, PRIORITY: 1, PC: 2,3
-PCB: PID: 22, PRIORITY: 1, PC: 0,3
-PCB: PID: 31, PRIORITY: 1, PC: 3,3
-Iteration: 84
-Q0: 0
-Q1: 20
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 11,3
-PCB: PID: 14, PRIORITY: 1, PC: 2,3
-PCB: PID: 22, PRIORITY: 1, PC: 0,3
-PCB: PID: 31, PRIORITY: 1, PC: 3,3
-Iteration: 85
-Q0: 0
-Q1: 20
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 11,3
-PCB: PID: 14, PRIORITY: 1, PC: 2,3
-PCB: PID: 22, PRIORITY: 1, PC: 0,3
-PCB: PID: 31, PRIORITY: 1, PC: 3,3
-Iteration: 86
-Q0: 0
-Q1: 20
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 11,3
-PCB: PID: 14, PRIORITY: 1, PC: 2,3
-PCB: PID: 22, PRIORITY: 1, PC: 0,3
-PCB: PID: 31, PRIORITY: 1, PC: 3,3
-Iteration: 87
-Q0: 0
-Q1: 20
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 11,3
-PCB: PID: 14, PRIORITY: 1, PC: 2,3
-PCB: PID: 22, PRIORITY: 1, PC: 0,3
-PCB: PID: 31, PRIORITY: 1, PC: 3,3
-Iteration: 88
-Q0: 0
-Q1: 20
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 23,4
-PCB: PID: 14, PRIORITY: 1, PC: 2,3
-PCB: PID: 22, PRIORITY: 1, PC: 0,3
-PCB: PID: 31, PRIORITY: 1, PC: 3,3
-Iteration: 89
-Q0: 0
-Q1: 20
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 23,4
-PCB: PID: 14, PRIORITY: 1, PC: 2,3
-PCB: PID: 22, PRIORITY: 1, PC: 0,3
-PCB: PID: 31, PRIORITY: 1, PC: 3,3
-Iteration: 90
-Q0: 0
-Q1: 20
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 23,4
-PCB: PID: 14, PRIORITY: 1, PC: 2,3
-PCB: PID: 22, PRIORITY: 1, PC: 0,3
-PCB: PID: 31, PRIORITY: 1, PC: 3,3
-Iteration: 91
-Q0: 0
-Q1: 20
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 23,4
-PCB: PID: 14, PRIORITY: 1, PC: 2,3
-PCB: PID: 22, PRIORITY: 1, PC: 0,3
-PCB: PID: 31, PRIORITY: 1, PC: 3,3
-Iteration: 92
-Q0: 0
-Q1: 20
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 23,4
-PCB: PID: 14, PRIORITY: 1, PC: 2,3
-PCB: PID: 22, PRIORITY: 1, PC: 0,3
-PCB: PID: 31, PRIORITY: 1, PC: 3,3
-Iteration: 93
-Q0: 0
-Q1: 20
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 23,4
-PCB: PID: 14, PRIORITY: 1, PC: 5,4
-PCB: PID: 22, PRIORITY: 1, PC: 0,3
-PCB: PID: 31, PRIORITY: 1, PC: 3,3
-Iteration: 94
-Q0: 0
-Q1: 20
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 23,4
-PCB: PID: 14, PRIORITY: 1, PC: 5,4
-PCB: PID: 22, PRIORITY: 1, PC: 0,3
-PCB: PID: 31, PRIORITY: 1, PC: 3,3
-Iteration: 95
-Q0: 0
-Q1: 20
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 23,4
-PCB: PID: 14, PRIORITY: 1, PC: 5,4
-PCB: PID: 22, PRIORITY: 1, PC: 0,3
-PCB: PID: 31, PRIORITY: 1, PC: 3,3
-Iteration: 96
-Q0: 0
-Q1: 19
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 23,4
-PCB: PID: 14, PRIORITY: 1, PC: 5,4
-PCB: PID: 22, PRIORITY: 1, PC: 0,3
-PCB: PID: 31, PRIORITY: 1, PC: 3,3
-Iteration: 97
-Q0: 18
-Q1: 0
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 0, PC: 23,4
-PCB: PID: 14, PRIORITY: 0, PC: 5,4
-PCB: PID: 22, PRIORITY: 0, PC: 0,3
-PCB: PID: 31, PRIORITY: 0, PC: 3,3
-Iteration: 98
-Q0: 17
-Q1: 1
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 0, PC: 23,4
-PCB: PID: 14, PRIORITY: 0, PC: 5,4
-PCB: PID: 22, PRIORITY: 0, PC: 0,3
-PCB: PID: 31, PRIORITY: 0, PC: 3,3
-Iteration: 99
-Q0: 17
-Q1: 1
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 0, PC: 23,4
-PCB: PID: 14, PRIORITY: 0, PC: 5,4
-PCB: PID: 22, PRIORITY: 0, PC: 0,4
-PCB: PID: 31, PRIORITY: 0, PC: 3,3
-Iteration: 100
-Q0: 17
-Q1: 1
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 0, PC: 23,4
-PCB: PID: 14, PRIORITY: 0, PC: 5,4
-PCB: PID: 22, PRIORITY: 0, PC: 0,4
-PCB: PID: 31, PRIORITY: 0, PC: 3,3
-Iteration: 101
-Q0: 17
-Q1: 1
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 0, PC: 23,4
-PCB: PID: 14, PRIORITY: 0, PC: 5,4
-PCB: PID: 22, PRIORITY: 0, PC: 0,4
-PCB: PID: 31, PRIORITY: 0, PC: 3,3
-Iteration: 102
-Q0: 17
-Q1: 1
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 0, PC: 23,4
-PCB: PID: 14, PRIORITY: 0, PC: 5,4
-PCB: PID: 22, PRIORITY: 0, PC: 0,4
-PCB: PID: 31, PRIORITY: 0, PC: 3,3
-Iteration: 103
-Q0: 17
-Q1: 1
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 0, PC: 23,4
-PCB: PID: 14, PRIORITY: 0, PC: 5,4
-PCB: PID: 22, PRIORITY: 0, PC: 0,4
-PCB: PID: 31, PRIORITY: 0, PC: 3,3
-Iteration: 104
-Q0: 17
-Q1: 1
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 0, PC: 23,4
-PCB: PID: 14, PRIORITY: 0, PC: 5,4
-PCB: PID: 22, PRIORITY: 0, PC: 0,4
-PCB: PID: 31, PRIORITY: 0, PC: 7,4
-Iteration: 105
-Q0: 17
-Q1: 1
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 0, PC: 23,4
-PCB: PID: 14, PRIORITY: 0, PC: 5,4
-PCB: PID: 22, PRIORITY: 0, PC: 0,4
-PCB: PID: 31, PRIORITY: 0, PC: 7,4
-Iteration: 106
-Q0: 16
-Q1: 2
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 0, PC: 23,4
-PCB: PID: 14, PRIORITY: 0, PC: 5,4
-PCB: PID: 22, PRIORITY: 0, PC: 0,4
-PCB: PID: 31, PRIORITY: 0, PC: 7,4
-Iteration: 107
-Q0: 15
-Q1: 3
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 0, PC: 23,4
-PCB: PID: 14, PRIORITY: 0, PC: 5,4
-PCB: PID: 22, PRIORITY: 0, PC: 0,4
-PCB: PID: 31, PRIORITY: 0, PC: 7,4
-Iteration: 108
-Q0: 14
-Q1: 4
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 0, PC: 23,4
-PCB: PID: 14, PRIORITY: 0, PC: 5,4
-PCB: PID: 22, PRIORITY: 0, PC: 0,4
-PCB: PID: 31, PRIORITY: 0, PC: 7,4
-Iteration: 109
-Q0: 13
-Q1: 5
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 47,5
-PCB: PID: 14, PRIORITY: 0, PC: 5,4
-PCB: PID: 22, PRIORITY: 0, PC: 0,4
-PCB: PID: 31, PRIORITY: 0, PC: 7,4
-Iteration: 110
-Q0: 12
-Q1: 6
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 47,5
-PCB: PID: 14, PRIORITY: 0, PC: 5,4
-PCB: PID: 22, PRIORITY: 0, PC: 0,4
-PCB: PID: 31, PRIORITY: 0, PC: 7,4
-Iteration: 111
-Q0: 11
-Q1: 7
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 47,5
-PCB: PID: 14, PRIORITY: 0, PC: 5,4
-PCB: PID: 22, PRIORITY: 0, PC: 0,4
-PCB: PID: 31, PRIORITY: 0, PC: 7,4
-Iteration: 112
-Q0: 10
-Q1: 8
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 47,5
-PCB: PID: 14, PRIORITY: 0, PC: 5,4
-PCB: PID: 22, PRIORITY: 0, PC: 0,4
-PCB: PID: 31, PRIORITY: 0, PC: 7,4
-Iteration: 113
-Q0: 9
-Q1: 9
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 47,5
-PCB: PID: 14, PRIORITY: 0, PC: 5,4
-PCB: PID: 22, PRIORITY: 0, PC: 0,4
-PCB: PID: 31, PRIORITY: 0, PC: 7,4
-Iteration: 114
-Q0: 8
-Q1: 10
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 47,5
-PCB: PID: 14, PRIORITY: 1, PC: 11,5
-PCB: PID: 22, PRIORITY: 0, PC: 0,4
-PCB: PID: 31, PRIORITY: 0, PC: 7,4
-Iteration: 115
-Q0: 7
-Q1: 11
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 47,5
-PCB: PID: 14, PRIORITY: 1, PC: 11,5
-PCB: PID: 22, PRIORITY: 0, PC: 0,4
-PCB: PID: 31, PRIORITY: 0, PC: 7,4
-Iteration: 116
-Q0: 6
-Q1: 12
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 47,5
-PCB: PID: 14, PRIORITY: 1, PC: 11,5
-PCB: PID: 22, PRIORITY: 0, PC: 0,4
-PCB: PID: 31, PRIORITY: 0, PC: 7,4
-Iteration: 117
-Q0: 5
-Q1: 13
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 47,5
-PCB: PID: 14, PRIORITY: 1, PC: 11,5
-PCB: PID: 22, PRIORITY: 1, PC: 1,5
-PCB: PID: 31, PRIORITY: 0, PC: 7,4
-Iteration: 118
-Q0: 4
-Q1: 14
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 47,5
-PCB: PID: 14, PRIORITY: 1, PC: 11,5
-PCB: PID: 22, PRIORITY: 1, PC: 1,5
-PCB: PID: 31, PRIORITY: 0, PC: 7,4
-Iteration: 119
-Q0: 3
-Q1: 15
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 47,5
-PCB: PID: 14, PRIORITY: 1, PC: 11,5
-PCB: PID: 22, PRIORITY: 1, PC: 1,5
-PCB: PID: 31, PRIORITY: 0, PC: 7,4
-Iteration: 120
-Q0: 2
-Q1: 16
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 47,5
-PCB: PID: 14, PRIORITY: 1, PC: 11,5
-PCB: PID: 22, PRIORITY: 1, PC: 1,5
-PCB: PID: 31, PRIORITY: 0, PC: 7,4
-Iteration: 121
-Q0: 1
-Q1: 17
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 47,5
-PCB: PID: 14, PRIORITY: 1, PC: 11,5
-PCB: PID: 22, PRIORITY: 1, PC: 1,5
-PCB: PID: 31, PRIORITY: 0, PC: 7,4
-Iteration: 122
-Q0: 0
-Q1: 18
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 47,5
-PCB: PID: 14, PRIORITY: 1, PC: 11,5
-PCB: PID: 22, PRIORITY: 1, PC: 1,5
-PCB: PID: 31, PRIORITY: 1, PC: 14,5
-Iteration: 123
-Q0: 0
-Q1: 17
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 47,5
-PCB: PID: 14, PRIORITY: 1, PC: 11,5
-PCB: PID: 22, PRIORITY: 1, PC: 1,5
-PCB: PID: 31, PRIORITY: 1, PC: 14,5
-Iteration: 124
-Q0: 0
-Q1: 16
-Q2: 1
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 47,5
-PCB: PID: 14, PRIORITY: 1, PC: 11,5
-PCB: PID: 22, PRIORITY: 1, PC: 1,5
-PCB: PID: 31, PRIORITY: 1, PC: 14,5
-Iteration: 125
-Q0: 0
-Q1: 16
-Q2: 1
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 47,5
-PCB: PID: 14, PRIORITY: 1, PC: 11,5
-PCB: PID: 22, PRIORITY: 1, PC: 1,5
-PCB: PID: 31, PRIORITY: 1, PC: 14,5
-Iteration: 126
-Q0: 0
-Q1: 16
-Q2: 1
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 47,5
-PCB: PID: 14, PRIORITY: 1, PC: 11,5
-PCB: PID: 22, PRIORITY: 1, PC: 1,5
-PCB: PID: 31, PRIORITY: 1, PC: 14,5
-Iteration: 127
-Q0: 0
-Q1: 15
-Q2: 1
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 47,5
-PCB: PID: 14, PRIORITY: 1, PC: 11,5
-PCB: PID: 22, PRIORITY: 1, PC: 1,5
-PCB: PID: 31, PRIORITY: 1, PC: 14,5
-Iteration: 128
-Q0: 0
-Q1: 15
-Q2: 1
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 96,6
-PCB: PID: 14, PRIORITY: 1, PC: 11,5
-PCB: PID: 22, PRIORITY: 1, PC: 1,5
-PCB: PID: 31, PRIORITY: 1, PC: 14,5
-Iteration: 129
-Q0: 0
-Q1: 15
-Q2: 1
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 96,6
-PCB: PID: 14, PRIORITY: 1, PC: 11,5
-PCB: PID: 22, PRIORITY: 1, PC: 1,5
-PCB: PID: 31, PRIORITY: 1, PC: 14,5
-Iteration: 130
-Q0: 0
-Q1: 15
-Q2: 1
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 96,6
-PCB: PID: 14, PRIORITY: 1, PC: 11,5
-PCB: PID: 22, PRIORITY: 1, PC: 1,5
-PCB: PID: 31, PRIORITY: 1, PC: 14,5
-Iteration: 131
-Q0: 0
-Q1: 15
-Q2: 1
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 96,6
-PCB: PID: 14, PRIORITY: 1, PC: 11,5
-PCB: PID: 22, PRIORITY: 1, PC: 1,5
-PCB: PID: 31, PRIORITY: 1, PC: 14,5
-Iteration: 132
-Q0: 0
-Q1: 15
-Q2: 1
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 96,6
-PCB: PID: 14, PRIORITY: 1, PC: 11,5
-PCB: PID: 22, PRIORITY: 1, PC: 1,5
-PCB: PID: 31, PRIORITY: 1, PC: 14,5
-Iteration: 133
-Q0: 0
-Q1: 15
-Q2: 1
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 96,6
-PCB: PID: 14, PRIORITY: 1, PC: 22,6
-PCB: PID: 22, PRIORITY: 1, PC: 1,5
-PCB: PID: 31, PRIORITY: 1, PC: 14,5
-Iteration: 134
-Q0: 0
-Q1: 15
-Q2: 1
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 96,6
-PCB: PID: 14, PRIORITY: 1, PC: 22,6
-PCB: PID: 22, PRIORITY: 1, PC: 1,5
-PCB: PID: 31, PRIORITY: 1, PC: 14,5
-Iteration: 135
-Q0: 0
-Q1: 15
-Q2: 1
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 96,6
-PCB: PID: 14, PRIORITY: 1, PC: 22,6
-PCB: PID: 22, PRIORITY: 1, PC: 1,5
-PCB: PID: 31, PRIORITY: 1, PC: 14,5
-Iteration: 136
-Q0: 0
-Q1: 15
-Q2: 1
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 96,6
-PCB: PID: 14, PRIORITY: 1, PC: 22,6
-PCB: PID: 22, PRIORITY: 1, PC: 5,6
-PCB: PID: 31, PRIORITY: 1, PC: 14,5
-Iteration: 137
-Q0: 0
-Q1: 14
-Q2: 1
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 96,6
-PCB: PID: 14, PRIORITY: 1, PC: 22,6
-PCB: PID: 22, PRIORITY: 1, PC: 5,6
-PCB: PID: 31, PRIORITY: 1, PC: 14,5
-Iteration: 138
-Q0: 0
-Q1: 14
-Q2: 1
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 96,6
-PCB: PID: 14, PRIORITY: 1, PC: 22,6
-PCB: PID: 22, PRIORITY: 1, PC: 5,6
-PCB: PID: 31, PRIORITY: 1, PC: 14,5
-Iteration: 139
-Q0: 0
-Q1: 14
-Q2: 1
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 96,6
-PCB: PID: 14, PRIORITY: 1, PC: 22,6
-PCB: PID: 22, PRIORITY: 1, PC: 5,6
-PCB: PID: 31, PRIORITY: 1, PC: 14,5
-Iteration: 140
-Q0: 0
-Q1: 14
-Q2: 1
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 96,6
-PCB: PID: 14, PRIORITY: 1, PC: 22,6
-PCB: PID: 22, PRIORITY: 1, PC: 5,6
-PCB: PID: 31, PRIORITY: 1, PC: 14,5
-Iteration: 141
-Q0: 0
-Q1: 14
-Q2: 1
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 96,6
-PCB: PID: 14, PRIORITY: 1, PC: 22,6
-PCB: PID: 22, PRIORITY: 1, PC: 5,6
-PCB: PID: 31, PRIORITY: 1, PC: 30,6
-Iteration: 142
-Q0: 0
-Q1: 13
-Q2: 1
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 96,6
-PCB: PID: 14, PRIORITY: 1, PC: 22,6
-PCB: PID: 22, PRIORITY: 1, PC: 5,6
-PCB: PID: 31, PRIORITY: 1, PC: 30,6
-Iteration: 143
-Q0: 0
-Q1: 13
-Q2: 1
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 96,6
-PCB: PID: 14, PRIORITY: 1, PC: 22,6
-PCB: PID: 22, PRIORITY: 1, PC: 5,6
-PCB: PID: 31, PRIORITY: 1, PC: 30,6
-Iteration: 144
-Q0: 0
-Q1: 13
-Q2: 1
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 192,7
-PCB: PID: 14, PRIORITY: 1, PC: 22,6
-PCB: PID: 22, PRIORITY: 1, PC: 5,6
-PCB: PID: 31, PRIORITY: 1, PC: 30,6
-Iteration: 145
-Q0: 14
-Q1: 0
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 0, PC: 192,7
-PCB: PID: 14, PRIORITY: 0, PC: 22,6
-PCB: PID: 22, PRIORITY: 0, PC: 5,6
-PCB: PID: 31, PRIORITY: 0, PC: 30,6
-Iteration: 146
-Q0: 13
-Q1: 1
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 0, PC: 192,7
-PCB: PID: 14, PRIORITY: 0, PC: 22,6
-PCB: PID: 22, PRIORITY: 0, PC: 5,6
-PCB: PID: 31, PRIORITY: 0, PC: 30,6
-Iteration: 147
-Q0: 12
-Q1: 2
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 0, PC: 192,7
-PCB: PID: 14, PRIORITY: 0, PC: 22,6
-PCB: PID: 22, PRIORITY: 0, PC: 5,6
-PCB: PID: 31, PRIORITY: 0, PC: 30,6
-Iteration: 148
-Q0: 11
-Q1: 3
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 0, PC: 192,7
-PCB: PID: 14, PRIORITY: 0, PC: 22,6
-PCB: PID: 22, PRIORITY: 0, PC: 5,6
-PCB: PID: 31, PRIORITY: 0, PC: 30,6
-Iteration: 149
-Q0: 10
-Q1: 4
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 0, PC: 192,7
-PCB: PID: 14, PRIORITY: 1, PC: 45,7
-PCB: PID: 22, PRIORITY: 0, PC: 5,6
-PCB: PID: 31, PRIORITY: 0, PC: 30,6
-Iteration: 150
-Q0: 9
-Q1: 5
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 0, PC: 192,7
-PCB: PID: 14, PRIORITY: 1, PC: 45,7
-PCB: PID: 22, PRIORITY: 0, PC: 5,6
-PCB: PID: 31, PRIORITY: 0, PC: 30,6
-Iteration: 151
-Q0: 8
-Q1: 6
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 0, PC: 192,7
-PCB: PID: 14, PRIORITY: 1, PC: 45,7
-PCB: PID: 22, PRIORITY: 0, PC: 5,6
-PCB: PID: 31, PRIORITY: 0, PC: 30,6
-Iteration: 152
-Q0: 7
-Q1: 7
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 0, PC: 192,7
-PCB: PID: 14, PRIORITY: 1, PC: 45,7
-PCB: PID: 22, PRIORITY: 1, PC: 10,7
-PCB: PID: 31, PRIORITY: 0, PC: 30,6
-Iteration: 153
-Q0: 6
-Q1: 8
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 0, PC: 192,7
-PCB: PID: 14, PRIORITY: 1, PC: 45,7
-PCB: PID: 22, PRIORITY: 1, PC: 10,7
-PCB: PID: 31, PRIORITY: 0, PC: 30,6
-Iteration: 154
-Q0: 5
-Q1: 9
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 0, PC: 192,7
-PCB: PID: 14, PRIORITY: 1, PC: 45,7
-PCB: PID: 22, PRIORITY: 1, PC: 10,7
-PCB: PID: 31, PRIORITY: 0, PC: 30,6
-Iteration: 155
-Q0: 4
-Q1: 9
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 0, PC: 192,7
-PCB: PID: 14, PRIORITY: 1, PC: 45,7
-PCB: PID: 22, PRIORITY: 1, PC: 10,7
-PCB: PID: 31, PRIORITY: 0, PC: 30,6
-Iteration: 156
-Q0: 3
-Q1: 10
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 0, PC: 192,7
-PCB: PID: 14, PRIORITY: 1, PC: 45,7
-PCB: PID: 22, PRIORITY: 1, PC: 10,7
-PCB: PID: 31, PRIORITY: 1, PC: 60,7
-Iteration: 157
-Q0: 3
-Q1: 10
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 0, PC: 192,7
-PCB: PID: 14, PRIORITY: 1, PC: 45,7
-PCB: PID: 22, PRIORITY: 1, PC: 10,7
-PCB: PID: 31, PRIORITY: 1, PC: 60,7
-Iteration: 158
-Q0: 3
-Q1: 10
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 0, PC: 385,8
-PCB: PID: 14, PRIORITY: 1, PC: 45,7
-PCB: PID: 22, PRIORITY: 1, PC: 10,7
-PCB: PID: 31, PRIORITY: 1, PC: 60,7
-Iteration: 159
-Q0: 3
-Q1: 10
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 0, PC: 385,8
-PCB: PID: 14, PRIORITY: 1, PC: 45,7
-PCB: PID: 22, PRIORITY: 1, PC: 10,7
-PCB: PID: 31, PRIORITY: 1, PC: 60,7
-Iteration: 160
-Q0: 3
-Q1: 10
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 0, PC: 385,8
-PCB: PID: 14, PRIORITY: 1, PC: 45,7
-PCB: PID: 22, PRIORITY: 1, PC: 10,7
-PCB: PID: 31, PRIORITY: 1, PC: 60,7
-Iteration: 161
-Q0: 2
-Q1: 11
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 0, PC: 385,8
-PCB: PID: 14, PRIORITY: 1, PC: 45,7
-PCB: PID: 22, PRIORITY: 1, PC: 10,7
-PCB: PID: 31, PRIORITY: 1, PC: 60,7
-Iteration: 162
-Q0: 1
-Q1: 12
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 771,9
-PCB: PID: 14, PRIORITY: 1, PC: 45,7
-PCB: PID: 22, PRIORITY: 1, PC: 10,7
-PCB: PID: 31, PRIORITY: 1, PC: 60,7
-Iteration: 163
-Q0: 0
-Q1: 13
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 771,9
-PCB: PID: 14, PRIORITY: 1, PC: 45,7
-PCB: PID: 22, PRIORITY: 1, PC: 10,7
-PCB: PID: 31, PRIORITY: 1, PC: 60,7
-Iteration: 164
-Q0: 0
-Q1: 13
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 771,9
-PCB: PID: 14, PRIORITY: 1, PC: 45,7
-PCB: PID: 22, PRIORITY: 1, PC: 10,7
-PCB: PID: 31, PRIORITY: 1, PC: 60,7
-Iteration: 165
-Q0: 0
-Q1: 13
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 771,9
-PCB: PID: 14, PRIORITY: 1, PC: 45,7
-PCB: PID: 22, PRIORITY: 1, PC: 10,7
-PCB: PID: 31, PRIORITY: 1, PC: 60,7
-Iteration: 166
-Q0: 0
-Q1: 13
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 771,9
-PCB: PID: 14, PRIORITY: 1, PC: 45,7
-PCB: PID: 22, PRIORITY: 1, PC: 10,7
-PCB: PID: 31, PRIORITY: 1, PC: 60,7
-Iteration: 167
-Q0: 0
-Q1: 13
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 771,9
-PCB: PID: 14, PRIORITY: 1, PC: 45,7
-PCB: PID: 22, PRIORITY: 1, PC: 10,7
-PCB: PID: 31, PRIORITY: 1, PC: 60,7
-Iteration: 168
-Q0: 0
-Q1: 13
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 771,9
-PCB: PID: 14, PRIORITY: 1, PC: 92,8
-PCB: PID: 22, PRIORITY: 1, PC: 10,7
-PCB: PID: 31, PRIORITY: 1, PC: 60,7
-Iteration: 169
-Q0: 0
-Q1: 13
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 771,9
-PCB: PID: 14, PRIORITY: 1, PC: 92,8
-PCB: PID: 22, PRIORITY: 1, PC: 10,7
-PCB: PID: 31, PRIORITY: 1, PC: 60,7
-Iteration: 170
-Q0: 0
-Q1: 13
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 771,9
-PCB: PID: 14, PRIORITY: 1, PC: 92,8
-PCB: PID: 22, PRIORITY: 1, PC: 10,7
-PCB: PID: 31, PRIORITY: 1, PC: 60,7
-Iteration: 171
-Q0: 0
-Q1: 13
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 771,9
-PCB: PID: 14, PRIORITY: 1, PC: 92,8
-PCB: PID: 22, PRIORITY: 1, PC: 22,8
-PCB: PID: 31, PRIORITY: 1, PC: 60,7
-Iteration: 172
-Q0: 0
-Q1: 13
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 771,9
-PCB: PID: 14, PRIORITY: 1, PC: 92,8
-PCB: PID: 22, PRIORITY: 1, PC: 22,8
-PCB: PID: 31, PRIORITY: 1, PC: 60,7
-Iteration: 173
-Q0: 0
-Q1: 13
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 771,9
-PCB: PID: 14, PRIORITY: 1, PC: 92,8
-PCB: PID: 22, PRIORITY: 1, PC: 22,8
-PCB: PID: 31, PRIORITY: 1, PC: 60,7
-Iteration: 174
-Q0: 0
-Q1: 13
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 771,9
-PCB: PID: 14, PRIORITY: 1, PC: 92,8
-PCB: PID: 22, PRIORITY: 1, PC: 22,8
-PCB: PID: 31, PRIORITY: 1, PC: 120,8
-Iteration: 175
-Q0: 0
-Q1: 13
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 771,9
-PCB: PID: 14, PRIORITY: 1, PC: 92,8
-PCB: PID: 22, PRIORITY: 1, PC: 22,8
-PCB: PID: 31, PRIORITY: 1, PC: 120,8
-Iteration: 176
-Q0: 0
-Q1: 13
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 1542,10
-PCB: PID: 14, PRIORITY: 1, PC: 92,8
-PCB: PID: 22, PRIORITY: 1, PC: 22,8
-PCB: PID: 31, PRIORITY: 1, PC: 120,8
-Iteration: 177
-Q0: 0
-Q1: 13
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 1542,10
-PCB: PID: 14, PRIORITY: 1, PC: 92,8
-PCB: PID: 22, PRIORITY: 1, PC: 22,8
-PCB: PID: 31, PRIORITY: 1, PC: 120,8
-Iteration: 178
-Q0: 0
-Q1: 13
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 1542,10
-PCB: PID: 14, PRIORITY: 1, PC: 92,8
-PCB: PID: 22, PRIORITY: 1, PC: 22,8
-PCB: PID: 31, PRIORITY: 1, PC: 120,8
-Iteration: 179
-Q0: 0
-Q1: 12
-Q2: 1
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 1542,10
-PCB: PID: 14, PRIORITY: 1, PC: 92,8
-PCB: PID: 22, PRIORITY: 1, PC: 22,8
-PCB: PID: 31, PRIORITY: 1, PC: 120,8
-Iteration: 180
-Q0: 0
-Q1: 11
 Q2: 2
 Q3: 0
 Q4: 0
@@ -3729,13 +424,17 @@ Q12: 0
 Q13: 0
 Q14: 0
 Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 1542,10
-PCB: PID: 14, PRIORITY: 1, PC: 92,8
-PCB: PID: 22, PRIORITY: 1, PC: 22,8
-PCB: PID: 31, PRIORITY: 1, PC: 120,8
-Iteration: 181
+PCB: PID: 2, PRIORITY: 2, PC: 6
+PCB: PID: 3, PRIORITY: 1, PC: 2
+PCB: PID: 4, PRIORITY: 1, PC: 2
+PCB: PID: 5, PRIORITY: 1, PC: 2
+
+Timer interrupt: process switch from P3 to P4
+Currently running:
+	PCB: PID: 4, PRIORITY: 1, PC: 2
+Iteration: 42
 Q0: 0
-Q1: 10
+Q1: 11
 Q2: 3
 Q3: 0
 Q4: 0
@@ -3750,13 +449,17 @@ Q12: 0
 Q13: 0
 Q14: 0
 Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 1542,10
-PCB: PID: 14, PRIORITY: 1, PC: 92,8
-PCB: PID: 22, PRIORITY: 1, PC: 22,8
-PCB: PID: 31, PRIORITY: 1, PC: 120,8
-Iteration: 182
+PCB: PID: 2, PRIORITY: 2, PC: 6
+PCB: PID: 3, PRIORITY: 2, PC: 6
+PCB: PID: 4, PRIORITY: 1, PC: 2
+PCB: PID: 5, PRIORITY: 1, PC: 2
+
+Timer interrupt: process switch from P4 to P5
+Currently running:
+	PCB: PID: 5, PRIORITY: 1, PC: 2
+Iteration: 46
 Q0: 0
-Q1: 9
+Q1: 10
 Q2: 4
 Q3: 0
 Q4: 0
@@ -3771,13 +474,17 @@ Q12: 0
 Q13: 0
 Q14: 0
 Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 1542,10
-PCB: PID: 14, PRIORITY: 2, PC: 186,9
-PCB: PID: 22, PRIORITY: 1, PC: 22,8
-PCB: PID: 31, PRIORITY: 1, PC: 120,8
-Iteration: 183
+PCB: PID: 2, PRIORITY: 2, PC: 6
+PCB: PID: 3, PRIORITY: 2, PC: 6
+PCB: PID: 4, PRIORITY: 2, PC: 6
+PCB: PID: 5, PRIORITY: 1, PC: 2
+
+Timer interrupt: process switch from P5 to P6
+Currently running:
+	PCB: PID: 6, PRIORITY: 1, PC: 2
+Iteration: 50
 Q0: 0
-Q1: 8
+Q1: 9
 Q2: 5
 Q3: 0
 Q4: 0
@@ -3792,13 +499,17 @@ Q12: 0
 Q13: 0
 Q14: 0
 Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 1542,10
-PCB: PID: 14, PRIORITY: 2, PC: 186,9
-PCB: PID: 22, PRIORITY: 1, PC: 22,8
-PCB: PID: 31, PRIORITY: 1, PC: 120,8
-Iteration: 184
+PCB: PID: 2, PRIORITY: 2, PC: 6
+PCB: PID: 3, PRIORITY: 2, PC: 6
+PCB: PID: 4, PRIORITY: 2, PC: 6
+PCB: PID: 5, PRIORITY: 2, PC: 6
+
+Timer interrupt: process switch from P6 to P7
+Currently running:
+	PCB: PID: 7, PRIORITY: 1, PC: 2
+Iteration: 54
 Q0: 0
-Q1: 7
+Q1: 8
 Q2: 6
 Q3: 0
 Q4: 0
@@ -3813,13 +524,17 @@ Q12: 0
 Q13: 0
 Q14: 0
 Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 1542,10
-PCB: PID: 14, PRIORITY: 2, PC: 186,9
-PCB: PID: 22, PRIORITY: 1, PC: 22,8
-PCB: PID: 31, PRIORITY: 1, PC: 120,8
-Iteration: 185
+PCB: PID: 2, PRIORITY: 2, PC: 6
+PCB: PID: 3, PRIORITY: 2, PC: 6
+PCB: PID: 4, PRIORITY: 2, PC: 6
+PCB: PID: 5, PRIORITY: 2, PC: 6
+
+Timer interrupt: process switch from P7 to P8
+Currently running:
+	PCB: PID: 8, PRIORITY: 1, PC: 2
+Iteration: 58
 Q0: 0
-Q1: 6
+Q1: 7
 Q2: 7
 Q3: 0
 Q4: 0
@@ -3834,13 +549,17 @@ Q12: 0
 Q13: 0
 Q14: 0
 Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 1542,10
-PCB: PID: 14, PRIORITY: 2, PC: 186,9
-PCB: PID: 22, PRIORITY: 2, PC: 44,9
-PCB: PID: 31, PRIORITY: 1, PC: 120,8
-Iteration: 186
+PCB: PID: 2, PRIORITY: 2, PC: 6
+PCB: PID: 3, PRIORITY: 2, PC: 6
+PCB: PID: 4, PRIORITY: 2, PC: 6
+PCB: PID: 5, PRIORITY: 2, PC: 6
+
+Timer interrupt: process switch from P8 to P9
+Currently running:
+	PCB: PID: 9, PRIORITY: 1, PC: 2
+Iteration: 62
 Q0: 0
-Q1: 5
+Q1: 6
 Q2: 8
 Q3: 0
 Q4: 0
@@ -3855,13 +574,17 @@ Q12: 0
 Q13: 0
 Q14: 0
 Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 1542,10
-PCB: PID: 14, PRIORITY: 2, PC: 186,9
-PCB: PID: 22, PRIORITY: 2, PC: 44,9
-PCB: PID: 31, PRIORITY: 1, PC: 120,8
-Iteration: 187
+PCB: PID: 2, PRIORITY: 2, PC: 6
+PCB: PID: 3, PRIORITY: 2, PC: 6
+PCB: PID: 4, PRIORITY: 2, PC: 6
+PCB: PID: 5, PRIORITY: 2, PC: 6
+
+Timer interrupt: process switch from P9 to P10
+Currently running:
+	PCB: PID: 10, PRIORITY: 1, PC: 2
+Iteration: 66
 Q0: 0
-Q1: 4
+Q1: 5
 Q2: 9
 Q3: 0
 Q4: 0
@@ -3876,97 +599,42 @@ Q12: 0
 Q13: 0
 Q14: 0
 Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 1542,10
-PCB: PID: 14, PRIORITY: 2, PC: 186,9
-PCB: PID: 22, PRIORITY: 2, PC: 44,9
-PCB: PID: 31, PRIORITY: 1, PC: 120,8
-Iteration: 188
+PCB: PID: 2, PRIORITY: 2, PC: 6
+PCB: PID: 3, PRIORITY: 2, PC: 6
+PCB: PID: 4, PRIORITY: 2, PC: 6
+PCB: PID: 5, PRIORITY: 2, PC: 6
+
+Timer interrupt: process switch from P10 to P11
+Currently running:
+	PCB: PID: 11, PRIORITY: 1, PC: 2
+Iteration: 70
+Q0: 0
+Q1: 4
+Q2: 10
+Q3: 0
+Q4: 0
+Q5: 0
+Q6: 0
+Q7: 0
+Q8: 0
+Q9: 0
+Q10: 0
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 2, PC: 6
+PCB: PID: 3, PRIORITY: 2, PC: 6
+PCB: PID: 4, PRIORITY: 2, PC: 6
+PCB: PID: 5, PRIORITY: 2, PC: 6
+
+Timer interrupt: process switch from P11 to P12
+Currently running:
+	PCB: PID: 12, PRIORITY: 1, PC: 2
+Iteration: 74
 Q0: 0
 Q1: 3
-Q2: 10
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 1542,10
-PCB: PID: 14, PRIORITY: 2, PC: 186,9
-PCB: PID: 22, PRIORITY: 2, PC: 44,9
-PCB: PID: 31, PRIORITY: 2, PC: 243,9
-Iteration: 189
-Q0: 0
-Q1: 2
-Q2: 10
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 1542,10
-PCB: PID: 14, PRIORITY: 2, PC: 186,9
-PCB: PID: 22, PRIORITY: 2, PC: 44,9
-PCB: PID: 31, PRIORITY: 2, PC: 243,9
-Iteration: 190
-Q0: 0
-Q1: 2
-Q2: 10
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 3084,11
-PCB: PID: 14, PRIORITY: 2, PC: 186,9
-PCB: PID: 22, PRIORITY: 2, PC: 44,9
-PCB: PID: 31, PRIORITY: 2, PC: 243,9
-Iteration: 191
-Q0: 0
-Q1: 2
-Q2: 10
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 3084,11
-PCB: PID: 14, PRIORITY: 2, PC: 186,9
-PCB: PID: 22, PRIORITY: 2, PC: 44,9
-PCB: PID: 31, PRIORITY: 2, PC: 243,9
-Iteration: 192
-Q0: 0
-Q1: 1
 Q2: 11
 Q3: 0
 Q4: 0
@@ -3981,959 +649,18 @@ Q12: 0
 Q13: 0
 Q14: 0
 Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 3084,11
-PCB: PID: 14, PRIORITY: 2, PC: 186,9
-PCB: PID: 22, PRIORITY: 2, PC: 44,9
-PCB: PID: 31, PRIORITY: 2, PC: 243,9
-Iteration: 193
-Q0: 12
-Q1: 0
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 0, PC: 6170,12
-PCB: PID: 14, PRIORITY: 0, PC: 186,9
-PCB: PID: 22, PRIORITY: 0, PC: 44,9
-PCB: PID: 31, PRIORITY: 0, PC: 243,9
-Iteration: 194
-Q0: 11
-Q1: 1
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 0, PC: 6170,12
-PCB: PID: 14, PRIORITY: 0, PC: 186,9
-PCB: PID: 22, PRIORITY: 0, PC: 44,9
-PCB: PID: 31, PRIORITY: 0, PC: 243,9
-Iteration: 195
-Q0: 10
-Q1: 2
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 12341,13
-PCB: PID: 14, PRIORITY: 0, PC: 186,9
-PCB: PID: 22, PRIORITY: 0, PC: 44,9
-PCB: PID: 31, PRIORITY: 0, PC: 243,9
-Iteration: 196
-Q0: 10
-Q1: 2
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 12341,13
-PCB: PID: 14, PRIORITY: 0, PC: 186,9
-PCB: PID: 22, PRIORITY: 0, PC: 44,9
-PCB: PID: 31, PRIORITY: 0, PC: 243,9
-Iteration: 197
-Q0: 10
-Q1: 2
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 12341,13
-PCB: PID: 14, PRIORITY: 0, PC: 186,9
-PCB: PID: 22, PRIORITY: 0, PC: 44,9
-PCB: PID: 31, PRIORITY: 0, PC: 243,9
-Iteration: 198
-Q0: 10
-Q1: 2
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 12341,13
-PCB: PID: 14, PRIORITY: 0, PC: 186,9
-PCB: PID: 22, PRIORITY: 0, PC: 44,9
-PCB: PID: 31, PRIORITY: 0, PC: 243,9
-Iteration: 199
-Q0: 10
-Q1: 2
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 12341,13
-PCB: PID: 14, PRIORITY: 0, PC: 373,10
-PCB: PID: 22, PRIORITY: 0, PC: 44,9
-PCB: PID: 31, PRIORITY: 0, PC: 243,9
-Iteration: 200
-Q0: 10
-Q1: 2
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 12341,13
-PCB: PID: 14, PRIORITY: 0, PC: 373,10
-PCB: PID: 22, PRIORITY: 0, PC: 44,9
-PCB: PID: 31, PRIORITY: 0, PC: 243,9
-Iteration: 201
-Q0: 10
-Q1: 2
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 12341,13
-PCB: PID: 14, PRIORITY: 0, PC: 373,10
-PCB: PID: 22, PRIORITY: 0, PC: 44,9
-PCB: PID: 31, PRIORITY: 0, PC: 243,9
-Iteration: 202
-Q0: 10
-Q1: 2
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 12341,13
-PCB: PID: 14, PRIORITY: 0, PC: 373,10
-PCB: PID: 22, PRIORITY: 0, PC: 89,10
-PCB: PID: 31, PRIORITY: 0, PC: 243,9
-Iteration: 203
-Q0: 10
-Q1: 2
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 12341,13
-PCB: PID: 14, PRIORITY: 0, PC: 373,10
-PCB: PID: 22, PRIORITY: 0, PC: 89,10
-PCB: PID: 31, PRIORITY: 0, PC: 243,9
-Iteration: 204
-Q0: 10
-Q1: 2
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 12341,13
-PCB: PID: 14, PRIORITY: 0, PC: 373,10
-PCB: PID: 22, PRIORITY: 0, PC: 89,10
-PCB: PID: 31, PRIORITY: 0, PC: 243,9
-Iteration: 205
-Q0: 10
-Q1: 2
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 12341,13
-PCB: PID: 14, PRIORITY: 0, PC: 373,10
-PCB: PID: 22, PRIORITY: 0, PC: 89,10
-PCB: PID: 31, PRIORITY: 0, PC: 487,10
-Iteration: 206
-Q0: 10
-Q1: 2
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 12341,13
-PCB: PID: 14, PRIORITY: 0, PC: 373,10
-PCB: PID: 22, PRIORITY: 0, PC: 89,10
-PCB: PID: 31, PRIORITY: 0, PC: 487,10
-Iteration: 207
-Q0: 9
-Q1: 3
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 12341,13
-PCB: PID: 14, PRIORITY: 0, PC: 373,10
-PCB: PID: 22, PRIORITY: 0, PC: 89,10
-PCB: PID: 31, PRIORITY: 0, PC: 487,10
-Iteration: 208
-Q0: 8
-Q1: 4
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 12341,13
-PCB: PID: 14, PRIORITY: 0, PC: 373,10
-PCB: PID: 22, PRIORITY: 0, PC: 89,10
-PCB: PID: 31, PRIORITY: 0, PC: 487,10
-Iteration: 209
-Q0: 7
-Q1: 5
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 12341,13
-PCB: PID: 14, PRIORITY: 0, PC: 373,10
-PCB: PID: 22, PRIORITY: 0, PC: 89,10
-PCB: PID: 31, PRIORITY: 0, PC: 487,10
-Iteration: 210
-Q0: 6
-Q1: 6
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 12341,13
-PCB: PID: 14, PRIORITY: 1, PC: 746,11
-PCB: PID: 22, PRIORITY: 0, PC: 89,10
-PCB: PID: 31, PRIORITY: 0, PC: 487,10
-Iteration: 211
-Q0: 5
-Q1: 7
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 12341,13
-PCB: PID: 14, PRIORITY: 1, PC: 746,11
-PCB: PID: 22, PRIORITY: 0, PC: 89,10
-PCB: PID: 31, PRIORITY: 0, PC: 487,10
-Iteration: 212
-Q0: 4
-Q1: 8
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 12341,13
-PCB: PID: 14, PRIORITY: 1, PC: 746,11
-PCB: PID: 22, PRIORITY: 0, PC: 89,10
-PCB: PID: 31, PRIORITY: 0, PC: 487,10
-Iteration: 213
-Q0: 3
-Q1: 9
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 12341,13
-PCB: PID: 14, PRIORITY: 1, PC: 746,11
-PCB: PID: 22, PRIORITY: 1, PC: 178,11
-PCB: PID: 31, PRIORITY: 0, PC: 487,10
-Iteration: 214
-Q0: 2
-Q1: 10
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 12341,13
-PCB: PID: 14, PRIORITY: 1, PC: 746,11
-PCB: PID: 22, PRIORITY: 1, PC: 178,11
-PCB: PID: 31, PRIORITY: 0, PC: 487,10
-Iteration: 215
-Q0: 1
-Q1: 11
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 12341,13
-PCB: PID: 14, PRIORITY: 1, PC: 746,11
-PCB: PID: 22, PRIORITY: 1, PC: 178,11
-PCB: PID: 31, PRIORITY: 0, PC: 487,10
-Iteration: 216
-Q0: 0
-Q1: 12
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 12341,13
-PCB: PID: 14, PRIORITY: 1, PC: 746,11
-PCB: PID: 22, PRIORITY: 1, PC: 178,11
-PCB: PID: 31, PRIORITY: 1, PC: 975,11
-Iteration: 217
-Q0: 0
-Q1: 12
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 12341,13
-PCB: PID: 14, PRIORITY: 1, PC: 746,11
-PCB: PID: 22, PRIORITY: 1, PC: 178,11
-PCB: PID: 31, PRIORITY: 1, PC: 975,11
-Iteration: 218
-Q0: 0
-Q1: 11
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 12341,13
-PCB: PID: 14, PRIORITY: 1, PC: 746,11
-PCB: PID: 22, PRIORITY: 1, PC: 178,11
-PCB: PID: 31, PRIORITY: 1, PC: 975,11
-Iteration: 219
-Q0: 0
-Q1: 11
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 24684,14
-PCB: PID: 14, PRIORITY: 1, PC: 746,11
-PCB: PID: 22, PRIORITY: 1, PC: 178,11
-PCB: PID: 31, PRIORITY: 1, PC: 975,11
-Iteration: 220
-Q0: 0
-Q1: 11
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 24684,14
-PCB: PID: 14, PRIORITY: 1, PC: 746,11
-PCB: PID: 22, PRIORITY: 1, PC: 178,11
-PCB: PID: 31, PRIORITY: 1, PC: 975,11
-Iteration: 221
-Q0: 0
-Q1: 11
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 24684,14
-PCB: PID: 14, PRIORITY: 1, PC: 746,11
-PCB: PID: 22, PRIORITY: 1, PC: 178,11
-PCB: PID: 31, PRIORITY: 1, PC: 975,11
-Iteration: 222
-Q0: 0
-Q1: 11
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 24684,14
-PCB: PID: 14, PRIORITY: 1, PC: 746,11
-PCB: PID: 22, PRIORITY: 1, PC: 178,11
-PCB: PID: 31, PRIORITY: 1, PC: 975,11
-Iteration: 223
-Q0: 0
-Q1: 11
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 24684,14
-PCB: PID: 14, PRIORITY: 1, PC: 1494,12
-PCB: PID: 22, PRIORITY: 1, PC: 178,11
-PCB: PID: 31, PRIORITY: 1, PC: 975,11
-Iteration: 224
-Q0: 0
-Q1: 10
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 24684,14
-PCB: PID: 14, PRIORITY: 1, PC: 1494,12
-PCB: PID: 22, PRIORITY: 1, PC: 178,11
-PCB: PID: 31, PRIORITY: 1, PC: 975,11
-Iteration: 225
-Q0: 0
-Q1: 10
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 24684,14
-PCB: PID: 14, PRIORITY: 1, PC: 1494,12
-PCB: PID: 22, PRIORITY: 1, PC: 178,11
-PCB: PID: 31, PRIORITY: 1, PC: 975,11
-Iteration: 226
-Q0: 0
-Q1: 10
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 24684,14
-PCB: PID: 14, PRIORITY: 1, PC: 1494,12
-PCB: PID: 22, PRIORITY: 1, PC: 357,12
-PCB: PID: 31, PRIORITY: 1, PC: 975,11
-Iteration: 227
-Q0: 0
-Q1: 10
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 24684,14
-PCB: PID: 14, PRIORITY: 1, PC: 1494,12
-PCB: PID: 22, PRIORITY: 1, PC: 357,12
-PCB: PID: 31, PRIORITY: 1, PC: 975,11
-Iteration: 228
-Q0: 0
-Q1: 9
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 24684,14
-PCB: PID: 14, PRIORITY: 1, PC: 1494,12
-PCB: PID: 22, PRIORITY: 1, PC: 357,12
-PCB: PID: 31, PRIORITY: 1, PC: 975,11
-Iteration: 229
-Q0: 0
-Q1: 9
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 24684,14
-PCB: PID: 14, PRIORITY: 1, PC: 1494,12
-PCB: PID: 22, PRIORITY: 1, PC: 357,12
-PCB: PID: 31, PRIORITY: 1, PC: 1952,12
-Iteration: 230
-Q0: 0
-Q1: 9
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 24684,14
-PCB: PID: 14, PRIORITY: 1, PC: 1494,12
-PCB: PID: 22, PRIORITY: 1, PC: 357,12
-PCB: PID: 31, PRIORITY: 1, PC: 1952,12
-Iteration: 231
-Q0: 0
-Q1: 9
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 49368,15
-PCB: PID: 14, PRIORITY: 1, PC: 1494,12
-PCB: PID: 22, PRIORITY: 1, PC: 357,12
-PCB: PID: 31, PRIORITY: 1, PC: 1952,12
-Iteration: 232
-Q0: 0
-Q1: 8
-Q2: 1
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 49368,15
-PCB: PID: 14, PRIORITY: 1, PC: 1494,12
-PCB: PID: 22, PRIORITY: 1, PC: 357,12
-PCB: PID: 31, PRIORITY: 1, PC: 1952,12
-Iteration: 233
-Q0: 0
-Q1: 7
-Q2: 2
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 49368,15
-PCB: PID: 14, PRIORITY: 1, PC: 1494,12
-PCB: PID: 22, PRIORITY: 1, PC: 357,12
-PCB: PID: 31, PRIORITY: 1, PC: 1952,12
-Iteration: 234
-Q0: 0
-Q1: 6
-Q2: 3
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 49368,15
-PCB: PID: 14, PRIORITY: 1, PC: 1494,12
-PCB: PID: 22, PRIORITY: 1, PC: 357,12
-PCB: PID: 31, PRIORITY: 1, PC: 1952,12
-Iteration: 235
-Q0: 0
-Q1: 5
-Q2: 4
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 49368,15
-PCB: PID: 14, PRIORITY: 2, PC: 2991,13
-PCB: PID: 22, PRIORITY: 1, PC: 357,12
-PCB: PID: 31, PRIORITY: 1, PC: 1952,12
-Iteration: 236
-Q0: 0
-Q1: 4
-Q2: 5
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 49368,15
-PCB: PID: 14, PRIORITY: 2, PC: 2991,13
-PCB: PID: 22, PRIORITY: 1, PC: 357,12
-PCB: PID: 31, PRIORITY: 1, PC: 1952,12
-Iteration: 237
-Q0: 0
-Q1: 3
-Q2: 6
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 49368,15
-PCB: PID: 14, PRIORITY: 2, PC: 2991,13
-PCB: PID: 22, PRIORITY: 2, PC: 716,13
-PCB: PID: 31, PRIORITY: 1, PC: 1952,12
-Iteration: 238
+PCB: PID: 2, PRIORITY: 2, PC: 6
+PCB: PID: 3, PRIORITY: 2, PC: 6
+PCB: PID: 4, PRIORITY: 2, PC: 6
+PCB: PID: 5, PRIORITY: 2, PC: 6
+
+Timer interrupt: process switch from P12 to P13
+Currently running:
+	PCB: PID: 13, PRIORITY: 1, PC: 2
+Iteration: 78
 Q0: 0
 Q1: 2
-Q2: 7
+Q2: 12
 Q3: 0
 Q4: 0
 Q5: 0
@@ -4947,14 +674,18 @@ Q12: 0
 Q13: 0
 Q14: 0
 Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 49368,15
-PCB: PID: 14, PRIORITY: 2, PC: 2991,13
-PCB: PID: 22, PRIORITY: 2, PC: 716,13
-PCB: PID: 31, PRIORITY: 1, PC: 1952,12
-Iteration: 239
+PCB: PID: 2, PRIORITY: 2, PC: 6
+PCB: PID: 3, PRIORITY: 2, PC: 6
+PCB: PID: 4, PRIORITY: 2, PC: 6
+PCB: PID: 5, PRIORITY: 2, PC: 6
+
+Timer interrupt: process switch from P13 to P14
+Currently running:
+	PCB: PID: 14, PRIORITY: 1, PC: 2
+Iteration: 82
 Q0: 0
 Q1: 1
-Q2: 8
+Q2: 13
 Q3: 0
 Q4: 0
 Q5: 0
@@ -4968,14 +699,18 @@ Q12: 0
 Q13: 0
 Q14: 0
 Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 49368,15
-PCB: PID: 14, PRIORITY: 2, PC: 2991,13
-PCB: PID: 22, PRIORITY: 2, PC: 716,13
-PCB: PID: 31, PRIORITY: 2, PC: 3906,13
-Iteration: 240
+PCB: PID: 2, PRIORITY: 2, PC: 6
+PCB: PID: 3, PRIORITY: 2, PC: 6
+PCB: PID: 4, PRIORITY: 2, PC: 6
+PCB: PID: 5, PRIORITY: 2, PC: 6
+
+Timer interrupt: process switch from P14 to P15
+Currently running:
+	PCB: PID: 15, PRIORITY: 1, PC: 2
+Iteration: 86
 Q0: 0
 Q1: 0
-Q2: 9
+Q2: 14
 Q3: 0
 Q4: 0
 Q5: 0
@@ -4989,749 +724,18 @@ Q12: 0
 Q13: 0
 Q14: 0
 Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 49368,15
-PCB: PID: 14, PRIORITY: 2, PC: 2991,13
-PCB: PID: 22, PRIORITY: 2, PC: 716,13
-PCB: PID: 31, PRIORITY: 2, PC: 3906,13
-Iteration: 241
-Q0: 9
-Q1: 0
-Q2: 0
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 98737,16
-PCB: PID: 14, PRIORITY: 0, PC: 2991,13
-PCB: PID: 22, PRIORITY: 0, PC: 716,13
-PCB: PID: 31, PRIORITY: 0, PC: 3906,13
-Iteration: 242
-Q0: 8
-Q1: 0
-Q2: 1
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 2, PC: 197475,17
-PCB: PID: 14, PRIORITY: 0, PC: 2991,13
-PCB: PID: 22, PRIORITY: 0, PC: 716,13
-PCB: PID: 31, PRIORITY: 0, PC: 3906,13
-Iteration: 243
-Q0: 8
-Q1: 0
-Q2: 1
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 2, PC: 197475,17
-PCB: PID: 14, PRIORITY: 0, PC: 2991,13
-PCB: PID: 22, PRIORITY: 0, PC: 716,13
-PCB: PID: 31, PRIORITY: 0, PC: 3906,13
-Iteration: 244
-Q0: 8
-Q1: 0
-Q2: 1
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 2, PC: 197475,17
-PCB: PID: 14, PRIORITY: 0, PC: 2991,13
-PCB: PID: 22, PRIORITY: 0, PC: 716,13
-PCB: PID: 31, PRIORITY: 0, PC: 3906,13
-Iteration: 245
-Q0: 8
-Q1: 0
-Q2: 1
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 2, PC: 197475,17
-PCB: PID: 14, PRIORITY: 0, PC: 2991,13
-PCB: PID: 22, PRIORITY: 0, PC: 716,13
-PCB: PID: 31, PRIORITY: 0, PC: 3906,13
-Iteration: 246
-Q0: 8
-Q1: 0
-Q2: 1
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 2, PC: 197475,17
-PCB: PID: 14, PRIORITY: 0, PC: 5983,14
-PCB: PID: 22, PRIORITY: 0, PC: 716,13
-PCB: PID: 31, PRIORITY: 0, PC: 3906,13
-Iteration: 247
-Q0: 8
-Q1: 0
-Q2: 1
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 2, PC: 197475,17
-PCB: PID: 14, PRIORITY: 0, PC: 5983,14
-PCB: PID: 22, PRIORITY: 0, PC: 716,13
-PCB: PID: 31, PRIORITY: 0, PC: 3906,13
-Iteration: 248
-Q0: 8
-Q1: 0
-Q2: 1
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 2, PC: 197475,17
-PCB: PID: 14, PRIORITY: 0, PC: 5983,14
-PCB: PID: 22, PRIORITY: 0, PC: 1432,14
-PCB: PID: 31, PRIORITY: 0, PC: 3906,13
-Iteration: 249
-Q0: 8
-Q1: 0
-Q2: 1
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 2, PC: 197475,17
-PCB: PID: 14, PRIORITY: 0, PC: 5983,14
-PCB: PID: 22, PRIORITY: 0, PC: 1432,14
-PCB: PID: 31, PRIORITY: 0, PC: 3906,13
-Iteration: 250
-Q0: 8
-Q1: 0
-Q2: 1
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 2, PC: 197475,17
-PCB: PID: 14, PRIORITY: 0, PC: 5983,14
-PCB: PID: 22, PRIORITY: 0, PC: 1432,14
-PCB: PID: 31, PRIORITY: 0, PC: 7813,14
-Iteration: 251
-Q0: 8
-Q1: 0
-Q2: 1
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 2, PC: 197475,17
-PCB: PID: 14, PRIORITY: 0, PC: 5983,14
-PCB: PID: 22, PRIORITY: 0, PC: 1432,14
-PCB: PID: 31, PRIORITY: 0, PC: 7813,14
-Iteration: 252
-Q0: 7
-Q1: 1
-Q2: 1
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 2, PC: 197475,17
-PCB: PID: 14, PRIORITY: 0, PC: 5983,14
-PCB: PID: 22, PRIORITY: 0, PC: 1432,14
-PCB: PID: 31, PRIORITY: 0, PC: 7813,14
-Iteration: 253
-Q0: 6
-Q1: 2
-Q2: 1
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 2, PC: 197475,17
-PCB: PID: 14, PRIORITY: 0, PC: 5983,14
-PCB: PID: 22, PRIORITY: 0, PC: 1432,14
-PCB: PID: 31, PRIORITY: 0, PC: 7813,14
-Iteration: 254
-Q0: 5
-Q1: 3
-Q2: 1
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 2, PC: 197475,17
-PCB: PID: 14, PRIORITY: 0, PC: 5983,14
-PCB: PID: 22, PRIORITY: 0, PC: 1432,14
-PCB: PID: 31, PRIORITY: 0, PC: 7813,14
-Iteration: 255
-Q0: 4
-Q1: 4
-Q2: 1
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 2, PC: 197475,17
-PCB: PID: 14, PRIORITY: 1, PC: 11967,15
-PCB: PID: 22, PRIORITY: 0, PC: 1432,14
-PCB: PID: 31, PRIORITY: 0, PC: 7813,14
-Iteration: 256
-Q0: 3
-Q1: 5
-Q2: 1
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 2, PC: 197475,17
-PCB: PID: 14, PRIORITY: 1, PC: 11967,15
-PCB: PID: 22, PRIORITY: 0, PC: 1432,14
-PCB: PID: 31, PRIORITY: 0, PC: 7813,14
-Iteration: 257
-Q0: 2
-Q1: 6
-Q2: 1
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 2, PC: 197475,17
-PCB: PID: 14, PRIORITY: 1, PC: 11967,15
-PCB: PID: 22, PRIORITY: 1, PC: 2865,15
-PCB: PID: 31, PRIORITY: 0, PC: 7813,14
-Iteration: 258
-Q0: 1
-Q1: 7
-Q2: 1
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 2, PC: 197475,17
-PCB: PID: 14, PRIORITY: 1, PC: 11967,15
-PCB: PID: 22, PRIORITY: 1, PC: 2865,15
-PCB: PID: 31, PRIORITY: 0, PC: 7813,14
-Iteration: 259
-Q0: 0
-Q1: 8
-Q2: 1
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 2, PC: 197475,17
-PCB: PID: 14, PRIORITY: 1, PC: 11967,15
-PCB: PID: 22, PRIORITY: 1, PC: 2865,15
-PCB: PID: 31, PRIORITY: 1, PC: 15627,15
-Iteration: 260
-Q0: 0
-Q1: 8
-Q2: 1
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 2, PC: 197475,17
-PCB: PID: 14, PRIORITY: 1, PC: 11967,15
-PCB: PID: 22, PRIORITY: 1, PC: 2865,15
-PCB: PID: 31, PRIORITY: 1, PC: 15627,15
-Iteration: 261
-Q0: 0
-Q1: 8
-Q2: 1
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 2, PC: 197475,17
-PCB: PID: 14, PRIORITY: 1, PC: 11967,15
-PCB: PID: 22, PRIORITY: 1, PC: 2865,15
-PCB: PID: 31, PRIORITY: 1, PC: 15627,15
-Iteration: 262
-Q0: 0
-Q1: 7
-Q2: 1
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 2, PC: 197475,17
-PCB: PID: 14, PRIORITY: 1, PC: 11967,15
-PCB: PID: 22, PRIORITY: 1, PC: 2865,15
-PCB: PID: 31, PRIORITY: 1, PC: 15627,15
-Iteration: 263
-Q0: 0
-Q1: 7
-Q2: 1
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 2, PC: 197475,17
-PCB: PID: 14, PRIORITY: 1, PC: 11967,15
-PCB: PID: 22, PRIORITY: 1, PC: 2865,15
-PCB: PID: 31, PRIORITY: 1, PC: 15627,15
-Iteration: 264
-Q0: 0
-Q1: 7
-Q2: 1
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 2, PC: 197475,17
-PCB: PID: 14, PRIORITY: 1, PC: 23937,16
-PCB: PID: 22, PRIORITY: 1, PC: 2865,15
-PCB: PID: 31, PRIORITY: 1, PC: 15627,15
-Iteration: 265
-Q0: 0
-Q1: 7
-Q2: 1
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 2, PC: 197475,17
-PCB: PID: 14, PRIORITY: 1, PC: 23937,16
-PCB: PID: 22, PRIORITY: 1, PC: 2865,15
-PCB: PID: 31, PRIORITY: 1, PC: 15627,15
-Iteration: 266
-Q0: 0
-Q1: 7
-Q2: 1
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 2, PC: 197475,17
-PCB: PID: 14, PRIORITY: 1, PC: 23937,16
-PCB: PID: 22, PRIORITY: 1, PC: 5733,16
-PCB: PID: 31, PRIORITY: 1, PC: 15627,15
-Iteration: 267
-Q0: 0
-Q1: 7
-Q2: 1
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 2, PC: 197475,17
-PCB: PID: 14, PRIORITY: 1, PC: 23937,16
-PCB: PID: 22, PRIORITY: 1, PC: 5733,16
-PCB: PID: 31, PRIORITY: 1, PC: 15627,15
-Iteration: 268
-Q0: 0
-Q1: 7
-Q2: 1
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 2, PC: 197475,17
-PCB: PID: 14, PRIORITY: 1, PC: 23937,16
-PCB: PID: 22, PRIORITY: 1, PC: 5733,16
-PCB: PID: 31, PRIORITY: 1, PC: 31254,16
-Iteration: 269
-Q0: 0
-Q1: 7
-Q2: 1
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 2, PC: 197475,17
-PCB: PID: 14, PRIORITY: 1, PC: 23937,16
-PCB: PID: 22, PRIORITY: 1, PC: 5733,16
-PCB: PID: 31, PRIORITY: 1, PC: 31254,16
-Iteration: 270
-Q0: 0
-Q1: 6
-Q2: 2
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 2, PC: 197475,17
-PCB: PID: 14, PRIORITY: 1, PC: 23937,16
-PCB: PID: 22, PRIORITY: 1, PC: 5733,16
-PCB: PID: 31, PRIORITY: 1, PC: 31254,16
-Iteration: 271
-Q0: 0
-Q1: 5
-Q2: 3
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 2, PC: 197475,17
-PCB: PID: 14, PRIORITY: 1, PC: 23937,16
-PCB: PID: 22, PRIORITY: 1, PC: 5733,16
-PCB: PID: 31, PRIORITY: 1, PC: 31254,16
-Iteration: 272
-Q0: 0
-Q1: 4
-Q2: 4
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 2, PC: 197475,17
-PCB: PID: 14, PRIORITY: 2, PC: 47874,17
-PCB: PID: 22, PRIORITY: 1, PC: 5733,16
-PCB: PID: 31, PRIORITY: 1, PC: 31254,16
-Iteration: 273
-Q0: 0
-Q1: 3
-Q2: 4
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 2, PC: 197475,17
-PCB: PID: 14, PRIORITY: 2, PC: 47874,17
-PCB: PID: 22, PRIORITY: 1, PC: 5733,16
-PCB: PID: 31, PRIORITY: 1, PC: 31254,16
-Iteration: 274
-Q0: 0
-Q1: 2
-Q2: 5
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 2, PC: 197475,17
-PCB: PID: 14, PRIORITY: 2, PC: 47874,17
-PCB: PID: 22, PRIORITY: 2, PC: 11466,17
-PCB: PID: 31, PRIORITY: 1, PC: 31254,16
-Iteration: 275
-Q0: 0
-Q1: 1
-Q2: 6
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 2, PC: 197475,17
-PCB: PID: 14, PRIORITY: 2, PC: 47874,17
-PCB: PID: 22, PRIORITY: 2, PC: 11466,17
-PCB: PID: 31, PRIORITY: 1, PC: 31254,16
-Iteration: 276
+PCB: PID: 2, PRIORITY: 2, PC: 6
+PCB: PID: 3, PRIORITY: 2, PC: 6
+PCB: PID: 4, PRIORITY: 2, PC: 6
+PCB: PID: 5, PRIORITY: 2, PC: 6
+
+Timer interrupt: process switch from P15 to P1
+Currently running:
+	PCB: PID: 1, PRIORITY: 2, PC: 6
+Iteration: 90
 Q0: 0
 Q1: 0
-Q2: 7
+Q2: 14
 Q3: 0
 Q4: 0
 Q5: 0
@@ -5745,203 +749,18 @@ Q12: 0
 Q13: 0
 Q14: 0
 Q15: 0
-PCB: PID: 8, PRIORITY: 2, PC: 197475,17
-PCB: PID: 14, PRIORITY: 2, PC: 47874,17
-PCB: PID: 22, PRIORITY: 2, PC: 11466,17
-PCB: PID: 31, PRIORITY: 2, PC: 62509,17
-Iteration: 277
+PCB: PID: 2, PRIORITY: 2, PC: 6
+PCB: PID: 3, PRIORITY: 2, PC: 6
+PCB: PID: 4, PRIORITY: 2, PC: 6
+PCB: PID: 5, PRIORITY: 2, PC: 6
+
+Timer interrupt: process switch from P1 to P2
+Currently running:
+	PCB: PID: 2, PRIORITY: 2, PC: 6
+Iteration: 96
 Q0: 0
 Q1: 0
-Q2: 7
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 2, PC: 197475,17
-PCB: PID: 14, PRIORITY: 2, PC: 47874,17
-PCB: PID: 22, PRIORITY: 2, PC: 11466,17
-PCB: PID: 31, PRIORITY: 2, PC: 62509,17
-Iteration: 278
-Q0: 0
-Q1: 0
-Q2: 7
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 2, PC: 394954,18
-PCB: PID: 14, PRIORITY: 2, PC: 47874,17
-PCB: PID: 22, PRIORITY: 2, PC: 11466,17
-PCB: PID: 31, PRIORITY: 2, PC: 62509,17
-Iteration: 279
-Q0: 0
-Q1: 0
-Q2: 7
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 2, PC: 394954,18
-PCB: PID: 14, PRIORITY: 2, PC: 47874,17
-PCB: PID: 22, PRIORITY: 2, PC: 11466,17
-PCB: PID: 31, PRIORITY: 2, PC: 62509,17
-Iteration: 280
-Q0: 0
-Q1: 0
-Q2: 7
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 2, PC: 394954,18
-PCB: PID: 14, PRIORITY: 2, PC: 47874,17
-PCB: PID: 22, PRIORITY: 2, PC: 11466,17
-PCB: PID: 31, PRIORITY: 2, PC: 62509,17
-Iteration: 281
-Q0: 0
-Q1: 0
-Q2: 7
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 2, PC: 394954,18
-PCB: PID: 14, PRIORITY: 2, PC: 95749,18
-PCB: PID: 22, PRIORITY: 2, PC: 11466,17
-PCB: PID: 31, PRIORITY: 2, PC: 62509,17
-Iteration: 282
-Q0: 0
-Q1: 0
-Q2: 7
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 2, PC: 394954,18
-PCB: PID: 14, PRIORITY: 2, PC: 95749,18
-PCB: PID: 22, PRIORITY: 2, PC: 22935,18
-PCB: PID: 31, PRIORITY: 2, PC: 62509,17
-Iteration: 283
-Q0: 0
-Q1: 0
-Q2: 6
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 2, PC: 394954,18
-PCB: PID: 14, PRIORITY: 2, PC: 95749,18
-PCB: PID: 22, PRIORITY: 2, PC: 22935,18
-PCB: PID: 31, PRIORITY: 2, PC: 62509,17
-Iteration: 284
-Q0: 0
-Q1: 0
-Q2: 6
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 2, PC: 394954,18
-PCB: PID: 14, PRIORITY: 2, PC: 95749,18
-PCB: PID: 22, PRIORITY: 2, PC: 22935,18
-PCB: PID: 31, PRIORITY: 2, PC: 125020,18
-Iteration: 285
-Q0: 0
-Q1: 0
-Q2: 6
-Q3: 0
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 2, PC: 394954,18
-PCB: PID: 14, PRIORITY: 2, PC: 95749,18
-PCB: PID: 22, PRIORITY: 2, PC: 22935,18
-PCB: PID: 31, PRIORITY: 2, PC: 125020,18
-Iteration: 286
-Q0: 0
-Q1: 0
-Q2: 5
+Q2: 13
 Q3: 1
 Q4: 0
 Q5: 0
@@ -5955,35 +774,18 @@ Q12: 0
 Q13: 0
 Q14: 0
 Q15: 0
-PCB: PID: 8, PRIORITY: 3, PC: 789910,19
-PCB: PID: 14, PRIORITY: 2, PC: 95749,18
-PCB: PID: 22, PRIORITY: 2, PC: 22935,18
-PCB: PID: 31, PRIORITY: 2, PC: 125020,18
-Iteration: 287
+PCB: PID: 2, PRIORITY: 2, PC: 6
+PCB: PID: 3, PRIORITY: 2, PC: 6
+PCB: PID: 4, PRIORITY: 2, PC: 6
+PCB: PID: 5, PRIORITY: 2, PC: 6
+
+Timer interrupt: process switch from P2 to P3
+Currently running:
+	PCB: PID: 3, PRIORITY: 2, PC: 6
+Iteration: 102
 Q0: 0
 Q1: 0
-Q2: 4
-Q3: 1
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 3, PC: 789910,19
-PCB: PID: 14, PRIORITY: 2, PC: 95749,18
-PCB: PID: 22, PRIORITY: 2, PC: 22935,18
-PCB: PID: 31, PRIORITY: 2, PC: 125020,18
-Iteration: 288
-Q0: 0
-Q1: 0
-Q2: 3
+Q2: 12
 Q3: 2
 Q4: 0
 Q5: 0
@@ -5997,12 +799,3123 @@ Q12: 0
 Q13: 0
 Q14: 0
 Q15: 0
-PCB: PID: 8, PRIORITY: 3, PC: 789910,19
-PCB: PID: 14, PRIORITY: 2, PC: 95749,18
-PCB: PID: 22, PRIORITY: 2, PC: 22935,18
-PCB: PID: 31, PRIORITY: 2, PC: 125020,18
-Iteration: 289
-Q0: 5
+PCB: PID: 2, PRIORITY: 3, PC: 12
+PCB: PID: 3, PRIORITY: 2, PC: 6
+PCB: PID: 4, PRIORITY: 2, PC: 6
+PCB: PID: 5, PRIORITY: 2, PC: 6
+
+Timer interrupt: process switch from P3 to P4
+Currently running:
+	PCB: PID: 4, PRIORITY: 2, PC: 6
+Iteration: 108
+Q0: 0
+Q1: 0
+Q2: 11
+Q3: 3
+Q4: 0
+Q5: 0
+Q6: 0
+Q7: 0
+Q8: 0
+Q9: 0
+Q10: 0
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 3, PC: 12
+PCB: PID: 3, PRIORITY: 3, PC: 12
+PCB: PID: 4, PRIORITY: 2, PC: 6
+PCB: PID: 5, PRIORITY: 2, PC: 6
+
+Timer interrupt: process switch from P4 to P5
+Currently running:
+	PCB: PID: 5, PRIORITY: 2, PC: 6
+Iteration: 114
+Q0: 0
+Q1: 0
+Q2: 10
+Q3: 4
+Q4: 0
+Q5: 0
+Q6: 0
+Q7: 0
+Q8: 0
+Q9: 0
+Q10: 0
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 3, PC: 12
+PCB: PID: 3, PRIORITY: 3, PC: 12
+PCB: PID: 4, PRIORITY: 3, PC: 12
+PCB: PID: 5, PRIORITY: 2, PC: 6
+
+Timer interrupt: process switch from P5 to P6
+Currently running:
+	PCB: PID: 6, PRIORITY: 2, PC: 6
+Iteration: 120
+Q0: 0
+Q1: 0
+Q2: 9
+Q3: 5
+Q4: 0
+Q5: 0
+Q6: 0
+Q7: 0
+Q8: 0
+Q9: 0
+Q10: 0
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 3, PC: 12
+PCB: PID: 3, PRIORITY: 3, PC: 12
+PCB: PID: 4, PRIORITY: 3, PC: 12
+PCB: PID: 5, PRIORITY: 3, PC: 12
+
+Timer interrupt: process switch from P6 to P7
+Currently running:
+	PCB: PID: 7, PRIORITY: 2, PC: 6
+Iteration: 126
+Q0: 0
+Q1: 0
+Q2: 8
+Q3: 6
+Q4: 0
+Q5: 0
+Q6: 0
+Q7: 0
+Q8: 0
+Q9: 0
+Q10: 0
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 3, PC: 12
+PCB: PID: 3, PRIORITY: 3, PC: 12
+PCB: PID: 4, PRIORITY: 3, PC: 12
+PCB: PID: 5, PRIORITY: 3, PC: 12
+
+Timer interrupt: process switch from P7 to P8
+Currently running:
+	PCB: PID: 8, PRIORITY: 2, PC: 6
+Iteration: 132
+Q0: 0
+Q1: 0
+Q2: 7
+Q3: 7
+Q4: 0
+Q5: 0
+Q6: 0
+Q7: 0
+Q8: 0
+Q9: 0
+Q10: 0
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 3, PC: 12
+PCB: PID: 3, PRIORITY: 3, PC: 12
+PCB: PID: 4, PRIORITY: 3, PC: 12
+PCB: PID: 5, PRIORITY: 3, PC: 12
+
+Timer interrupt: process switch from P8 to P9
+Currently running:
+	PCB: PID: 9, PRIORITY: 2, PC: 6
+Iteration: 138
+Q0: 0
+Q1: 0
+Q2: 6
+Q3: 8
+Q4: 0
+Q5: 0
+Q6: 0
+Q7: 0
+Q8: 0
+Q9: 0
+Q10: 0
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 3, PC: 12
+PCB: PID: 3, PRIORITY: 3, PC: 12
+PCB: PID: 4, PRIORITY: 3, PC: 12
+PCB: PID: 5, PRIORITY: 3, PC: 12
+
+Timer interrupt: process switch from P9 to P10
+Currently running:
+	PCB: PID: 10, PRIORITY: 2, PC: 6
+Iteration: 144
+Q0: 0
+Q1: 0
+Q2: 5
+Q3: 9
+Q4: 0
+Q5: 0
+Q6: 0
+Q7: 0
+Q8: 0
+Q9: 0
+Q10: 0
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 3, PC: 12
+PCB: PID: 3, PRIORITY: 3, PC: 12
+PCB: PID: 4, PRIORITY: 3, PC: 12
+PCB: PID: 5, PRIORITY: 3, PC: 12
+
+Timer interrupt: process switch from P10 to P11
+Currently running:
+	PCB: PID: 11, PRIORITY: 2, PC: 6
+Iteration: 150
+Q0: 0
+Q1: 0
+Q2: 4
+Q3: 10
+Q4: 0
+Q5: 0
+Q6: 0
+Q7: 0
+Q8: 0
+Q9: 0
+Q10: 0
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 3, PC: 12
+PCB: PID: 3, PRIORITY: 3, PC: 12
+PCB: PID: 4, PRIORITY: 3, PC: 12
+PCB: PID: 5, PRIORITY: 3, PC: 12
+
+Timer interrupt: process switch from P11 to P12
+Currently running:
+	PCB: PID: 12, PRIORITY: 2, PC: 6
+Iteration: 156
+Q0: 0
+Q1: 0
+Q2: 3
+Q3: 11
+Q4: 0
+Q5: 0
+Q6: 0
+Q7: 0
+Q8: 0
+Q9: 0
+Q10: 0
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 3, PC: 12
+PCB: PID: 3, PRIORITY: 3, PC: 12
+PCB: PID: 4, PRIORITY: 3, PC: 12
+PCB: PID: 5, PRIORITY: 3, PC: 12
+
+Timer interrupt: process switch from P12 to P13
+Currently running:
+	PCB: PID: 13, PRIORITY: 2, PC: 6
+Iteration: 162
+Q0: 0
+Q1: 0
+Q2: 2
+Q3: 12
+Q4: 0
+Q5: 0
+Q6: 0
+Q7: 0
+Q8: 0
+Q9: 0
+Q10: 0
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 3, PC: 12
+PCB: PID: 3, PRIORITY: 3, PC: 12
+PCB: PID: 4, PRIORITY: 3, PC: 12
+PCB: PID: 5, PRIORITY: 3, PC: 12
+
+Timer interrupt: process switch from P13 to P14
+Currently running:
+	PCB: PID: 14, PRIORITY: 2, PC: 6
+Iteration: 168
+Q0: 0
+Q1: 0
+Q2: 1
+Q3: 13
+Q4: 0
+Q5: 0
+Q6: 0
+Q7: 0
+Q8: 0
+Q9: 0
+Q10: 0
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 3, PC: 12
+PCB: PID: 3, PRIORITY: 3, PC: 12
+PCB: PID: 4, PRIORITY: 3, PC: 12
+PCB: PID: 5, PRIORITY: 3, PC: 12
+
+Timer interrupt: process switch from P14 to P15
+Currently running:
+	PCB: PID: 15, PRIORITY: 2, PC: 6
+Iteration: 174
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 14
+Q4: 0
+Q5: 0
+Q6: 0
+Q7: 0
+Q8: 0
+Q9: 0
+Q10: 0
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 3, PC: 12
+PCB: PID: 3, PRIORITY: 3, PC: 12
+PCB: PID: 4, PRIORITY: 3, PC: 12
+PCB: PID: 5, PRIORITY: 3, PC: 12
+
+Timer interrupt: process switch from P15 to P1
+Currently running:
+	PCB: PID: 1, PRIORITY: 3, PC: 12
+Iteration: 180
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 14
+Q4: 0
+Q5: 0
+Q6: 0
+Q7: 0
+Q8: 0
+Q9: 0
+Q10: 0
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 3, PC: 12
+PCB: PID: 3, PRIORITY: 3, PC: 12
+PCB: PID: 4, PRIORITY: 3, PC: 12
+PCB: PID: 5, PRIORITY: 3, PC: 12
+
+Timer interrupt: process switch from P1 to P2
+Currently running:
+	PCB: PID: 2, PRIORITY: 3, PC: 12
+Iteration: 188
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 13
+Q4: 1
+Q5: 0
+Q6: 0
+Q7: 0
+Q8: 0
+Q9: 0
+Q10: 0
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 3, PC: 12
+PCB: PID: 3, PRIORITY: 3, PC: 12
+PCB: PID: 4, PRIORITY: 3, PC: 12
+PCB: PID: 5, PRIORITY: 3, PC: 12
+
+Timer interrupt: process switch from P2 to P3
+Currently running:
+	PCB: PID: 3, PRIORITY: 3, PC: 12
+Iteration: 196
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 12
+Q4: 2
+Q5: 0
+Q6: 0
+Q7: 0
+Q8: 0
+Q9: 0
+Q10: 0
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 4, PC: 20
+PCB: PID: 3, PRIORITY: 3, PC: 12
+PCB: PID: 4, PRIORITY: 3, PC: 12
+PCB: PID: 5, PRIORITY: 3, PC: 12
+
+Timer interrupt: process switch from P3 to P4
+Currently running:
+	PCB: PID: 4, PRIORITY: 3, PC: 12
+Iteration: 204
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 11
+Q4: 3
+Q5: 0
+Q6: 0
+Q7: 0
+Q8: 0
+Q9: 0
+Q10: 0
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 4, PC: 20
+PCB: PID: 3, PRIORITY: 4, PC: 20
+PCB: PID: 4, PRIORITY: 3, PC: 12
+PCB: PID: 5, PRIORITY: 3, PC: 12
+
+Timer interrupt: process switch from P4 to P5
+Currently running:
+	PCB: PID: 5, PRIORITY: 3, PC: 12
+Iteration: 212
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 10
+Q4: 4
+Q5: 0
+Q6: 0
+Q7: 0
+Q8: 0
+Q9: 0
+Q10: 0
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 4, PC: 20
+PCB: PID: 3, PRIORITY: 4, PC: 20
+PCB: PID: 4, PRIORITY: 4, PC: 20
+PCB: PID: 5, PRIORITY: 3, PC: 12
+
+Timer interrupt: process switch from P5 to P6
+Currently running:
+	PCB: PID: 6, PRIORITY: 3, PC: 12
+Iteration: 220
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 9
+Q4: 5
+Q5: 0
+Q6: 0
+Q7: 0
+Q8: 0
+Q9: 0
+Q10: 0
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 4, PC: 20
+PCB: PID: 3, PRIORITY: 4, PC: 20
+PCB: PID: 4, PRIORITY: 4, PC: 20
+PCB: PID: 5, PRIORITY: 4, PC: 20
+
+Timer interrupt: process switch from P6 to P7
+Currently running:
+	PCB: PID: 7, PRIORITY: 3, PC: 12
+Iteration: 228
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 8
+Q4: 6
+Q5: 0
+Q6: 0
+Q7: 0
+Q8: 0
+Q9: 0
+Q10: 0
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 4, PC: 20
+PCB: PID: 3, PRIORITY: 4, PC: 20
+PCB: PID: 4, PRIORITY: 4, PC: 20
+PCB: PID: 5, PRIORITY: 4, PC: 20
+
+Timer interrupt: process switch from P7 to P8
+Currently running:
+	PCB: PID: 8, PRIORITY: 3, PC: 12
+Iteration: 236
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 7
+Q4: 7
+Q5: 0
+Q6: 0
+Q7: 0
+Q8: 0
+Q9: 0
+Q10: 0
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 4, PC: 20
+PCB: PID: 3, PRIORITY: 4, PC: 20
+PCB: PID: 4, PRIORITY: 4, PC: 20
+PCB: PID: 5, PRIORITY: 4, PC: 20
+
+Timer interrupt: process switch from P8 to P9
+Currently running:
+	PCB: PID: 9, PRIORITY: 3, PC: 12
+Iteration: 244
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 6
+Q4: 8
+Q5: 0
+Q6: 0
+Q7: 0
+Q8: 0
+Q9: 0
+Q10: 0
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 4, PC: 20
+PCB: PID: 3, PRIORITY: 4, PC: 20
+PCB: PID: 4, PRIORITY: 4, PC: 20
+PCB: PID: 5, PRIORITY: 4, PC: 20
+
+Timer interrupt: process switch from P9 to P10
+Currently running:
+	PCB: PID: 10, PRIORITY: 3, PC: 12
+Iteration: 252
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 5
+Q4: 9
+Q5: 0
+Q6: 0
+Q7: 0
+Q8: 0
+Q9: 0
+Q10: 0
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 4, PC: 20
+PCB: PID: 3, PRIORITY: 4, PC: 20
+PCB: PID: 4, PRIORITY: 4, PC: 20
+PCB: PID: 5, PRIORITY: 4, PC: 20
+
+Timer interrupt: process switch from P10 to P11
+Currently running:
+	PCB: PID: 11, PRIORITY: 3, PC: 12
+Iteration: 260
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 4
+Q4: 10
+Q5: 0
+Q6: 0
+Q7: 0
+Q8: 0
+Q9: 0
+Q10: 0
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 4, PC: 20
+PCB: PID: 3, PRIORITY: 4, PC: 20
+PCB: PID: 4, PRIORITY: 4, PC: 20
+PCB: PID: 5, PRIORITY: 4, PC: 20
+
+Timer interrupt: process switch from P11 to P12
+Currently running:
+	PCB: PID: 12, PRIORITY: 3, PC: 12
+Iteration: 268
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 3
+Q4: 11
+Q5: 0
+Q6: 0
+Q7: 0
+Q8: 0
+Q9: 0
+Q10: 0
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 4, PC: 20
+PCB: PID: 3, PRIORITY: 4, PC: 20
+PCB: PID: 4, PRIORITY: 4, PC: 20
+PCB: PID: 5, PRIORITY: 4, PC: 20
+
+Timer interrupt: process switch from P12 to P13
+Currently running:
+	PCB: PID: 13, PRIORITY: 3, PC: 12
+Iteration: 276
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 2
+Q4: 12
+Q5: 0
+Q6: 0
+Q7: 0
+Q8: 0
+Q9: 0
+Q10: 0
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 4, PC: 20
+PCB: PID: 3, PRIORITY: 4, PC: 20
+PCB: PID: 4, PRIORITY: 4, PC: 20
+PCB: PID: 5, PRIORITY: 4, PC: 20
+
+Timer interrupt: process switch from P13 to P14
+Currently running:
+	PCB: PID: 14, PRIORITY: 3, PC: 12
+Iteration: 284
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 1
+Q4: 13
+Q5: 0
+Q6: 0
+Q7: 0
+Q8: 0
+Q9: 0
+Q10: 0
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 4, PC: 20
+PCB: PID: 3, PRIORITY: 4, PC: 20
+PCB: PID: 4, PRIORITY: 4, PC: 20
+PCB: PID: 5, PRIORITY: 4, PC: 20
+
+Timer interrupt: process switch from P14 to P15
+Currently running:
+	PCB: PID: 15, PRIORITY: 3, PC: 12
+Iteration: 292
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 0
+Q4: 14
+Q5: 0
+Q6: 0
+Q7: 0
+Q8: 0
+Q9: 0
+Q10: 0
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 4, PC: 20
+PCB: PID: 3, PRIORITY: 4, PC: 20
+PCB: PID: 4, PRIORITY: 4, PC: 20
+PCB: PID: 5, PRIORITY: 4, PC: 20
+
+Timer interrupt: process switch from P15 to P1
+Currently running:
+	PCB: PID: 1, PRIORITY: 4, PC: 20
+Iteration: 300
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 0
+Q4: 14
+Q5: 0
+Q6: 0
+Q7: 0
+Q8: 0
+Q9: 0
+Q10: 0
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 4, PC: 20
+PCB: PID: 3, PRIORITY: 4, PC: 20
+PCB: PID: 4, PRIORITY: 4, PC: 20
+PCB: PID: 5, PRIORITY: 4, PC: 20
+
+Timer interrupt: process switch from P1 to P2
+Currently running:
+	PCB: PID: 2, PRIORITY: 4, PC: 20
+Iteration: 310
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 0
+Q4: 13
+Q5: 1
+Q6: 0
+Q7: 0
+Q8: 0
+Q9: 0
+Q10: 0
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 4, PC: 20
+PCB: PID: 3, PRIORITY: 4, PC: 20
+PCB: PID: 4, PRIORITY: 4, PC: 20
+PCB: PID: 5, PRIORITY: 4, PC: 20
+
+Timer interrupt: process switch from P2 to P3
+Currently running:
+	PCB: PID: 3, PRIORITY: 4, PC: 20
+Iteration: 320
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 0
+Q4: 12
+Q5: 2
+Q6: 0
+Q7: 0
+Q8: 0
+Q9: 0
+Q10: 0
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 5, PC: 30
+PCB: PID: 3, PRIORITY: 4, PC: 20
+PCB: PID: 4, PRIORITY: 4, PC: 20
+PCB: PID: 5, PRIORITY: 4, PC: 20
+
+Timer interrupt: process switch from P3 to P4
+Currently running:
+	PCB: PID: 4, PRIORITY: 4, PC: 20
+Iteration: 330
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 0
+Q4: 11
+Q5: 3
+Q6: 0
+Q7: 0
+Q8: 0
+Q9: 0
+Q10: 0
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 5, PC: 30
+PCB: PID: 3, PRIORITY: 5, PC: 30
+PCB: PID: 4, PRIORITY: 4, PC: 20
+PCB: PID: 5, PRIORITY: 4, PC: 20
+
+Timer interrupt: process switch from P4 to P5
+Currently running:
+	PCB: PID: 5, PRIORITY: 4, PC: 20
+Iteration: 340
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 0
+Q4: 10
+Q5: 4
+Q6: 0
+Q7: 0
+Q8: 0
+Q9: 0
+Q10: 0
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 5, PC: 30
+PCB: PID: 3, PRIORITY: 5, PC: 30
+PCB: PID: 4, PRIORITY: 5, PC: 30
+PCB: PID: 5, PRIORITY: 4, PC: 20
+
+Timer interrupt: process switch from P5 to P6
+Currently running:
+	PCB: PID: 6, PRIORITY: 4, PC: 20
+Iteration: 350
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 0
+Q4: 9
+Q5: 5
+Q6: 0
+Q7: 0
+Q8: 0
+Q9: 0
+Q10: 0
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 5, PC: 30
+PCB: PID: 3, PRIORITY: 5, PC: 30
+PCB: PID: 4, PRIORITY: 5, PC: 30
+PCB: PID: 5, PRIORITY: 5, PC: 30
+
+Timer interrupt: process switch from P6 to P7
+Currently running:
+	PCB: PID: 7, PRIORITY: 4, PC: 20
+Iteration: 360
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 0
+Q4: 8
+Q5: 6
+Q6: 0
+Q7: 0
+Q8: 0
+Q9: 0
+Q10: 0
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 5, PC: 30
+PCB: PID: 3, PRIORITY: 5, PC: 30
+PCB: PID: 4, PRIORITY: 5, PC: 30
+PCB: PID: 5, PRIORITY: 5, PC: 30
+
+Timer interrupt: process switch from P7 to P8
+Currently running:
+	PCB: PID: 8, PRIORITY: 4, PC: 20
+Iteration: 370
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 0
+Q4: 7
+Q5: 7
+Q6: 0
+Q7: 0
+Q8: 0
+Q9: 0
+Q10: 0
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 5, PC: 30
+PCB: PID: 3, PRIORITY: 5, PC: 30
+PCB: PID: 4, PRIORITY: 5, PC: 30
+PCB: PID: 5, PRIORITY: 5, PC: 30
+
+Timer interrupt: process switch from P8 to P9
+Currently running:
+	PCB: PID: 9, PRIORITY: 4, PC: 20
+Iteration: 380
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 0
+Q4: 6
+Q5: 8
+Q6: 0
+Q7: 0
+Q8: 0
+Q9: 0
+Q10: 0
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 5, PC: 30
+PCB: PID: 3, PRIORITY: 5, PC: 30
+PCB: PID: 4, PRIORITY: 5, PC: 30
+PCB: PID: 5, PRIORITY: 5, PC: 30
+
+Timer interrupt: process switch from P9 to P10
+Currently running:
+	PCB: PID: 10, PRIORITY: 4, PC: 20
+Iteration: 390
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 0
+Q4: 5
+Q5: 9
+Q6: 0
+Q7: 0
+Q8: 0
+Q9: 0
+Q10: 0
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 5, PC: 30
+PCB: PID: 3, PRIORITY: 5, PC: 30
+PCB: PID: 4, PRIORITY: 5, PC: 30
+PCB: PID: 5, PRIORITY: 5, PC: 30
+
+Timer interrupt: process switch from P10 to P11
+Currently running:
+	PCB: PID: 11, PRIORITY: 4, PC: 20
+Iteration: 400
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 0
+Q4: 4
+Q5: 10
+Q6: 0
+Q7: 0
+Q8: 0
+Q9: 0
+Q10: 0
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 5, PC: 30
+PCB: PID: 3, PRIORITY: 5, PC: 30
+PCB: PID: 4, PRIORITY: 5, PC: 30
+PCB: PID: 5, PRIORITY: 5, PC: 30
+
+Timer interrupt: process switch from P11 to P12
+Currently running:
+	PCB: PID: 12, PRIORITY: 4, PC: 20
+Iteration: 410
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 0
+Q4: 3
+Q5: 11
+Q6: 0
+Q7: 0
+Q8: 0
+Q9: 0
+Q10: 0
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 5, PC: 30
+PCB: PID: 3, PRIORITY: 5, PC: 30
+PCB: PID: 4, PRIORITY: 5, PC: 30
+PCB: PID: 5, PRIORITY: 5, PC: 30
+
+Timer interrupt: process switch from P12 to P13
+Currently running:
+	PCB: PID: 13, PRIORITY: 4, PC: 20
+Iteration: 420
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 0
+Q4: 2
+Q5: 12
+Q6: 0
+Q7: 0
+Q8: 0
+Q9: 0
+Q10: 0
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 5, PC: 30
+PCB: PID: 3, PRIORITY: 5, PC: 30
+PCB: PID: 4, PRIORITY: 5, PC: 30
+PCB: PID: 5, PRIORITY: 5, PC: 30
+
+Timer interrupt: process switch from P13 to P14
+Currently running:
+	PCB: PID: 14, PRIORITY: 4, PC: 20
+Iteration: 430
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 0
+Q4: 1
+Q5: 13
+Q6: 0
+Q7: 0
+Q8: 0
+Q9: 0
+Q10: 0
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 5, PC: 30
+PCB: PID: 3, PRIORITY: 5, PC: 30
+PCB: PID: 4, PRIORITY: 5, PC: 30
+PCB: PID: 5, PRIORITY: 5, PC: 30
+
+Timer interrupt: process switch from P14 to P15
+Currently running:
+	PCB: PID: 15, PRIORITY: 4, PC: 20
+Iteration: 440
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 0
+Q4: 0
+Q5: 14
+Q6: 0
+Q7: 0
+Q8: 0
+Q9: 0
+Q10: 0
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 5, PC: 30
+PCB: PID: 3, PRIORITY: 5, PC: 30
+PCB: PID: 4, PRIORITY: 5, PC: 30
+PCB: PID: 5, PRIORITY: 5, PC: 30
+
+Timer interrupt: process switch from P15 to P1
+Currently running:
+	PCB: PID: 1, PRIORITY: 5, PC: 30
+Iteration: 450
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 0
+Q4: 0
+Q5: 14
+Q6: 0
+Q7: 0
+Q8: 0
+Q9: 0
+Q10: 0
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 5, PC: 30
+PCB: PID: 3, PRIORITY: 5, PC: 30
+PCB: PID: 4, PRIORITY: 5, PC: 30
+PCB: PID: 5, PRIORITY: 5, PC: 30
+
+Timer interrupt: process switch from P1 to P2
+Currently running:
+	PCB: PID: 2, PRIORITY: 5, PC: 30
+Iteration: 462
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 0
+Q4: 0
+Q5: 13
+Q6: 1
+Q7: 0
+Q8: 0
+Q9: 0
+Q10: 0
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 5, PC: 30
+PCB: PID: 3, PRIORITY: 5, PC: 30
+PCB: PID: 4, PRIORITY: 5, PC: 30
+PCB: PID: 5, PRIORITY: 5, PC: 30
+
+Timer interrupt: process switch from P2 to P3
+Currently running:
+	PCB: PID: 3, PRIORITY: 5, PC: 30
+Iteration: 474
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 0
+Q4: 0
+Q5: 12
+Q6: 2
+Q7: 0
+Q8: 0
+Q9: 0
+Q10: 0
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 6, PC: 42
+PCB: PID: 3, PRIORITY: 5, PC: 30
+PCB: PID: 4, PRIORITY: 5, PC: 30
+PCB: PID: 5, PRIORITY: 5, PC: 30
+
+Timer interrupt: process switch from P3 to P4
+Currently running:
+	PCB: PID: 4, PRIORITY: 5, PC: 30
+Iteration: 486
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 0
+Q4: 0
+Q5: 11
+Q6: 3
+Q7: 0
+Q8: 0
+Q9: 0
+Q10: 0
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 6, PC: 42
+PCB: PID: 3, PRIORITY: 6, PC: 42
+PCB: PID: 4, PRIORITY: 5, PC: 30
+PCB: PID: 5, PRIORITY: 5, PC: 30
+
+Timer interrupt: process switch from P4 to P5
+Currently running:
+	PCB: PID: 5, PRIORITY: 5, PC: 30
+Iteration: 498
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 0
+Q4: 0
+Q5: 10
+Q6: 4
+Q7: 0
+Q8: 0
+Q9: 0
+Q10: 0
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 6, PC: 42
+PCB: PID: 3, PRIORITY: 6, PC: 42
+PCB: PID: 4, PRIORITY: 6, PC: 42
+PCB: PID: 5, PRIORITY: 5, PC: 30
+
+Timer interrupt: process switch from P5 to P6
+Currently running:
+	PCB: PID: 6, PRIORITY: 5, PC: 30
+Iteration: 510
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 0
+Q4: 0
+Q5: 9
+Q6: 5
+Q7: 0
+Q8: 0
+Q9: 0
+Q10: 0
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 6, PC: 42
+PCB: PID: 3, PRIORITY: 6, PC: 42
+PCB: PID: 4, PRIORITY: 6, PC: 42
+PCB: PID: 5, PRIORITY: 6, PC: 42
+
+Timer interrupt: process switch from P6 to P7
+Currently running:
+	PCB: PID: 7, PRIORITY: 5, PC: 30
+Iteration: 522
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 0
+Q4: 0
+Q5: 8
+Q6: 6
+Q7: 0
+Q8: 0
+Q9: 0
+Q10: 0
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 6, PC: 42
+PCB: PID: 3, PRIORITY: 6, PC: 42
+PCB: PID: 4, PRIORITY: 6, PC: 42
+PCB: PID: 5, PRIORITY: 6, PC: 42
+
+Timer interrupt: process switch from P7 to P8
+Currently running:
+	PCB: PID: 8, PRIORITY: 5, PC: 30
+Iteration: 534
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 0
+Q4: 0
+Q5: 7
+Q6: 7
+Q7: 0
+Q8: 0
+Q9: 0
+Q10: 0
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 6, PC: 42
+PCB: PID: 3, PRIORITY: 6, PC: 42
+PCB: PID: 4, PRIORITY: 6, PC: 42
+PCB: PID: 5, PRIORITY: 6, PC: 42
+
+Timer interrupt: process switch from P8 to P9
+Currently running:
+	PCB: PID: 9, PRIORITY: 5, PC: 30
+Iteration: 546
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 0
+Q4: 0
+Q5: 6
+Q6: 8
+Q7: 0
+Q8: 0
+Q9: 0
+Q10: 0
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 6, PC: 42
+PCB: PID: 3, PRIORITY: 6, PC: 42
+PCB: PID: 4, PRIORITY: 6, PC: 42
+PCB: PID: 5, PRIORITY: 6, PC: 42
+
+Timer interrupt: process switch from P9 to P10
+Currently running:
+	PCB: PID: 10, PRIORITY: 5, PC: 30
+Iteration: 558
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 0
+Q4: 0
+Q5: 5
+Q6: 9
+Q7: 0
+Q8: 0
+Q9: 0
+Q10: 0
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 6, PC: 42
+PCB: PID: 3, PRIORITY: 6, PC: 42
+PCB: PID: 4, PRIORITY: 6, PC: 42
+PCB: PID: 5, PRIORITY: 6, PC: 42
+
+Timer interrupt: process switch from P10 to P11
+Currently running:
+	PCB: PID: 11, PRIORITY: 5, PC: 30
+Iteration: 570
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 0
+Q4: 0
+Q5: 4
+Q6: 10
+Q7: 0
+Q8: 0
+Q9: 0
+Q10: 0
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 6, PC: 42
+PCB: PID: 3, PRIORITY: 6, PC: 42
+PCB: PID: 4, PRIORITY: 6, PC: 42
+PCB: PID: 5, PRIORITY: 6, PC: 42
+
+Timer interrupt: process switch from P11 to P12
+Currently running:
+	PCB: PID: 12, PRIORITY: 5, PC: 30
+Iteration: 582
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 0
+Q4: 0
+Q5: 3
+Q6: 11
+Q7: 0
+Q8: 0
+Q9: 0
+Q10: 0
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 6, PC: 42
+PCB: PID: 3, PRIORITY: 6, PC: 42
+PCB: PID: 4, PRIORITY: 6, PC: 42
+PCB: PID: 5, PRIORITY: 6, PC: 42
+
+Timer interrupt: process switch from P12 to P13
+Currently running:
+	PCB: PID: 13, PRIORITY: 5, PC: 30
+Iteration: 594
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 0
+Q4: 0
+Q5: 2
+Q6: 12
+Q7: 0
+Q8: 0
+Q9: 0
+Q10: 0
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 6, PC: 42
+PCB: PID: 3, PRIORITY: 6, PC: 42
+PCB: PID: 4, PRIORITY: 6, PC: 42
+PCB: PID: 5, PRIORITY: 6, PC: 42
+
+Timer interrupt: process switch from P13 to P14
+Currently running:
+	PCB: PID: 14, PRIORITY: 5, PC: 30
+Iteration: 606
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 0
+Q4: 0
+Q5: 1
+Q6: 13
+Q7: 0
+Q8: 0
+Q9: 0
+Q10: 0
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 6, PC: 42
+PCB: PID: 3, PRIORITY: 6, PC: 42
+PCB: PID: 4, PRIORITY: 6, PC: 42
+PCB: PID: 5, PRIORITY: 6, PC: 42
+
+Timer interrupt: process switch from P14 to P15
+Currently running:
+	PCB: PID: 15, PRIORITY: 5, PC: 30
+Iteration: 618
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 0
+Q4: 0
+Q5: 0
+Q6: 14
+Q7: 0
+Q8: 0
+Q9: 0
+Q10: 0
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 6, PC: 42
+PCB: PID: 3, PRIORITY: 6, PC: 42
+PCB: PID: 4, PRIORITY: 6, PC: 42
+PCB: PID: 5, PRIORITY: 6, PC: 42
+
+Timer interrupt: process switch from P15 to P1
+Currently running:
+	PCB: PID: 1, PRIORITY: 6, PC: 42
+Iteration: 630
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 0
+Q4: 0
+Q5: 0
+Q6: 14
+Q7: 0
+Q8: 0
+Q9: 0
+Q10: 0
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 6, PC: 42
+PCB: PID: 3, PRIORITY: 6, PC: 42
+PCB: PID: 4, PRIORITY: 6, PC: 42
+PCB: PID: 5, PRIORITY: 6, PC: 42
+
+Timer interrupt: process switch from P1 to P2
+Currently running:
+	PCB: PID: 2, PRIORITY: 6, PC: 42
+Iteration: 644
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 0
+Q4: 0
+Q5: 0
+Q6: 13
+Q7: 1
+Q8: 0
+Q9: 0
+Q10: 0
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 6, PC: 42
+PCB: PID: 3, PRIORITY: 6, PC: 42
+PCB: PID: 4, PRIORITY: 6, PC: 42
+PCB: PID: 5, PRIORITY: 6, PC: 42
+
+Timer interrupt: process switch from P2 to P3
+Currently running:
+	PCB: PID: 3, PRIORITY: 6, PC: 42
+Iteration: 658
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 0
+Q4: 0
+Q5: 0
+Q6: 12
+Q7: 2
+Q8: 0
+Q9: 0
+Q10: 0
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 7, PC: 56
+PCB: PID: 3, PRIORITY: 6, PC: 42
+PCB: PID: 4, PRIORITY: 6, PC: 42
+PCB: PID: 5, PRIORITY: 6, PC: 42
+
+Timer interrupt: process switch from P3 to P4
+Currently running:
+	PCB: PID: 4, PRIORITY: 6, PC: 42
+Iteration: 672
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 0
+Q4: 0
+Q5: 0
+Q6: 11
+Q7: 3
+Q8: 0
+Q9: 0
+Q10: 0
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 7, PC: 56
+PCB: PID: 3, PRIORITY: 7, PC: 56
+PCB: PID: 4, PRIORITY: 6, PC: 42
+PCB: PID: 5, PRIORITY: 6, PC: 42
+
+Timer interrupt: process switch from P4 to P5
+Currently running:
+	PCB: PID: 5, PRIORITY: 6, PC: 42
+Iteration: 686
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 0
+Q4: 0
+Q5: 0
+Q6: 10
+Q7: 4
+Q8: 0
+Q9: 0
+Q10: 0
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 7, PC: 56
+PCB: PID: 3, PRIORITY: 7, PC: 56
+PCB: PID: 4, PRIORITY: 7, PC: 56
+PCB: PID: 5, PRIORITY: 6, PC: 42
+
+Timer interrupt: process switch from P5 to P6
+Currently running:
+	PCB: PID: 6, PRIORITY: 6, PC: 42
+Iteration: 700
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 0
+Q4: 0
+Q5: 0
+Q6: 9
+Q7: 5
+Q8: 0
+Q9: 0
+Q10: 0
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 7, PC: 56
+PCB: PID: 3, PRIORITY: 7, PC: 56
+PCB: PID: 4, PRIORITY: 7, PC: 56
+PCB: PID: 5, PRIORITY: 7, PC: 56
+
+Timer interrupt: process switch from P6 to P7
+Currently running:
+	PCB: PID: 7, PRIORITY: 6, PC: 42
+Iteration: 714
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 0
+Q4: 0
+Q5: 0
+Q6: 8
+Q7: 6
+Q8: 0
+Q9: 0
+Q10: 0
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 7, PC: 56
+PCB: PID: 3, PRIORITY: 7, PC: 56
+PCB: PID: 4, PRIORITY: 7, PC: 56
+PCB: PID: 5, PRIORITY: 7, PC: 56
+
+Timer interrupt: process switch from P7 to P8
+Currently running:
+	PCB: PID: 8, PRIORITY: 6, PC: 42
+Iteration: 728
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 0
+Q4: 0
+Q5: 0
+Q6: 7
+Q7: 7
+Q8: 0
+Q9: 0
+Q10: 0
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 7, PC: 56
+PCB: PID: 3, PRIORITY: 7, PC: 56
+PCB: PID: 4, PRIORITY: 7, PC: 56
+PCB: PID: 5, PRIORITY: 7, PC: 56
+
+Timer interrupt: process switch from P8 to P9
+Currently running:
+	PCB: PID: 9, PRIORITY: 6, PC: 42
+Iteration: 742
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 0
+Q4: 0
+Q5: 0
+Q6: 6
+Q7: 8
+Q8: 0
+Q9: 0
+Q10: 0
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 7, PC: 56
+PCB: PID: 3, PRIORITY: 7, PC: 56
+PCB: PID: 4, PRIORITY: 7, PC: 56
+PCB: PID: 5, PRIORITY: 7, PC: 56
+
+Timer interrupt: process switch from P9 to P10
+Currently running:
+	PCB: PID: 10, PRIORITY: 6, PC: 42
+Iteration: 756
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 0
+Q4: 0
+Q5: 0
+Q6: 5
+Q7: 9
+Q8: 0
+Q9: 0
+Q10: 0
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 7, PC: 56
+PCB: PID: 3, PRIORITY: 7, PC: 56
+PCB: PID: 4, PRIORITY: 7, PC: 56
+PCB: PID: 5, PRIORITY: 7, PC: 56
+
+Timer interrupt: process switch from P10 to P11
+Currently running:
+	PCB: PID: 11, PRIORITY: 6, PC: 42
+Iteration: 770
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 0
+Q4: 0
+Q5: 0
+Q6: 4
+Q7: 10
+Q8: 0
+Q9: 0
+Q10: 0
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 7, PC: 56
+PCB: PID: 3, PRIORITY: 7, PC: 56
+PCB: PID: 4, PRIORITY: 7, PC: 56
+PCB: PID: 5, PRIORITY: 7, PC: 56
+
+Timer interrupt: process switch from P11 to P12
+Currently running:
+	PCB: PID: 12, PRIORITY: 6, PC: 42
+Iteration: 784
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 0
+Q4: 0
+Q5: 0
+Q6: 3
+Q7: 11
+Q8: 0
+Q9: 0
+Q10: 0
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 7, PC: 56
+PCB: PID: 3, PRIORITY: 7, PC: 56
+PCB: PID: 4, PRIORITY: 7, PC: 56
+PCB: PID: 5, PRIORITY: 7, PC: 56
+
+Timer interrupt: process switch from P12 to P13
+Currently running:
+	PCB: PID: 13, PRIORITY: 6, PC: 42
+Iteration: 798
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 0
+Q4: 0
+Q5: 0
+Q6: 2
+Q7: 12
+Q8: 0
+Q9: 0
+Q10: 0
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 7, PC: 56
+PCB: PID: 3, PRIORITY: 7, PC: 56
+PCB: PID: 4, PRIORITY: 7, PC: 56
+PCB: PID: 5, PRIORITY: 7, PC: 56
+
+Timer interrupt: process switch from P13 to P14
+Currently running:
+	PCB: PID: 14, PRIORITY: 6, PC: 42
+Iteration: 812
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 0
+Q4: 0
+Q5: 0
+Q6: 1
+Q7: 13
+Q8: 0
+Q9: 0
+Q10: 0
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 7, PC: 56
+PCB: PID: 3, PRIORITY: 7, PC: 56
+PCB: PID: 4, PRIORITY: 7, PC: 56
+PCB: PID: 5, PRIORITY: 7, PC: 56
+
+Timer interrupt: process switch from P14 to P15
+Currently running:
+	PCB: PID: 15, PRIORITY: 6, PC: 42
+Iteration: 826
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 0
+Q4: 0
+Q5: 0
+Q6: 0
+Q7: 14
+Q8: 0
+Q9: 0
+Q10: 0
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 7, PC: 56
+PCB: PID: 3, PRIORITY: 7, PC: 56
+PCB: PID: 4, PRIORITY: 7, PC: 56
+PCB: PID: 5, PRIORITY: 7, PC: 56
+
+Timer interrupt: process switch from P15 to P1
+Currently running:
+	PCB: PID: 1, PRIORITY: 7, PC: 56
+Iteration: 840
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 0
+Q4: 0
+Q5: 0
+Q6: 0
+Q7: 14
+Q8: 0
+Q9: 0
+Q10: 0
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 7, PC: 56
+PCB: PID: 3, PRIORITY: 7, PC: 56
+PCB: PID: 4, PRIORITY: 7, PC: 56
+PCB: PID: 5, PRIORITY: 7, PC: 56
+
+Timer interrupt: process switch from P1 to P2
+Currently running:
+	PCB: PID: 2, PRIORITY: 7, PC: 56
+Iteration: 856
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 0
+Q4: 0
+Q5: 0
+Q6: 0
+Q7: 13
+Q8: 1
+Q9: 0
+Q10: 0
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 7, PC: 56
+PCB: PID: 3, PRIORITY: 7, PC: 56
+PCB: PID: 4, PRIORITY: 7, PC: 56
+PCB: PID: 5, PRIORITY: 7, PC: 56
+
+Timer interrupt: process switch from P2 to P3
+Currently running:
+	PCB: PID: 3, PRIORITY: 7, PC: 56
+Iteration: 872
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 0
+Q4: 0
+Q5: 0
+Q6: 0
+Q7: 12
+Q8: 2
+Q9: 0
+Q10: 0
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 8, PC: 72
+PCB: PID: 3, PRIORITY: 7, PC: 56
+PCB: PID: 4, PRIORITY: 7, PC: 56
+PCB: PID: 5, PRIORITY: 7, PC: 56
+
+Timer interrupt: process switch from P3 to P4
+Currently running:
+	PCB: PID: 4, PRIORITY: 7, PC: 56
+Iteration: 888
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 0
+Q4: 0
+Q5: 0
+Q6: 0
+Q7: 11
+Q8: 3
+Q9: 0
+Q10: 0
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 8, PC: 72
+PCB: PID: 3, PRIORITY: 8, PC: 72
+PCB: PID: 4, PRIORITY: 7, PC: 56
+PCB: PID: 5, PRIORITY: 7, PC: 56
+
+Timer interrupt: process switch from P4 to P5
+Currently running:
+	PCB: PID: 5, PRIORITY: 7, PC: 56
+Iteration: 904
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 0
+Q4: 0
+Q5: 0
+Q6: 0
+Q7: 10
+Q8: 4
+Q9: 0
+Q10: 0
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 8, PC: 72
+PCB: PID: 3, PRIORITY: 8, PC: 72
+PCB: PID: 4, PRIORITY: 8, PC: 72
+PCB: PID: 5, PRIORITY: 7, PC: 56
+
+Timer interrupt: process switch from P5 to P6
+Currently running:
+	PCB: PID: 6, PRIORITY: 7, PC: 56
+Iteration: 920
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 0
+Q4: 0
+Q5: 0
+Q6: 0
+Q7: 9
+Q8: 5
+Q9: 0
+Q10: 0
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 8, PC: 72
+PCB: PID: 3, PRIORITY: 8, PC: 72
+PCB: PID: 4, PRIORITY: 8, PC: 72
+PCB: PID: 5, PRIORITY: 8, PC: 72
+
+Timer interrupt: process switch from P6 to P7
+Currently running:
+	PCB: PID: 7, PRIORITY: 7, PC: 56
+Iteration: 936
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 0
+Q4: 0
+Q5: 0
+Q6: 0
+Q7: 8
+Q8: 6
+Q9: 0
+Q10: 0
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 8, PC: 72
+PCB: PID: 3, PRIORITY: 8, PC: 72
+PCB: PID: 4, PRIORITY: 8, PC: 72
+PCB: PID: 5, PRIORITY: 8, PC: 72
+
+Timer interrupt: process switch from P7 to P8
+Currently running:
+	PCB: PID: 8, PRIORITY: 7, PC: 56
+Iteration: 952
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 0
+Q4: 0
+Q5: 0
+Q6: 0
+Q7: 7
+Q8: 7
+Q9: 0
+Q10: 0
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 8, PC: 72
+PCB: PID: 3, PRIORITY: 8, PC: 72
+PCB: PID: 4, PRIORITY: 8, PC: 72
+PCB: PID: 5, PRIORITY: 8, PC: 72
+
+Timer interrupt: process switch from P8 to P9
+Currently running:
+	PCB: PID: 9, PRIORITY: 7, PC: 56
+Iteration: 968
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 0
+Q4: 0
+Q5: 0
+Q6: 0
+Q7: 6
+Q8: 8
+Q9: 0
+Q10: 0
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 8, PC: 72
+PCB: PID: 3, PRIORITY: 8, PC: 72
+PCB: PID: 4, PRIORITY: 8, PC: 72
+PCB: PID: 5, PRIORITY: 8, PC: 72
+
+Timer interrupt: process switch from P9 to P10
+Currently running:
+	PCB: PID: 10, PRIORITY: 7, PC: 56
+Iteration: 984
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 0
+Q4: 0
+Q5: 0
+Q6: 0
+Q7: 5
+Q8: 9
+Q9: 0
+Q10: 0
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 8, PC: 72
+PCB: PID: 3, PRIORITY: 8, PC: 72
+PCB: PID: 4, PRIORITY: 8, PC: 72
+PCB: PID: 5, PRIORITY: 8, PC: 72
+
+Timer interrupt: process switch from P10 to P11
+Currently running:
+	PCB: PID: 11, PRIORITY: 7, PC: 56
+Iteration: 1000
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 0
+Q4: 0
+Q5: 0
+Q6: 0
+Q7: 4
+Q8: 10
+Q9: 0
+Q10: 0
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 8, PC: 72
+PCB: PID: 3, PRIORITY: 8, PC: 72
+PCB: PID: 4, PRIORITY: 8, PC: 72
+PCB: PID: 5, PRIORITY: 8, PC: 72
+
+Timer interrupt: process switch from P11 to P12
+Currently running:
+	PCB: PID: 12, PRIORITY: 7, PC: 56
+Iteration: 1016
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 0
+Q4: 0
+Q5: 0
+Q6: 0
+Q7: 3
+Q8: 11
+Q9: 0
+Q10: 0
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 8, PC: 72
+PCB: PID: 3, PRIORITY: 8, PC: 72
+PCB: PID: 4, PRIORITY: 8, PC: 72
+PCB: PID: 5, PRIORITY: 8, PC: 72
+
+Timer interrupt: process switch from P12 to P13
+Currently running:
+	PCB: PID: 13, PRIORITY: 7, PC: 56
+Iteration: 1032
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 0
+Q4: 0
+Q5: 0
+Q6: 0
+Q7: 2
+Q8: 12
+Q9: 0
+Q10: 0
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 8, PC: 72
+PCB: PID: 3, PRIORITY: 8, PC: 72
+PCB: PID: 4, PRIORITY: 8, PC: 72
+PCB: PID: 5, PRIORITY: 8, PC: 72
+
+Timer interrupt: process switch from P13 to P14
+Currently running:
+	PCB: PID: 14, PRIORITY: 7, PC: 56
+Iteration: 1048
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 0
+Q4: 0
+Q5: 0
+Q6: 0
+Q7: 1
+Q8: 13
+Q9: 0
+Q10: 0
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 8, PC: 72
+PCB: PID: 3, PRIORITY: 8, PC: 72
+PCB: PID: 4, PRIORITY: 8, PC: 72
+PCB: PID: 5, PRIORITY: 8, PC: 72
+
+Timer interrupt: process switch from P14 to P15
+Currently running:
+	PCB: PID: 15, PRIORITY: 7, PC: 56
+Iteration: 1064
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 0
+Q4: 0
+Q5: 0
+Q6: 0
+Q7: 0
+Q8: 14
+Q9: 0
+Q10: 0
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 8, PC: 72
+PCB: PID: 3, PRIORITY: 8, PC: 72
+PCB: PID: 4, PRIORITY: 8, PC: 72
+PCB: PID: 5, PRIORITY: 8, PC: 72
+
+Timer interrupt: process switch from P15 to P1
+Currently running:
+	PCB: PID: 1, PRIORITY: 8, PC: 72
+Iteration: 1080
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 0
+Q4: 0
+Q5: 0
+Q6: 0
+Q7: 0
+Q8: 14
+Q9: 0
+Q10: 0
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 8, PC: 72
+PCB: PID: 3, PRIORITY: 8, PC: 72
+PCB: PID: 4, PRIORITY: 8, PC: 72
+PCB: PID: 5, PRIORITY: 8, PC: 72
+
+Timer interrupt: process switch from P1 to P2
+Currently running:
+	PCB: PID: 2, PRIORITY: 8, PC: 72
+Iteration: 1098
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 0
+Q4: 0
+Q5: 0
+Q6: 0
+Q7: 0
+Q8: 13
+Q9: 1
+Q10: 0
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 8, PC: 72
+PCB: PID: 3, PRIORITY: 8, PC: 72
+PCB: PID: 4, PRIORITY: 8, PC: 72
+PCB: PID: 5, PRIORITY: 8, PC: 72
+
+Timer interrupt: process switch from P2 to P3
+Currently running:
+	PCB: PID: 3, PRIORITY: 8, PC: 72
+Iteration: 1116
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 0
+Q4: 0
+Q5: 0
+Q6: 0
+Q7: 0
+Q8: 12
+Q9: 2
+Q10: 0
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 9, PC: 90
+PCB: PID: 3, PRIORITY: 8, PC: 72
+PCB: PID: 4, PRIORITY: 8, PC: 72
+PCB: PID: 5, PRIORITY: 8, PC: 72
+
+Timer interrupt: process switch from P3 to P4
+Currently running:
+	PCB: PID: 4, PRIORITY: 8, PC: 72
+Iteration: 1134
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 0
+Q4: 0
+Q5: 0
+Q6: 0
+Q7: 0
+Q8: 11
+Q9: 3
+Q10: 0
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 9, PC: 90
+PCB: PID: 3, PRIORITY: 9, PC: 90
+PCB: PID: 4, PRIORITY: 8, PC: 72
+PCB: PID: 5, PRIORITY: 8, PC: 72
+
+Timer interrupt: process switch from P4 to P5
+Currently running:
+	PCB: PID: 5, PRIORITY: 8, PC: 72
+Iteration: 1152
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 0
+Q4: 0
+Q5: 0
+Q6: 0
+Q7: 0
+Q8: 10
+Q9: 4
+Q10: 0
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 9, PC: 90
+PCB: PID: 3, PRIORITY: 9, PC: 90
+PCB: PID: 4, PRIORITY: 9, PC: 90
+PCB: PID: 5, PRIORITY: 8, PC: 72
+
+Timer interrupt: process switch from P5 to P6
+Currently running:
+	PCB: PID: 6, PRIORITY: 8, PC: 72
+Iteration: 1170
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 0
+Q4: 0
+Q5: 0
+Q6: 0
+Q7: 0
+Q8: 9
+Q9: 5
+Q10: 0
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 9, PC: 90
+PCB: PID: 3, PRIORITY: 9, PC: 90
+PCB: PID: 4, PRIORITY: 9, PC: 90
+PCB: PID: 5, PRIORITY: 9, PC: 90
+
+Timer interrupt: process switch from P6 to P7
+Currently running:
+	PCB: PID: 7, PRIORITY: 8, PC: 72
+Iteration: 1188
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 0
+Q4: 0
+Q5: 0
+Q6: 0
+Q7: 0
+Q8: 8
+Q9: 6
+Q10: 0
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 9, PC: 90
+PCB: PID: 3, PRIORITY: 9, PC: 90
+PCB: PID: 4, PRIORITY: 9, PC: 90
+PCB: PID: 5, PRIORITY: 9, PC: 90
+
+Timer interrupt: process switch from P7 to P8
+Currently running:
+	PCB: PID: 8, PRIORITY: 8, PC: 72
+Iteration: 1206
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 0
+Q4: 0
+Q5: 0
+Q6: 0
+Q7: 0
+Q8: 7
+Q9: 7
+Q10: 0
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 9, PC: 90
+PCB: PID: 3, PRIORITY: 9, PC: 90
+PCB: PID: 4, PRIORITY: 9, PC: 90
+PCB: PID: 5, PRIORITY: 9, PC: 90
+
+Timer interrupt: process switch from P8 to P9
+Currently running:
+	PCB: PID: 9, PRIORITY: 8, PC: 72
+Iteration: 1224
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 0
+Q4: 0
+Q5: 0
+Q6: 0
+Q7: 0
+Q8: 6
+Q9: 8
+Q10: 0
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 9, PC: 90
+PCB: PID: 3, PRIORITY: 9, PC: 90
+PCB: PID: 4, PRIORITY: 9, PC: 90
+PCB: PID: 5, PRIORITY: 9, PC: 90
+
+Timer interrupt: process switch from P9 to P10
+Currently running:
+	PCB: PID: 10, PRIORITY: 8, PC: 72
+Iteration: 1242
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 0
+Q4: 0
+Q5: 0
+Q6: 0
+Q7: 0
+Q8: 5
+Q9: 9
+Q10: 0
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 9, PC: 90
+PCB: PID: 3, PRIORITY: 9, PC: 90
+PCB: PID: 4, PRIORITY: 9, PC: 90
+PCB: PID: 5, PRIORITY: 9, PC: 90
+
+Timer interrupt: process switch from P10 to P11
+Currently running:
+	PCB: PID: 11, PRIORITY: 8, PC: 72
+Iteration: 1260
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 0
+Q4: 0
+Q5: 0
+Q6: 0
+Q7: 0
+Q8: 4
+Q9: 10
+Q10: 0
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 9, PC: 90
+PCB: PID: 3, PRIORITY: 9, PC: 90
+PCB: PID: 4, PRIORITY: 9, PC: 90
+PCB: PID: 5, PRIORITY: 9, PC: 90
+
+Timer interrupt: process switch from P11 to P12
+Currently running:
+	PCB: PID: 12, PRIORITY: 8, PC: 72
+Iteration: 1278
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 0
+Q4: 0
+Q5: 0
+Q6: 0
+Q7: 0
+Q8: 3
+Q9: 11
+Q10: 0
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 9, PC: 90
+PCB: PID: 3, PRIORITY: 9, PC: 90
+PCB: PID: 4, PRIORITY: 9, PC: 90
+PCB: PID: 5, PRIORITY: 9, PC: 90
+
+Timer interrupt: process switch from P12 to P13
+Currently running:
+	PCB: PID: 13, PRIORITY: 8, PC: 72
+Iteration: 1296
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 0
+Q4: 0
+Q5: 0
+Q6: 0
+Q7: 0
+Q8: 2
+Q9: 12
+Q10: 0
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 9, PC: 90
+PCB: PID: 3, PRIORITY: 9, PC: 90
+PCB: PID: 4, PRIORITY: 9, PC: 90
+PCB: PID: 5, PRIORITY: 9, PC: 90
+
+Timer interrupt: process switch from P13 to P14
+Currently running:
+	PCB: PID: 14, PRIORITY: 8, PC: 72
+Iteration: 1314
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 0
+Q4: 0
+Q5: 0
+Q6: 0
+Q7: 0
+Q8: 1
+Q9: 13
+Q10: 0
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 9, PC: 90
+PCB: PID: 3, PRIORITY: 9, PC: 90
+PCB: PID: 4, PRIORITY: 9, PC: 90
+PCB: PID: 5, PRIORITY: 9, PC: 90
+
+Timer interrupt: process switch from P14 to P15
+Currently running:
+	PCB: PID: 15, PRIORITY: 8, PC: 72
+Iteration: 1332
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 0
+Q4: 0
+Q5: 0
+Q6: 0
+Q7: 0
+Q8: 0
+Q9: 14
+Q10: 0
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 9, PC: 90
+PCB: PID: 3, PRIORITY: 9, PC: 90
+PCB: PID: 4, PRIORITY: 9, PC: 90
+PCB: PID: 5, PRIORITY: 9, PC: 90
+
+Timer interrupt: process switch from P15 to P1
+Currently running:
+	PCB: PID: 1, PRIORITY: 9, PC: 90
+Iteration: 1350
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 0
+Q4: 0
+Q5: 0
+Q6: 0
+Q7: 0
+Q8: 0
+Q9: 14
+Q10: 0
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 9, PC: 90
+PCB: PID: 3, PRIORITY: 9, PC: 90
+PCB: PID: 4, PRIORITY: 9, PC: 90
+PCB: PID: 5, PRIORITY: 9, PC: 90
+
+Timer interrupt: process switch from P1 to P2
+Currently running:
+	PCB: PID: 2, PRIORITY: 9, PC: 90
+Iteration: 1370
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 0
+Q4: 0
+Q5: 0
+Q6: 0
+Q7: 0
+Q8: 0
+Q9: 13
+Q10: 1
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 9, PC: 90
+PCB: PID: 3, PRIORITY: 9, PC: 90
+PCB: PID: 4, PRIORITY: 9, PC: 90
+PCB: PID: 5, PRIORITY: 9, PC: 90
+
+Timer interrupt: process switch from P2 to P3
+Currently running:
+	PCB: PID: 3, PRIORITY: 9, PC: 90
+Iteration: 1390
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 0
+Q4: 0
+Q5: 0
+Q6: 0
+Q7: 0
+Q8: 0
+Q9: 12
+Q10: 2
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 10, PC: 110
+PCB: PID: 3, PRIORITY: 9, PC: 90
+PCB: PID: 4, PRIORITY: 9, PC: 90
+PCB: PID: 5, PRIORITY: 9, PC: 90
+
+Timer interrupt: process switch from P3 to P4
+Currently running:
+	PCB: PID: 4, PRIORITY: 9, PC: 90
+Iteration: 1410
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 0
+Q4: 0
+Q5: 0
+Q6: 0
+Q7: 0
+Q8: 0
+Q9: 11
+Q10: 3
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 10, PC: 110
+PCB: PID: 3, PRIORITY: 10, PC: 110
+PCB: PID: 4, PRIORITY: 9, PC: 90
+PCB: PID: 5, PRIORITY: 9, PC: 90
+
+Timer interrupt: process switch from P4 to P5
+Currently running:
+	PCB: PID: 5, PRIORITY: 9, PC: 90
+Iteration: 1430
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 0
+Q4: 0
+Q5: 0
+Q6: 0
+Q7: 0
+Q8: 0
+Q9: 10
+Q10: 4
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 10, PC: 110
+PCB: PID: 3, PRIORITY: 10, PC: 110
+PCB: PID: 4, PRIORITY: 10, PC: 110
+PCB: PID: 5, PRIORITY: 9, PC: 90
+
+Timer interrupt: process switch from P5 to P6
+Currently running:
+	PCB: PID: 6, PRIORITY: 9, PC: 90
+Iteration: 1450
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 0
+Q4: 0
+Q5: 0
+Q6: 0
+Q7: 0
+Q8: 0
+Q9: 9
+Q10: 5
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 10, PC: 110
+PCB: PID: 3, PRIORITY: 10, PC: 110
+PCB: PID: 4, PRIORITY: 10, PC: 110
+PCB: PID: 5, PRIORITY: 10, PC: 110
+
+Timer interrupt: process switch from P6 to P7
+Currently running:
+	PCB: PID: 7, PRIORITY: 9, PC: 90
+Iteration: 1470
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 0
+Q4: 0
+Q5: 0
+Q6: 0
+Q7: 0
+Q8: 0
+Q9: 8
+Q10: 6
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 10, PC: 110
+PCB: PID: 3, PRIORITY: 10, PC: 110
+PCB: PID: 4, PRIORITY: 10, PC: 110
+PCB: PID: 5, PRIORITY: 10, PC: 110
+
+Timer interrupt: process switch from P7 to P8
+Currently running:
+	PCB: PID: 8, PRIORITY: 9, PC: 90
+Iteration: 1490
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 0
+Q4: 0
+Q5: 0
+Q6: 0
+Q7: 0
+Q8: 0
+Q9: 7
+Q10: 7
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 10, PC: 110
+PCB: PID: 3, PRIORITY: 10, PC: 110
+PCB: PID: 4, PRIORITY: 10, PC: 110
+PCB: PID: 5, PRIORITY: 10, PC: 110
+
+Timer interrupt: process switch from P8 to P9
+Currently running:
+	PCB: PID: 9, PRIORITY: 9, PC: 90
+Iteration: 1510
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 0
+Q4: 0
+Q5: 0
+Q6: 0
+Q7: 0
+Q8: 0
+Q9: 6
+Q10: 8
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 10, PC: 110
+PCB: PID: 3, PRIORITY: 10, PC: 110
+PCB: PID: 4, PRIORITY: 10, PC: 110
+PCB: PID: 5, PRIORITY: 10, PC: 110
+
+Timer interrupt: process switch from P9 to P10
+Currently running:
+	PCB: PID: 10, PRIORITY: 9, PC: 90
+Iteration: 1530
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 0
+Q4: 0
+Q5: 0
+Q6: 0
+Q7: 0
+Q8: 0
+Q9: 5
+Q10: 9
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 10, PC: 110
+PCB: PID: 3, PRIORITY: 10, PC: 110
+PCB: PID: 4, PRIORITY: 10, PC: 110
+PCB: PID: 5, PRIORITY: 10, PC: 110
+
+Timer interrupt: process switch from P10 to P11
+Currently running:
+	PCB: PID: 11, PRIORITY: 9, PC: 90
+Iteration: 1550
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 0
+Q4: 0
+Q5: 0
+Q6: 0
+Q7: 0
+Q8: 0
+Q9: 4
+Q10: 10
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 10, PC: 110
+PCB: PID: 3, PRIORITY: 10, PC: 110
+PCB: PID: 4, PRIORITY: 10, PC: 110
+PCB: PID: 5, PRIORITY: 10, PC: 110
+
+Timer interrupt: process switch from P11 to P12
+Currently running:
+	PCB: PID: 12, PRIORITY: 9, PC: 90
+Iteration: 1570
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 0
+Q4: 0
+Q5: 0
+Q6: 0
+Q7: 0
+Q8: 0
+Q9: 3
+Q10: 11
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 10, PC: 110
+PCB: PID: 3, PRIORITY: 10, PC: 110
+PCB: PID: 4, PRIORITY: 10, PC: 110
+PCB: PID: 5, PRIORITY: 10, PC: 110
+
+Timer interrupt: process switch from P12 to P13
+Currently running:
+	PCB: PID: 13, PRIORITY: 9, PC: 90
+Iteration: 1590
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 0
+Q4: 0
+Q5: 0
+Q6: 0
+Q7: 0
+Q8: 0
+Q9: 2
+Q10: 12
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 10, PC: 110
+PCB: PID: 3, PRIORITY: 10, PC: 110
+PCB: PID: 4, PRIORITY: 10, PC: 110
+PCB: PID: 5, PRIORITY: 10, PC: 110
+
+Timer interrupt: process switch from P13 to P14
+Currently running:
+	PCB: PID: 14, PRIORITY: 9, PC: 90
+Iteration: 1610
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 0
+Q4: 0
+Q5: 0
+Q6: 0
+Q7: 0
+Q8: 0
+Q9: 1
+Q10: 13
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 10, PC: 110
+PCB: PID: 3, PRIORITY: 10, PC: 110
+PCB: PID: 4, PRIORITY: 10, PC: 110
+PCB: PID: 5, PRIORITY: 10, PC: 110
+
+Timer interrupt: process switch from P14 to P15
+Currently running:
+	PCB: PID: 15, PRIORITY: 9, PC: 90
+Iteration: 1630
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 0
+Q4: 0
+Q5: 0
+Q6: 0
+Q7: 0
+Q8: 0
+Q9: 0
+Q10: 14
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 10, PC: 110
+PCB: PID: 3, PRIORITY: 10, PC: 110
+PCB: PID: 4, PRIORITY: 10, PC: 110
+PCB: PID: 5, PRIORITY: 10, PC: 110
+
+Timer interrupt: process switch from P15 to P1
+Currently running:
+	PCB: PID: 1, PRIORITY: 10, PC: 110
+Iteration: 1650
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 0
+Q4: 0
+Q5: 0
+Q6: 0
+Q7: 0
+Q8: 0
+Q9: 0
+Q10: 14
+Q11: 0
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 10, PC: 110
+PCB: PID: 3, PRIORITY: 10, PC: 110
+PCB: PID: 4, PRIORITY: 10, PC: 110
+PCB: PID: 5, PRIORITY: 10, PC: 110
+
+Process P1 requesting input from IO device 1, adding process to IO 1 queue.
+Timer interrupt: process switch from P2 to P3
+Currently running:
+	PCB: PID: 3, PRIORITY: 10, PC: 110
+Iteration: 1672
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 0
+Q4: 0
+Q5: 0
+Q6: 0
+Q7: 0
+Q8: 0
+Q9: 0
+Q10: 12
+Q11: 1
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 11, PC: 132
+PCB: PID: 3, PRIORITY: 10, PC: 110
+PCB: PID: 4, PRIORITY: 10, PC: 110
+PCB: PID: 5, PRIORITY: 10, PC: 110
+
+Process P3 requesting input from IO device 1, adding process to IO 1 queue.
+Timer interrupt: process switch from P4 to P5
+Currently running:
+	PCB: PID: 5, PRIORITY: 10, PC: 110
+Iteration: 1694
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 0
+Q4: 0
+Q5: 0
+Q6: 0
+Q7: 0
+Q8: 0
+Q9: 0
+Q10: 10
+Q11: 2
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 11, PC: 132
+PCB: PID: 3, PRIORITY: 10, PC: 112
+PCB: PID: 4, PRIORITY: 11, PC: 132
+PCB: PID: 5, PRIORITY: 10, PC: 110
+
+Process P5 requesting input from IO device 1, adding process to IO 1 queue.
+Timer interrupt: process switch from P6 to P7
+Currently running:
+	PCB: PID: 7, PRIORITY: 10, PC: 110
+Iteration: 1716
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 0
+Q4: 0
+Q5: 0
+Q6: 0
+Q7: 0
+Q8: 0
+Q9: 0
+Q10: 8
+Q11: 3
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 11, PC: 132
+PCB: PID: 3, PRIORITY: 10, PC: 112
+PCB: PID: 4, PRIORITY: 11, PC: 132
+PCB: PID: 5, PRIORITY: 10, PC: 112
+
+Process P7 requesting input from IO device 1, adding process to IO 1 queue.
+Timer interrupt: process switch from P8 to P9
+Currently running:
+	PCB: PID: 9, PRIORITY: 10, PC: 110
+Iteration: 1738
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 0
+Q4: 0
+Q5: 0
+Q6: 0
+Q7: 0
+Q8: 0
+Q9: 0
+Q10: 6
+Q11: 4
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 11, PC: 132
+PCB: PID: 3, PRIORITY: 10, PC: 112
+PCB: PID: 4, PRIORITY: 11, PC: 132
+PCB: PID: 5, PRIORITY: 10, PC: 112
+
+Process P9 requesting input from IO device 1, adding process to IO 1 queue.
+Timer interrupt: process switch from P10 to P11
+Currently running:
+	PCB: PID: 11, PRIORITY: 10, PC: 110
+Iteration: 1760
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 0
+Q4: 0
+Q5: 0
+Q6: 0
+Q7: 0
+Q8: 0
+Q9: 0
+Q10: 4
+Q11: 5
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 11, PC: 132
+PCB: PID: 3, PRIORITY: 10, PC: 112
+PCB: PID: 4, PRIORITY: 11, PC: 132
+PCB: PID: 5, PRIORITY: 10, PC: 112
+
+Process P11 requesting input from IO device 1, adding process to IO 1 queue.
+Timer interrupt: process switch from P12 to P13
+Currently running:
+	PCB: PID: 13, PRIORITY: 10, PC: 110
+Iteration: 1782
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 0
+Q4: 0
+Q5: 0
+Q6: 0
+Q7: 0
+Q8: 0
+Q9: 0
+Q10: 2
+Q11: 6
+Q12: 0
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 11, PC: 132
+PCB: PID: 3, PRIORITY: 10, PC: 112
+PCB: PID: 4, PRIORITY: 11, PC: 132
+PCB: PID: 5, PRIORITY: 10, PC: 112
+
+Process P13 requesting input from IO device 1, adding process to IO 1 queue.
+Timer interrupt: process switch from P14 to P15
+Currently running:
+	PCB: PID: 15, PRIORITY: 10, PC: 110
+Iteration: 1804
+Q0: 0
 Q1: 0
 Q2: 0
 Q3: 0
@@ -6013,20 +3926,25 @@ Q7: 0
 Q8: 0
 Q9: 0
 Q10: 0
-Q11: 0
+Q11: 7
 Q12: 0
 Q13: 0
 Q14: 0
 Q15: 0
-PCB: PID: 8, PRIORITY: 0, PC: 789910,19
-PCB: PID: 14, PRIORITY: 0, PC: 191498,19
-PCB: PID: 22, PRIORITY: 2, PC: 22935,18
-PCB: PID: 31, PRIORITY: 0, PC: 125020,18
-Iteration: 290
-Q0: 4
+PCB: PID: 2, PRIORITY: 11, PC: 132
+PCB: PID: 3, PRIORITY: 10, PC: 112
+PCB: PID: 4, PRIORITY: 11, PC: 132
+PCB: PID: 5, PRIORITY: 10, PC: 112
+
+Process P15 requesting input from IO device 1, adding process to IO 1 queue.
+Timer interrupt: process switch from P2 to P4
+Currently running:
+	PCB: PID: 4, PRIORITY: 11, PC: 132
+Iteration: 1826
+Q0: 0
 Q1: 0
 Q2: 0
-Q3: 1
+Q3: 0
 Q4: 0
 Q5: 0
 Q6: 0
@@ -6034,20 +3952,100 @@ Q7: 0
 Q8: 0
 Q9: 0
 Q10: 0
-Q11: 0
-Q12: 0
+Q11: 5
+Q12: 1
 Q13: 0
 Q14: 0
 Q15: 0
-PCB: PID: 8, PRIORITY: 0, PC: 789910,19
-PCB: PID: 14, PRIORITY: 0, PC: 191498,19
-PCB: PID: 22, PRIORITY: 3, PC: 45874,19
-PCB: PID: 31, PRIORITY: 0, PC: 125020,18
-Iteration: 291
-Q0: 3
+PCB: PID: 2, PRIORITY: 12, PC: 132
+PCB: PID: 3, PRIORITY: 10, PC: 112
+PCB: PID: 4, PRIORITY: 11, PC: 132
+PCB: PID: 5, PRIORITY: 10, PC: 112
+
+Timer interrupt: process switch from P4 to P6
+Currently running:
+	PCB: PID: 6, PRIORITY: 11, PC: 132
+Iteration: 1850
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 0
+Q4: 0
+Q5: 0
+Q6: 0
+Q7: 0
+Q8: 0
+Q9: 0
+Q10: 0
+Q11: 4
+Q12: 2
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 12, PC: 132
+PCB: PID: 3, PRIORITY: 10, PC: 112
+PCB: PID: 4, PRIORITY: 12, PC: 156
+PCB: PID: 5, PRIORITY: 10, PC: 112
+
+Timer interrupt: process switch from P6 to P8
+Currently running:
+	PCB: PID: 8, PRIORITY: 11, PC: 132
+Iteration: 1874
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 0
+Q4: 0
+Q5: 0
+Q6: 0
+Q7: 0
+Q8: 0
+Q9: 0
+Q10: 0
+Q11: 3
+Q12: 3
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 12, PC: 132
+PCB: PID: 3, PRIORITY: 10, PC: 112
+PCB: PID: 4, PRIORITY: 12, PC: 156
+PCB: PID: 5, PRIORITY: 10, PC: 112
+
+IO device 1 received input, releasing processes from IO 1 queue.
+Timer interrupt: process switch from P8 to P1
+Currently running:
+	PCB: PID: 1, PRIORITY: 0, PC: 112
+Iteration: 1898
+Q0: 7
+Q1: 0
+Q2: 0
+Q3: 0
+Q4: 0
+Q5: 0
+Q6: 0
+Q7: 0
+Q8: 0
+Q9: 0
+Q10: 0
+Q11: 3
+Q12: 4
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 12, PC: 132
+PCB: PID: 3, PRIORITY: 0, PC: 112
+PCB: PID: 4, PRIORITY: 12, PC: 156
+PCB: PID: 5, PRIORITY: 0, PC: 112
+
+Timer interrupt: process switch from P1 to P3
+Currently running:
+	PCB: PID: 3, PRIORITY: 0, PC: 112
+Iteration: 1900
+Q0: 6
 Q1: 1
 Q2: 0
-Q3: 1
+Q3: 0
 Q4: 0
 Q5: 0
 Q6: 0
@@ -6055,104 +4053,24 @@ Q7: 0
 Q8: 0
 Q9: 0
 Q10: 0
-Q11: 0
-Q12: 0
+Q11: 3
+Q12: 4
 Q13: 0
 Q14: 0
 Q15: 0
-PCB: PID: 8, PRIORITY: 0, PC: 789910,19
-PCB: PID: 14, PRIORITY: 0, PC: 191498,19
-PCB: PID: 22, PRIORITY: 3, PC: 45874,19
-PCB: PID: 31, PRIORITY: 1, PC: 250040,19
-Iteration: 292
-Q0: 2
-Q1: 1
-Q2: 0
-Q3: 1
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 0, PC: 789910,19
-PCB: PID: 14, PRIORITY: 0, PC: 191498,19
-PCB: PID: 22, PRIORITY: 3, PC: 45874,19
-PCB: PID: 31, PRIORITY: 1, PC: 250040,19
-Iteration: 293
-Q0: 2
-Q1: 1
-Q2: 0
-Q3: 1
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 0, PC: 1579820,20
-PCB: PID: 14, PRIORITY: 0, PC: 191498,19
-PCB: PID: 22, PRIORITY: 3, PC: 45874,19
-PCB: PID: 31, PRIORITY: 1, PC: 250040,19
-Iteration: 294
-Q0: 2
-Q1: 1
-Q2: 0
-Q3: 1
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 0, PC: 1579820,20
-PCB: PID: 14, PRIORITY: 0, PC: 191498,19
-PCB: PID: 22, PRIORITY: 3, PC: 45874,19
-PCB: PID: 31, PRIORITY: 1, PC: 250040,19
-Iteration: 295
-Q0: 2
-Q1: 1
-Q2: 0
-Q3: 1
-Q4: 0
-Q5: 0
-Q6: 0
-Q7: 0
-Q8: 0
-Q9: 0
-Q10: 0
-Q11: 0
-Q12: 0
-Q13: 0
-Q14: 0
-Q15: 0
-PCB: PID: 8, PRIORITY: 0, PC: 1579820,20
-PCB: PID: 14, PRIORITY: 0, PC: 382997,20
-PCB: PID: 22, PRIORITY: 3, PC: 45874,19
-PCB: PID: 31, PRIORITY: 1, PC: 250040,19
-Iteration: 296
-Q0: 1
+PCB: PID: 2, PRIORITY: 12, PC: 132
+PCB: PID: 3, PRIORITY: 0, PC: 112
+PCB: PID: 4, PRIORITY: 12, PC: 156
+PCB: PID: 5, PRIORITY: 0, PC: 112
+
+Timer interrupt: process switch from P3 to P5
+Currently running:
+	PCB: PID: 5, PRIORITY: 0, PC: 112
+Iteration: 1902
+Q0: 5
 Q1: 2
 Q2: 0
-Q3: 1
+Q3: 0
 Q4: 0
 Q5: 0
 Q6: 0
@@ -6160,20 +4078,24 @@ Q7: 0
 Q8: 0
 Q9: 0
 Q10: 0
-Q11: 0
-Q12: 0
+Q11: 3
+Q12: 4
 Q13: 0
 Q14: 0
 Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 3159641,21
-PCB: PID: 14, PRIORITY: 0, PC: 382997,20
-PCB: PID: 22, PRIORITY: 3, PC: 45874,19
-PCB: PID: 31, PRIORITY: 1, PC: 250040,19
-Iteration: 297
-Q0: 0
+PCB: PID: 2, PRIORITY: 12, PC: 132
+PCB: PID: 3, PRIORITY: 1, PC: 114
+PCB: PID: 4, PRIORITY: 12, PC: 156
+PCB: PID: 5, PRIORITY: 0, PC: 112
+
+Timer interrupt: process switch from P5 to P7
+Currently running:
+	PCB: PID: 7, PRIORITY: 0, PC: 112
+Iteration: 1904
+Q0: 4
 Q1: 3
 Q2: 0
-Q3: 1
+Q3: 0
 Q4: 0
 Q5: 0
 Q6: 0
@@ -6181,20 +4103,224 @@ Q7: 0
 Q8: 0
 Q9: 0
 Q10: 0
-Q11: 0
-Q12: 0
+Q11: 3
+Q12: 4
 Q13: 0
 Q14: 0
 Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 3159641,21
-PCB: PID: 14, PRIORITY: 0, PC: 382997,20
-PCB: PID: 22, PRIORITY: 3, PC: 45874,19
-PCB: PID: 31, PRIORITY: 1, PC: 250040,19
-Iteration: 298
+PCB: PID: 2, PRIORITY: 12, PC: 132
+PCB: PID: 3, PRIORITY: 1, PC: 114
+PCB: PID: 4, PRIORITY: 12, PC: 156
+PCB: PID: 5, PRIORITY: 1, PC: 114
+
+Timer interrupt: process switch from P7 to P9
+Currently running:
+	PCB: PID: 9, PRIORITY: 0, PC: 112
+Iteration: 1906
+Q0: 3
+Q1: 4
+Q2: 0
+Q3: 0
+Q4: 0
+Q5: 0
+Q6: 0
+Q7: 0
+Q8: 0
+Q9: 0
+Q10: 0
+Q11: 3
+Q12: 4
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 12, PC: 132
+PCB: PID: 3, PRIORITY: 1, PC: 114
+PCB: PID: 4, PRIORITY: 12, PC: 156
+PCB: PID: 5, PRIORITY: 1, PC: 114
+
+Timer interrupt: process switch from P9 to P11
+Currently running:
+	PCB: PID: 11, PRIORITY: 0, PC: 112
+Iteration: 1908
+Q0: 2
+Q1: 5
+Q2: 0
+Q3: 0
+Q4: 0
+Q5: 0
+Q6: 0
+Q7: 0
+Q8: 0
+Q9: 0
+Q10: 0
+Q11: 3
+Q12: 4
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 12, PC: 132
+PCB: PID: 3, PRIORITY: 1, PC: 114
+PCB: PID: 4, PRIORITY: 12, PC: 156
+PCB: PID: 5, PRIORITY: 1, PC: 114
+
+Timer interrupt: process switch from P11 to P13
+Currently running:
+	PCB: PID: 13, PRIORITY: 0, PC: 112
+Iteration: 1910
+Q0: 1
+Q1: 6
+Q2: 0
+Q3: 0
+Q4: 0
+Q5: 0
+Q6: 0
+Q7: 0
+Q8: 0
+Q9: 0
+Q10: 0
+Q11: 3
+Q12: 4
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 12, PC: 132
+PCB: PID: 3, PRIORITY: 1, PC: 114
+PCB: PID: 4, PRIORITY: 12, PC: 156
+PCB: PID: 5, PRIORITY: 1, PC: 114
+
+Timer interrupt: process switch from P13 to P15
+Currently running:
+	PCB: PID: 15, PRIORITY: 0, PC: 112
+Iteration: 1912
+Q0: 0
+Q1: 7
+Q2: 0
+Q3: 0
+Q4: 0
+Q5: 0
+Q6: 0
+Q7: 0
+Q8: 0
+Q9: 0
+Q10: 0
+Q11: 3
+Q12: 4
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 12, PC: 132
+PCB: PID: 3, PRIORITY: 1, PC: 114
+PCB: PID: 4, PRIORITY: 12, PC: 156
+PCB: PID: 5, PRIORITY: 1, PC: 114
+
+Timer interrupt: process switch from P15 to P1
+Currently running:
+	PCB: PID: 1, PRIORITY: 1, PC: 114
+Iteration: 1914
+Q0: 0
+Q1: 7
+Q2: 0
+Q3: 0
+Q4: 0
+Q5: 0
+Q6: 0
+Q7: 0
+Q8: 0
+Q9: 0
+Q10: 0
+Q11: 3
+Q12: 4
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 12, PC: 132
+PCB: PID: 3, PRIORITY: 1, PC: 114
+PCB: PID: 4, PRIORITY: 12, PC: 156
+PCB: PID: 5, PRIORITY: 1, PC: 114
+
+Timer interrupt: process switch from P1 to P3
+Currently running:
+	PCB: PID: 3, PRIORITY: 1, PC: 114
+Iteration: 1918
+Q0: 0
+Q1: 6
+Q2: 1
+Q3: 0
+Q4: 0
+Q5: 0
+Q6: 0
+Q7: 0
+Q8: 0
+Q9: 0
+Q10: 0
+Q11: 3
+Q12: 4
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 12, PC: 132
+PCB: PID: 3, PRIORITY: 1, PC: 114
+PCB: PID: 4, PRIORITY: 12, PC: 156
+PCB: PID: 5, PRIORITY: 1, PC: 114
+
+Timer interrupt: process switch from P3 to P5
+Currently running:
+	PCB: PID: 5, PRIORITY: 1, PC: 114
+Iteration: 1922
+Q0: 0
+Q1: 5
+Q2: 2
+Q3: 0
+Q4: 0
+Q5: 0
+Q6: 0
+Q7: 0
+Q8: 0
+Q9: 0
+Q10: 0
+Q11: 3
+Q12: 4
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 12, PC: 132
+PCB: PID: 3, PRIORITY: 2, PC: 118
+PCB: PID: 4, PRIORITY: 12, PC: 156
+PCB: PID: 5, PRIORITY: 1, PC: 114
+
+Timer interrupt: process switch from P5 to P7
+Currently running:
+	PCB: PID: 7, PRIORITY: 1, PC: 114
+Iteration: 1926
+Q0: 0
+Q1: 4
+Q2: 3
+Q3: 0
+Q4: 0
+Q5: 0
+Q6: 0
+Q7: 0
+Q8: 0
+Q9: 0
+Q10: 0
+Q11: 3
+Q12: 4
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 12, PC: 132
+PCB: PID: 3, PRIORITY: 2, PC: 118
+PCB: PID: 4, PRIORITY: 12, PC: 156
+PCB: PID: 5, PRIORITY: 2, PC: 118
+
+Timer interrupt: process switch from P7 to P9
+Currently running:
+	PCB: PID: 9, PRIORITY: 1, PC: 114
+Iteration: 1930
 Q0: 0
 Q1: 3
-Q2: 0
-Q3: 1
+Q2: 4
+Q3: 0
 Q4: 0
 Q5: 0
 Q6: 0
@@ -6202,19 +4328,123 @@ Q7: 0
 Q8: 0
 Q9: 0
 Q10: 0
-Q11: 0
-Q12: 0
+Q11: 3
+Q12: 4
 Q13: 0
 Q14: 0
 Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 3159641,21
-PCB: PID: 14, PRIORITY: 1, PC: 765995,21
-PCB: PID: 22, PRIORITY: 3, PC: 45874,19
-PCB: PID: 31, PRIORITY: 1, PC: 250040,19
-Iteration: 299
+PCB: PID: 2, PRIORITY: 12, PC: 132
+PCB: PID: 3, PRIORITY: 2, PC: 118
+PCB: PID: 4, PRIORITY: 12, PC: 156
+PCB: PID: 5, PRIORITY: 2, PC: 118
+
+Timer interrupt: process switch from P9 to P11
+Currently running:
+	PCB: PID: 11, PRIORITY: 1, PC: 114
+Iteration: 1934
 Q0: 0
-Q1: 3
-Q2: 0
+Q1: 2
+Q2: 5
+Q3: 0
+Q4: 0
+Q5: 0
+Q6: 0
+Q7: 0
+Q8: 0
+Q9: 0
+Q10: 0
+Q11: 3
+Q12: 4
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 12, PC: 132
+PCB: PID: 3, PRIORITY: 2, PC: 118
+PCB: PID: 4, PRIORITY: 12, PC: 156
+PCB: PID: 5, PRIORITY: 2, PC: 118
+
+Timer interrupt: process switch from P11 to P13
+Currently running:
+	PCB: PID: 13, PRIORITY: 1, PC: 114
+Iteration: 1938
+Q0: 0
+Q1: 1
+Q2: 6
+Q3: 0
+Q4: 0
+Q5: 0
+Q6: 0
+Q7: 0
+Q8: 0
+Q9: 0
+Q10: 0
+Q11: 3
+Q12: 4
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 12, PC: 132
+PCB: PID: 3, PRIORITY: 2, PC: 118
+PCB: PID: 4, PRIORITY: 12, PC: 156
+PCB: PID: 5, PRIORITY: 2, PC: 118
+
+Timer interrupt: process switch from P13 to P15
+Currently running:
+	PCB: PID: 15, PRIORITY: 1, PC: 114
+Iteration: 1942
+Q0: 0
+Q1: 0
+Q2: 7
+Q3: 0
+Q4: 0
+Q5: 0
+Q6: 0
+Q7: 0
+Q8: 0
+Q9: 0
+Q10: 0
+Q11: 3
+Q12: 4
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 12, PC: 132
+PCB: PID: 3, PRIORITY: 2, PC: 118
+PCB: PID: 4, PRIORITY: 12, PC: 156
+PCB: PID: 5, PRIORITY: 2, PC: 118
+
+Timer interrupt: process switch from P15 to P1
+Currently running:
+	PCB: PID: 1, PRIORITY: 2, PC: 118
+Iteration: 1946
+Q0: 0
+Q1: 0
+Q2: 7
+Q3: 0
+Q4: 0
+Q5: 0
+Q6: 0
+Q7: 0
+Q8: 0
+Q9: 0
+Q10: 0
+Q11: 3
+Q12: 4
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 12, PC: 132
+PCB: PID: 3, PRIORITY: 2, PC: 118
+PCB: PID: 4, PRIORITY: 12, PC: 156
+PCB: PID: 5, PRIORITY: 2, PC: 118
+
+Timer interrupt: process switch from P1 to P3
+Currently running:
+	PCB: PID: 3, PRIORITY: 2, PC: 118
+Iteration: 1952
+Q0: 0
+Q1: 0
+Q2: 6
 Q3: 1
 Q4: 0
 Q5: 0
@@ -6223,12 +4453,188 @@ Q7: 0
 Q8: 0
 Q9: 0
 Q10: 0
-Q11: 0
-Q12: 0
+Q11: 3
+Q12: 4
 Q13: 0
 Q14: 0
 Q15: 0
-PCB: PID: 8, PRIORITY: 1, PC: 3159641,21
-PCB: PID: 14, PRIORITY: 1, PC: 765995,21
-PCB: PID: 22, PRIORITY: 3, PC: 45874,19
-PCB: PID: 31, PRIORITY: 1, PC: 500080,20
+PCB: PID: 2, PRIORITY: 12, PC: 132
+PCB: PID: 3, PRIORITY: 2, PC: 118
+PCB: PID: 4, PRIORITY: 12, PC: 156
+PCB: PID: 5, PRIORITY: 2, PC: 118
+
+Timer interrupt: process switch from P3 to P5
+Currently running:
+	PCB: PID: 5, PRIORITY: 2, PC: 118
+Iteration: 1958
+Q0: 0
+Q1: 0
+Q2: 5
+Q3: 2
+Q4: 0
+Q5: 0
+Q6: 0
+Q7: 0
+Q8: 0
+Q9: 0
+Q10: 0
+Q11: 3
+Q12: 4
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 12, PC: 132
+PCB: PID: 3, PRIORITY: 3, PC: 124
+PCB: PID: 4, PRIORITY: 12, PC: 156
+PCB: PID: 5, PRIORITY: 2, PC: 118
+
+Timer interrupt: process switch from P5 to P7
+Currently running:
+	PCB: PID: 7, PRIORITY: 2, PC: 118
+Iteration: 1964
+Q0: 0
+Q1: 0
+Q2: 4
+Q3: 3
+Q4: 0
+Q5: 0
+Q6: 0
+Q7: 0
+Q8: 0
+Q9: 0
+Q10: 0
+Q11: 3
+Q12: 4
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 12, PC: 132
+PCB: PID: 3, PRIORITY: 3, PC: 124
+PCB: PID: 4, PRIORITY: 12, PC: 156
+PCB: PID: 5, PRIORITY: 3, PC: 124
+
+Timer interrupt: process switch from P7 to P9
+Currently running:
+	PCB: PID: 9, PRIORITY: 2, PC: 118
+Iteration: 1970
+Q0: 0
+Q1: 0
+Q2: 3
+Q3: 4
+Q4: 0
+Q5: 0
+Q6: 0
+Q7: 0
+Q8: 0
+Q9: 0
+Q10: 0
+Q11: 3
+Q12: 4
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 12, PC: 132
+PCB: PID: 3, PRIORITY: 3, PC: 124
+PCB: PID: 4, PRIORITY: 12, PC: 156
+PCB: PID: 5, PRIORITY: 3, PC: 124
+
+Timer interrupt: process switch from P9 to P11
+Currently running:
+	PCB: PID: 11, PRIORITY: 2, PC: 118
+Iteration: 1976
+Q0: 0
+Q1: 0
+Q2: 2
+Q3: 5
+Q4: 0
+Q5: 0
+Q6: 0
+Q7: 0
+Q8: 0
+Q9: 0
+Q10: 0
+Q11: 3
+Q12: 4
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 12, PC: 132
+PCB: PID: 3, PRIORITY: 3, PC: 124
+PCB: PID: 4, PRIORITY: 12, PC: 156
+PCB: PID: 5, PRIORITY: 3, PC: 124
+
+Timer interrupt: process switch from P11 to P13
+Currently running:
+	PCB: PID: 13, PRIORITY: 2, PC: 118
+Iteration: 1982
+Q0: 0
+Q1: 0
+Q2: 1
+Q3: 6
+Q4: 0
+Q5: 0
+Q6: 0
+Q7: 0
+Q8: 0
+Q9: 0
+Q10: 0
+Q11: 3
+Q12: 4
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 12, PC: 132
+PCB: PID: 3, PRIORITY: 3, PC: 124
+PCB: PID: 4, PRIORITY: 12, PC: 156
+PCB: PID: 5, PRIORITY: 3, PC: 124
+
+Timer interrupt: process switch from P13 to P15
+Currently running:
+	PCB: PID: 15, PRIORITY: 2, PC: 118
+Iteration: 1988
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 7
+Q4: 0
+Q5: 0
+Q6: 0
+Q7: 0
+Q8: 0
+Q9: 0
+Q10: 0
+Q11: 3
+Q12: 4
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 12, PC: 132
+PCB: PID: 3, PRIORITY: 3, PC: 124
+PCB: PID: 4, PRIORITY: 12, PC: 156
+PCB: PID: 5, PRIORITY: 3, PC: 124
+
+Timer interrupt: process switch from P15 to P1
+Currently running:
+	PCB: PID: 1, PRIORITY: 3, PC: 124
+Iteration: 1994
+Q0: 0
+Q1: 0
+Q2: 0
+Q3: 7
+Q4: 0
+Q5: 0
+Q6: 0
+Q7: 0
+Q8: 0
+Q9: 0
+Q10: 0
+Q11: 3
+Q12: 4
+Q13: 0
+Q14: 0
+Q15: 0
+PCB: PID: 2, PRIORITY: 12, PC: 132
+PCB: PID: 3, PRIORITY: 3, PC: 124
+PCB: PID: 4, PRIORITY: 12, PC: 156
+PCB: PID: 5, PRIORITY: 3, PC: 124
+

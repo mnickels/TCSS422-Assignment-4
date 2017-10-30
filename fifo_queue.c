@@ -1,10 +1,8 @@
 /*
-TCSS422 - Operating Systems
-Problem 3
-
-Group Members:
-Taylor Riccetti
-Alisher Baimenov
+    Mike Nickels
+    Taylor Riccetti
+    TCSS 422
+    Problem 4
 */
 
 #include <stdlib.h>
@@ -76,7 +74,7 @@ PCB_p fifo_dequeue(FIFO_Queue_p fifo) {
         fifo->count--;
         return pcb;
     } else {
-        return 0;
+        return NULL;
     }
 }
 

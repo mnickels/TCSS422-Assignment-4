@@ -1,18 +1,8 @@
 /*
-TCSS422 - Operating Systems
-Problem 3
-
-Group Members:
-Taylor Riccetti
-Alisher Baimenov
-
-Changes:
-    We added to variables the the PCB_s struct, a bool value to
-    determine whether or not the PCB is privileged and added
-    a cycles variable to track how many cycles the PCB has run.
-
-    This information is specific to the PCB so we decided to store this
-    information here.
+	Mike Nickels
+	Taylor Riccetti
+	TCSS 422
+	Problem 4
 */
 
 #ifndef PCB_H
